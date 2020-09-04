@@ -1,8 +1,7 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 ?>
-    </div>
-</div>
+    <!-- </div> -->
 
 
 <?php //echo poll('theme/basic'); // 설문조사 ?>
@@ -11,7 +10,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 <!-- 기존코드 삭제 -->
 
 <!-- All Menus, Action Sheets, Modals, Notifications, Toasts, Snackbars get Placed outside the <div class="page-content"> -->
-<div id="menu-settings" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="308">
+    <div id="menu-settings" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="308">
         <div class="menu-title"><h1>Settings</h1><p class="color-highlight">Flexible and Easy to Use</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -159,8 +158,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
         </div>
     </div>
+<!-- </div> -->
 </div>
-<script>
+<!-- <script>
 jQuery(function($) {
 
     $( document ).ready( function() {
@@ -189,7 +189,7 @@ jQuery(function($) {
 
     });
 });
-</script>
+</script> -->
 
 <?php
 include_once(G5_THEME_PATH."/cbvmatail.sub.php");
