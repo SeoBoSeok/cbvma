@@ -90,12 +90,12 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 <!-- To set open and Close Hours Open custom.js and search for "SET OPENING HOURS BELOW" -->
                 <!-- Only setting the code below will not make the system work automatically-->
 
-                <div class="working-hours day-monday">          <p class="p2 color-white  bg-red2-dark">농림축산식품부 동물병원 과태료 상향 등 발표 알림</p>    <p class="color-white bg-red2-dark">08.26</p></div>
-                <div class="working-hours day-tuesday">         <p class="p2">동물병원 진료부‧처방내역공개 관련 가이드라인” 알림</p>   <p>08.25</p></div>
-                <div class="working-hours day-wednesday">       <p class="p2">유효기간이 지난 약제의 폐기방법 관련 안내</p> <p>08.18</p></div>
-                <div class="working-hours day-thursday">        <p class="p2">「의료 폐기물 처리 담당자 교육」이수 홍보 안내</p>  <p>08.14</p></div>
+                <div class="working-hours day-monday">          <p class="p2 color-white  bg-red2-dark">농림축산식품부 동물병원 과태료 상향.../p>    <p class="color-white bg-red2-dark">08.26</p></div>
+                <div class="working-hours day-tuesday">         <p class="p2">동물병원 진료부‧처방내역공개 관련 가이...</p>   <p>08.25</p></div>
+                <div class="working-hours day-wednesday">       <p class="p2">유효기간이 지난 약제의 폐기방법 관련 안...</p> <p>08.18</p></div>
+                <div class="working-hours day-thursday">        <p class="p2">「의료 폐기물 처리 담당자 교육」이수 홍보...</p>  <p>08.14</p></div>
                 <div class="working-hours day-friday">          <p class="p2">｢마약류관리법｣주요 준수사항 알림</p>    <p>08.14</p></div>
-                <div class="working-hours day-saturday">        <p class="p2">동물병원 진료 연결 소셜커머스 가입 금지 요청</p>  <p>08.14</p></div>
+                <div class="working-hours day-saturday">        <p class="p2">동물병원 진료 연결 소셜커머스 가입 금...</p>  <p>08.14</p></div>
 
                 </div>
             </div>
