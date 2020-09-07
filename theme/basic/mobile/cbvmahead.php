@@ -29,3 +29,9 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
     		<a href="javascript:history.back();"><i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sound_only">뒤로가기</span></a> <?php echo get_head_title($g5['title']); ?>
     	</h2>
     <?php } ?>
+
+    <div class="header header-demo header-logo-center">
+        <a href="/" class="header-logo">Enabled<span class="color-highlight"> Mobile</span></a>
+        <a href="#" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+        <a href="#" class="header-icon header-icon-4"><i class="fas fa-heart color-red2-light"></i></a>
+    </div>

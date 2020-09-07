@@ -261,7 +261,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
 	        <li class="is_captcha_use">
 	            <span  class="frm_label">자동등록방지</span>
-	            <?php echo captcha_html(); ?>
+	            <?php // echo captcha_html(); ?>
 	        </li>
 	    </ul>
     </div>
@@ -397,14 +397,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <?php } ?>
 
         // 닉네임 검사
-        if ((f.w.value == "") || (f.w.value == "u" && f.mb_nick.defaultValue != f.mb_nick.value)) {
-            var msg = reg_mb_nick_check();
-            if (msg) {
-                alert(msg);
-                f.reg_mb_nick.select();
-                return false;
-            }
-        }
+        // if ((f.w.value == "") || (f.w.value == "u" && f.mb_nick.defaultValue != f.mb_nick.value)) {
+        //     var msg = reg_mb_nick_check();
+        //     if (msg) {
+        //         alert(msg);
+        //         f.reg_mb_nick.select();
+        //         return false;
+        //     }
+        // }
 
         // E-mail 검사
         if ((f.w.value == "") || (f.w.value == "u" && f.mb_email.defaultValue != f.mb_email.value)) {

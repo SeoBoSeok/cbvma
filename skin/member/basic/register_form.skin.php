@@ -214,14 +214,14 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 	            </li>
 	            <?php } ?>
 
-	            <li class="chk_box">
+	            <!-- <li class="chk_box">
 		        	<input type="checkbox" name="mb_mailling" value="1" id="reg_mb_mailling" <?php echo ($w=='' || $member['mb_mailling'])?'checked':''; ?> class="selec_chk">
 		            <label for="reg_mb_mailling">
 		            	<span></span>
 		            	<b class="sound_only">메일링서비스</b>
 		            </label>
 		            <span class="chk_li">정보 메일을 받겠습니다.</span>
-		        </li>
+		        </li> -->
 	
 				<?php if ($config['cf_use_hp']) { ?>
 		        <li class="chk_box">
@@ -235,8 +235,8 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 		        <?php } ?>
 	
 		        <?php if (isset($member['mb_open_date']) && $member['mb_open_date'] <= date("Y-m-d", G5_SERVER_TIME - ($config['cf_open_modify'] * 86400)) || empty($member['mb_open_date'])) { // 정보공개 수정일이 지났다면 수정가능 ?>
-		        <li class="chk_box">
-		            <input type="checkbox" name="mb_open" value="1" id="reg_mb_open" <?php echo ($w=='' || $member['mb_open'])?'checked':''; ?> class="selec_chk">
+		        <!-- <li class="chk_box">
+		            <input type="checkbox" name="mb_open" value="1" id="reg_mb_open" <?php //echo ($w=='' || $member['mb_open'])?'checked':''; ?> class="selec_chk">
 		      		<label for="reg_mb_open">
 		      			<span></span>
 		      			<b class="sound_only">정보공개</b>
@@ -244,21 +244,21 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 		            <span class="chk_li">다른분들이 나의 정보를 볼 수 있도록 합니다.</span>
 		            <button type="button" class="tooltip_icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span class="sound_only">설명보기</span></button>
 		            <span class="tooltip">
-		                정보공개를 바꾸시면 앞으로 <?php echo (int)$config['cf_open_modify'] ?>일 이내에는 변경이 안됩니다.
+		                정보공개를 바꾸시면 앞으로 <?php //echo (int)$config['cf_open_modify'] ?>일 이내에는 변경이 안됩니다.
 		            </span>
-		            <input type="hidden" name="mb_open_default" value="<?php echo $member['mb_open'] ?>"> 
-		        </li>		        
+		            <input type="hidden" name="mb_open_default" value="<?php //echo $member['mb_open'] ?>"> 
+		        </li>		         -->
 		        <?php } else { ?>
-	            <li>
+	            <!-- <li>
 	                정보공개
-	                <input type="hidden" name="mb_open" value="<?php echo $member['mb_open'] ?>">
+	                <input type="hidden" name="mb_open" value="<?php //echo $member['mb_open'] ?>">
 	                <button type="button" class="tooltip_icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span class="sound_only">설명보기</span></button>
 	                <span class="tooltip">
-	                    정보공개는 수정후 <?php echo (int)$config['cf_open_modify'] ?>일 이내, <?php echo date("Y년 m월 j일", isset($member['mb_open_date']) ? strtotime("{$member['mb_open_date']} 00:00:00")+$config['cf_open_modify']*86400:G5_SERVER_TIME+$config['cf_open_modify']*86400); ?> 까지는 변경이 안됩니다.<br>
+	                    정보공개는 수정후 <?php //echo (int)$config['cf_open_modify'] ?>일 이내, <?php //echo date("Y년 m월 j일", isset($member['mb_open_date']) ? strtotime("{$member['mb_open_date']} 00:00:00")+$config['cf_open_modify']*86400:G5_SERVER_TIME+$config['cf_open_modify']*86400); ?> 까지는 변경이 안됩니다.<br>
 	                    이렇게 하는 이유는 잦은 정보공개 수정으로 인하여 쪽지를 보낸 후 받지 않는 경우를 막기 위해서 입니다.
 	                </span>
 	                
-	            </li>
+	            </li> -->
 	            <?php }  ?>
 	
 	            <?php
@@ -275,10 +275,10 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 	            </li>
 	            <?php }  ?>
 	
-	            <li class="is_captcha_use">
-	                자동등록방지
-	                <?php echo captcha_html(); ?>
-	            </li>
+	            <!-- <li class="is_captcha_use">
+	                자동등록방지 -->
+	                <?php // echo captcha_html(); ?>
+	            <!-- </li> -->
 	        </ul>
 	    </div>
 	</div>

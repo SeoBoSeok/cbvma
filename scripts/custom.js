@@ -1378,5 +1378,6 @@ $(document).ready(function(){
         };
         function loadPWA(){}
         loadJS('scripts/pwa.js', loadPWA, document.body);
-    }    
+    }
+
 }); 

@@ -307,8 +307,8 @@ if ($w == '') {
     if (!trim($_SESSION['ss_mb_id']))
         alert('로그인 되어 있지 않습니다.');
 
-    if (trim($_POST['mb_id']) != $mb_id)
-        alert("로그인된 정보와 수정하려는 정보가 틀리므로 수정할 수 없습니다.\\n만약 올바르지 않은 방법을 사용하신다면 바로 중지하여 주십시오.");
+    // if (trim($_POST['mb_id']) != $mb_id)
+    //     alert("로그인된 정보와 수정하려는 정보가 틀리므로 수정할 수 없습니다.\\n만약 올바르지 않은 방법을 사용하신다면 바로 중지하여 주십시오.");
 
     $sql_password = "";
     if ($mb_password)
@@ -328,7 +328,8 @@ if ($w == '') {
         $sql_email_certify = " , mb_email_certify = '' ";
 
     $sql = " update {$g5['member_table']}
-                set mb_nick = '{$mb_nick}',
+                set mb_id = '{$_POST["mb_id"]}',
+                    mb_nick = '{$mb_nick}',
                     mb_mailling = '{$mb_mailling}',
                     mb_sms = '{$mb_sms}',
                     mb_open = '{$mb_open}',
@@ -536,7 +537,7 @@ if ($w == '') {
         <meta charset="utf-8">
         <title>회원정보수정</title>
         <body>
-        <form name="fregisterupdate" method="post" action="'.G5_HTTP_BBS_URL.'/register_form.php">
+        <form name="fregisterupdate" method="post" action="/?p=pageAccount">
         <input type="hidden" name="w" value="u">
         <input type="hidden" name="mb_id" value="'.$mb_id.'">
         <input type="hidden" name="mb_password" value="'.$tmp_password.'">
