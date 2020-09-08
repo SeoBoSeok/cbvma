@@ -99,15 +99,15 @@ if ($w == '' || $w == 'u') {
         alert('비밀번호가 일치하지 않습니다.');
 
     if ($msg = empty_mb_name($mb_name))       alert($msg, "", true, true);
-    if ($msg = empty_mb_nick($mb_nick))     alert($msg, "", true, true);
-    if ($msg = empty_mb_email($mb_email))   alert($msg, "", true, true);
+    // if ($msg = empty_mb_nick($mb_nick))     alert($msg, "", true, true);
+    // if ($msg = empty_mb_email($mb_email))   alert($msg, "", true, true);
     if ($msg = reserve_mb_id($mb_id))       alert($msg, "", true, true);
-    if ($msg = reserve_mb_nick($mb_nick))   alert($msg, "", true, true);
+    // if ($msg = reserve_mb_nick($mb_nick))   alert($msg, "", true, true);
     // 이름에 한글명 체크를 하지 않는다.
     //if ($msg = valid_mb_name($mb_name))     alert($msg, "", true, true);
-    if ($msg = valid_mb_nick($mb_nick))     alert($msg, "", true, true);
-    if ($msg = valid_mb_email($mb_email))   alert($msg, "", true, true);
-    if ($msg = prohibit_mb_email($mb_email))alert($msg, "", true, true);
+    // if ($msg = valid_mb_nick($mb_nick))     alert($msg, "", true, true);
+    // if ($msg = valid_mb_email($mb_email))   alert($msg, "", true, true);
+    // if ($msg = prohibit_mb_email($mb_email))alert($msg, "", true, true);
 
     // 휴대폰 필수입력일 경우 휴대폰번호 유효성 체크
     if (($config['cf_use_hp'] || $config['cf_cert_hp']) && $config['cf_req_hp']) {

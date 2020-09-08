@@ -83,7 +83,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 	                <span class="tooltip">아이핀 본인확인 후에는 이름이 자동 입력되고 휴대폰 본인확인 후에는 이름과 휴대폰번호가 자동 입력되어 수동으로 입력할수 없게 됩니다.</span>
 	                <?php } ?>
 	            </li>
-	            <?php if ($req_nick) {  ?>
+	            <?php if (false) {  ?>
 	            <li>
 	                <label for="reg_mb_nick">
 	                	닉네임<strong class="sound_only">필수</strong>
@@ -110,7 +110,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 					</label>
 
 	                <input type="hidden" name="old_email" value="<?php echo $member['mb_email'] ?>">
-	                <input type="text" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" required class="frm_input email full_input required" size="70" maxlength="100" placeholder="E-mail">
+	                <input type="text" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" class="frm_input email full_input" size="70" maxlength="100" placeholder="E-mail">
 	            
 	            </li>
 	
@@ -124,21 +124,42 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 	            <li>
 	            <?php if ($config['cf_use_tel']) {  ?>
 	            
-	                <label for="reg_mb_tel">전화번호<?php if ($config['cf_req_tel']) { ?><strong class="sound_only">필수</strong><?php } ?></label>
+	                <label for="reg_mb_tel">전화번호(- 없이 숫자만 입력)<?php if ($config['cf_req_tel']) { ?><strong class="sound_only">필수</strong><?php } ?></label>
 	                <input type="text" name="mb_tel" value="<?php echo get_text($member['mb_tel']) ?>" id="reg_mb_tel" <?php echo $config['cf_req_tel']?"required":""; ?> class="frm_input full_input <?php echo $config['cf_req_tel']?"required":""; ?>" maxlength="20" placeholder="전화번호">
 	            <?php }  ?>
 				</li>
 				<li>
-	            <?php if ($config['cf_use_hp'] || $config['cf_cert_hp']) {  ?>
-	                <label for="reg_mb_hp">휴대폰번호<?php if ($config['cf_req_hp']) { ?><strong class="sound_only">필수</strong><?php } ?></label>
+	            <?php //if ($config['cf_use_hp'] || $config['cf_cert_hp']) {  ?>
+	                <label for="reg_mb_hp">휴대폰번호(- 없이 숫자만 입력)<?php if ($config['cf_req_hp']) { ?><strong class="sound_only">필수</strong><?php } ?></label>
 	                
 	                <input type="text" name="mb_hp" value="<?php echo get_text($member['mb_hp']) ?>" id="reg_mb_hp" <?php echo ($config['cf_req_hp'])?"required":""; ?> class="frm_input full_input <?php echo ($config['cf_req_hp'])?"required":""; ?>" maxlength="20" placeholder="휴대폰번호">
 	                <?php if ($config['cf_cert_use'] && $config['cf_cert_hp']) { ?>
 	                <input type="hidden" name="old_mb_hp" value="<?php echo get_text($member['mb_hp']) ?>">
 	                <?php } ?>
-	            <?php }  ?>
+	            <?php //}  ?>
 	            </li>
-	
+				<!-- 커스터마이징 영역 Start -->
+				<li>
+					<label for="reg_mb_1">면허번호</label>
+	                <input type="text" name="mb_1" value="<?php echo get_text($member['mb_1']) ?>" id="reg_mb_1" class="frm_input full_input " maxlength="20" placeholder="면허번호">
+				</li>
+				<li>
+					<label for="reg_mb_2">직위</label>
+	                <input type="text" name="mb_2" value="<?php echo get_text($member['mb_2']) ?>" id="reg_mb_2" class="frm_input full_input " maxlength="20" placeholder="직위">
+				</li>
+				<li>
+					<label for="reg_mb_3">근무처</label>
+	                <input type="text" name="mb_3" value="<?php echo get_text($member['mb_3']) ?>" id="reg_mb_3" class="frm_input full_input " maxlength="20" placeholder="근무처">
+				</li>
+				<li>
+					<label for="reg_mb_4">출신학교</label>
+	                <input type="text" name="mb_4" value="<?php echo get_text($member['mb_4']) ?>" id="reg_mb_4" class="frm_input " maxlength="20" placeholder="출신학교">
+				</li>
+				<li>
+					<label for="reg_mb_5">졸업연도</label>
+	                <input type="text" name="mb_5" value="<?php echo get_text($member['mb_5']) ?>" id="reg_mb_5" class="frm_input" maxlength="20" placeholder="출신학교">
+				</li>
+				<!-- 커스터마이징 영역 End -->
 	            <?php if ($config['cf_use_addr']) { ?>
 	            <li>
 	            	<label>주소</label>
@@ -162,6 +183,24 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 	    <div class="tbl_frm01 tbl_wrap register_form_inner">
 	        <h2>기타 개인설정</h2>
 	        <ul>
+				<!-- Customizing Options Start -->
+				<li class="reg_mb_img_file">
+	                <label for="reg_mb_img" class="frm_label">
+	                	회원이미지
+	                	<button type="button" class="tooltip_icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span class="sound_only">설명보기</span></button>
+	                	<span class="tooltip">이미지 크기는 가로 <?php echo $config['cf_member_img_width'] ?>픽셀, 세로 <?php echo $config['cf_member_img_height'] ?>픽셀 이하로 해주세요.<br>
+	                    gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_member_img_size']) ?>바이트 이하만 등록됩니다.</span>
+	                </label>
+	                <input type="file" name="mb_img" id="reg_mb_img">
+	
+	                <?php if ($w == 'u' && file_exists($mb_img_path)) {  ?>
+	                <img src="<?php echo $mb_img_url ?>" alt="회원이미지">
+	                <input type="checkbox" name="del_mb_img" value="1" id="del_mb_img">
+	                <label for="del_mb_img">삭제</label>
+	                <?php }  ?>
+	            
+	            </li>
+				<!-- Customizing Options End -->
 	            <?php if ($config['cf_use_signature']) {  ?>
 	            <li>
 	                <label for="reg_mb_signature">서명<?php if ($config['cf_req_signature']){ ?><strong class="sound_only">필수</strong><?php } ?></label>
@@ -176,7 +215,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 	            </li>
 	            <?php }  ?>
 	
-	            <?php if ($config['cf_use_member_icon'] && $member['mb_level'] >= $config['cf_icon_level']) {  ?>
+	            <?php if (false) {  ?>
 	            <li>
 	                <label for="reg_mb_icon" class="frm_label">
 	                	회원아이콘
@@ -195,7 +234,7 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 	            </li>
 	            <?php }  ?>
 	
-	            <?php if ($member['mb_level'] >= $config['cf_icon_level'] && $config['cf_member_img_size'] && $config['cf_member_img_width'] && $config['cf_member_img_height']) {  ?>
+	            <?php if (false) {  ?>
 	            <li class="reg_mb_img_file">
 	                <label for="reg_mb_img" class="frm_label">
 	                	회원이미지
@@ -282,6 +321,222 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 	        </ul>
 	    </div>
 	</div>
+		<div class="content mb-0">
+                <div class="input-style input-style-2 input-required">
+                    <span class="color-highlight input-style-1-active input-style-1-inactive">분류</span>
+                    <em><i class="fa fa-angle-down"></i></em>
+                    <select class="form-control" name="mb_6">
+                        <option value="default" disabled>선택하기</option>
+                        <option value="cbvet">개업수의사</option>
+                        <option value="cbpublicofficer">충정북도 공무원</option>
+                        <option value="publicofficer">시군 공무원</option>
+                        <option value="institution">기타 기관</option>
+                        <option value="education">교육 기관</option>
+                        <option value="vet">수의사</option>
+                        <!-- cbvet, cbpublicofficer, publicofficer, institution, education, vet -->
+                    </select>
+                </div>
+                <div class="row mb-0" id="cbvet_list">
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box1-fac-radio" type="radio" name="mb_7" value="sangdang">
+                            <label for="box1-fac-radio">청주시 상당구</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box3-fac-radio" type="radio" name="mb_7" value="cheongwon">
+                            <label for="box3-fac-radio">청주시 청원구</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box5-fac-radio" type="radio" name="mb_7" value="chungjusi">
+                            <label for="box5-fac-radio">충주시</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box7-fac-radio" type="radio" name="mb_7" value="boeun">
+                            <label for="box7-fac-radio">보은군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box9-fac-radio" type="radio" name="mb_7" value="youngdong">
+                            <label for="box9-fac-radio">영동군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box11-fac-radio" type="radio" name="mb_7" value="jincheon">
+                            <label for="box11-fac-radio">진천군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box13-fac-radio" type="radio" name="mb_7" value="eumseong">
+                            <label for="box13-fac-radio">음성군</label>
+                        </div>                                                                        
+                    </div>
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box2-fac-radio" type="radio" name="mb_7" value="seowon">
+                            <label for="box2-fac-radio">청주시 서원구</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box4-fac-radio" type="radio" name="mb_7" value="heungdeok">
+                            <label for="box4-fac-radio">청주시 흥덕구</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box6-fac-radio" type="radio" name="mb_7" value="jecheon">
+                            <label for="box6-fac-radio">제천시</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box8-fac-radio" type="radio" name="mb_7" value="okcheon">
+                            <label for="box8-fac-radio">옥천군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box10-fac-radio" type="radio" name="mb_7" value="jeungpyeong">
+                            <label for="box10-fac-radio">증평군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box12-fac-radio" type="radio" name="mb_7" value="goesan">
+                            <label for="box12-fac-radio">괴산군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box14-fac-radio" type="radio" name="mb_7" value="danyang">
+                            <label for="box14-fac-radio">단양군</label>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="row mb-0" id="cbpublicofficer_list" style="display:<?php echo ($member["mb_6"] == "cbpublicofficer") ? null : "none" ?>">
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box15-fac-radio" type="radio" name="mb_7" value="cbpolist_1">
+                            <label for="box15-fac-radio">도청 동물방역과</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box17-fac-radio" type="radio" name="mb_7" value="cbpolist_3">
+                            <label for="box17-fac-radio">동물위생시험소 방역과</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box19-fac-radio" type="radio" name="mb_7" value="cbpolist_5">
+                            <label for="box19-fac-radio">동물위생시험소 중부지소</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box21-fac-radio" type="radio" name="mb_7" value="cbpolist_7">
+                            <label for="box21-fac-radio">동물위생시험소 북부지소</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box23-fac-radio" type="radio" name="mb_7" value="cbpolist_9">
+                            <label for="box23-fac-radio">충청북도 보건환경연구원</label>
+                        </div>                        
+                    </div>
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box16-fac-radio" type="radio" name="mb_7" value="cbpolist_2">
+                            <label for="box16-fac-radio">도청 축수산과</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box18-fac-radio" type="radio" name="mb_7" value="cbpolist_4">
+                            <label for="box18-fac-radio">동물위생시험소 축산물검사과</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box20-fac-radio" type="radio" name="mb_7" value="cbpolist_6">
+                            <label for="box20-fac-radio">동물위생시험소 남부지소</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box22-fac-radio" type="radio" name="mb_7" value="cbpolist_8">
+                            <label for="box22-fac-radio">동물위생시험소 음성축산물검사소</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-0" id="publicofficer_list" style="display:<?php echo ($member["mb_6"] == "publicofficer") ? null : "none" ?>">
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box24-fac-radio" type="radio" name="mb_7" value="polist_1">
+                            <label for="box24-fac-radio">청주시</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box26-fac-radio" type="radio" name="mb_7" value="polist_3">
+                            <label for="box26-fac-radio">제천시</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box28-fac-radio" type="radio" name="mb_7" value="polist_5">
+                            <label for="box28-fac-radio">옥천군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box30-fac-radio" type="radio" name="mb_7" value="polist_7">
+                            <label for="box30-fac-radio">증평군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box32-fac-radio" type="radio" name="mb_7" value="polist_9">
+                            <label for="box32-fac-radio">괴산군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box34-fac-radio" type="radio" name="mb_7" value="polist_11">
+                            <label for="box34-fac-radio">단양군</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box25-fac-radio" type="radio" name="mb_7" value="polist_2">
+                            <label for="box25-fac-radio">충주시</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box27-fac-radio" type="radio" name="mb_7" value="polist_4">
+                            <label for="box27-fac-radio">보은군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box29-fac-radio" type="radio" name="mb_7" value="polist_6">
+                            <label for="box29-fac-radio">영동군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box31-fac-radio" type="radio" name="mb_7" value="polist_8">
+                            <label for="box31-fac-radio">진천군</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box33-fac-radio" type="radio" name="mb_7" value="polist_10">
+                            <label for="box33-fac-radio">음성군</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-0" id="institution_list" style="display:<?php echo ($member["mb_6"] == "institution") ? null : "none" ?>">
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box35-fac-radio" type="radio" name="mb_7" value="ins_1">
+                            <label for="box35-fac-radio">식품의약품안전처</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box37-fac-radio" type="radio" name="mb_7" value="ins_3">
+                            <label for="box37-fac-radio">한국생명공학연구원</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box36-fac-radio" type="radio" name="mb_7" value="ins_2">
+                            <label for="box36-fac-radio">질병관리본부</label>
+                        </div>
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box38-fac-radio" type="radio" name="mb_7" value="ins_4">
+                            <label for="box38-fac-radio">한국식품안전관리인증원</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-0" id="education_list" style="display:<?php echo ($member["mb_6"] == "education") ? null : "none" ?>">
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box39-fac-radio" type="radio" name="mb_7" value="edu_1">
+                            <label for="box39-fac-radio">교육기관</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                </div>
+                <div class="row mb-0" id="vet_list" style="display:<?php echo ($member["mb_6"] == "vet") ? null : "none" ?>">
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box40-fac-radio" type="radio" name="mb_7" value="vet_1">
+                            <label for="box40-fac-radio">일반수의사</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box41-fac-radio" type="radio" name="mb_7" value="vet_2">
+                            <label for="box41-fac-radio">공수의사</label>
+                        </div>
+                    </div>
+                </div>
+			</div>
 	<div class="btn_confirm">
 	    <a href="<?php echo G5_URL ?>" class="btn_close">취소</a>
 	    <button type="submit" id="btn_submit" class="btn_submit" accesskey="s"><?php echo $w==''?'회원가입':'정보수정'; ?></button>
@@ -399,24 +654,24 @@ function fregisterform_submit(f)
     <?php } ?>
 
     // 닉네임 검사
-    if ((f.w.value == "") || (f.w.value == "u" && f.mb_nick.defaultValue != f.mb_nick.value)) {
-        var msg = reg_mb_nick_check();
-        if (msg) {
-            alert(msg);
-            f.reg_mb_nick.select();
-            return false;
-        }
-    }
+    // if ((f.w.value == "") || (f.w.value == "u" && f.mb_nick.defaultValue != f.mb_nick.value)) {
+    //     var msg = reg_mb_nick_check();
+    //     if (msg) {
+    //         alert(msg);
+    //         f.reg_mb_nick.select();
+    //         return false;
+    //     }
+    // }
 
     // E-mail 검사
-    if ((f.w.value == "") || (f.w.value == "u" && f.mb_email.defaultValue != f.mb_email.value)) {
-        var msg = reg_mb_email_check();
-        if (msg) {
-            alert(msg);
-            f.reg_mb_email.select();
-            return false;
-        }
-    }
+    // if ((f.w.value == "") || (f.w.value == "u" && f.mb_email.defaultValue != f.mb_email.value)) {
+    //     var msg = reg_mb_email_check();
+    //     if (msg) {
+    //         alert(msg);
+    //         f.reg_mb_email.select();
+    //         return false;
+    //     }
+    // }
 
     <?php if (($config['cf_use_hp'] || $config['cf_cert_hp']) && $config['cf_req_hp']) {  ?>
     // 휴대폰번호 체크
@@ -477,6 +732,28 @@ jQuery(function($){
     }).on("mouseout", ".tooltip_icon", function(e){
         $(this).next(".tooltip").fadeOut();
     });
+});
+
+function checkCategory() {
+	var cat = "<?php echo (isset($member["mb_7"]) ? $member["mb_7"] : null) ?>";
+	if(cat) {
+		$('input[type=radio]').each(function(item, el){
+			if($(el).val() == cat) {
+				$(el).attr("checked", true);
+				$(el).parent(".fac-radio").addClass("fac-red");
+			}
+		});
+	}
+}
+checkCategory();
+
+var mb_6_list = ['cbvet_list', 'cbpublicofficer_list', 'publicofficer_list', 'institution_list', 'education_list', 'vet_list'];
+$('select[name="mb_6"]').change(function(e){
+	console.log(e.target.value);
+	mb_6_list.forEach(function(item){
+		$('#'+item).hide();
+	});
+	$('#' + e.target.value + '_list').show();
 });
 
 </script>
