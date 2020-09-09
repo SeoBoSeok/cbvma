@@ -34,7 +34,7 @@ if(!$mb_id)
 $mb_password    = trim($_POST['mb_password']);
 $mb_password_re = trim($_POST['mb_password_re']);
 $mb_name        = trim($_POST['mb_name']);
-$mb_nick        = trim($_POST['mb_nick']);
+$mb_nick        = trim($_POST['mb_1']);
 $mb_email       = trim($_POST['mb_email']);
 $mb_sex         = isset($_POST['mb_sex'])           ? trim($_POST['mb_sex'])         : "";
 $mb_birth       = isset($_POST['mb_birth'])         ? trim($_POST['mb_birth'])       : "";
