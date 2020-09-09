@@ -29,14 +29,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a data-menu="menu-highlights" href="#">
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>Page Highlight</span>
-                    <strong>16 Colors Highlights Included</strong>
                     <span class="badge bg-highlight color-white">HOT</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>Background Color</span>
-                    <strong>10 Page Gradients Included</strong>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
@@ -132,9 +130,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         data-menu-effect="menu-parallax">
         <div class="boxed-text-l mt-4">
             <img class="rounded-l mb-3" src="app/icons/icon-128x128.png" alt="img" width="90">
-            <h4 class="mt-3">Add Sticky on your Home Screen</h4>
+            <h4 class="mt-3">충청북도 수의사회 모바일 전용 홈페이지 오픈</h4>
             <p>
-                Install Sticky on your home screen, and access it just like a regular app. It really is that simple!
+            충청북도 수의사회 모바일 전용 홈페이지 오픈하였습니다. 많은 관심 부탁드립니다.
             </p>
             <a href="#" class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br>
             <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">Maybe later</a>
@@ -149,9 +147,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         data-menu-effect="menu-parallax">
         <div class="boxed-text-xl mt-4">
             <img class="rounded-l mb-3" src="app/icons/icon-128x128.png" alt="img" width="90">
-            <h4 class="mt-3">Add Sticky on your Home Screen</h4>
-            <p class="mb-0 pb-0">
-                Install Sticky on your home screen, and access it just like a regular app.  Open your Safari menu and tap "Add to Home Screen".
+            <h4 class="mt-3">충청북도 수의사회 모바일 전용 홈페이지 오픈</h4>
+            <p>
+            충청북도 수의사회 모바일 전용 홈페이지 오픈하였습니다. 많은 관심 부탁드립니다.
             </p>
             <div class="clear"></div>
             <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">Maybe later</a>
