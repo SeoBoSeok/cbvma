@@ -117,7 +117,7 @@ if ($w == '' || $w == 'u') {
     if ($w=='') {
         if ($msg = exist_mb_id($mb_id))     alert($msg);
 
-        if (get_session('ss_check_mb_id') != $mb_id || get_session('ss_check_mb_email') != $mb_email) {
+        if (get_session('ss_check_mb_id') != $mb_id) {
             set_session('ss_check_mb_id', '');
             set_session('ss_check_mb_nick', '');
             set_session('ss_check_mb_email', '');
