@@ -3142,9 +3142,9 @@ body {
   }
   
   .list-custom-large a span:not(.badge) {
-    font-size: 14px;
+    font-size: 28px;
     position: absolute;
-    margin-top: -6px;
+    /* margin-top: -6px; */
   }
   
   .list-custom-large a strong {

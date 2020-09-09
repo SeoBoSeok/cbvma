@@ -19,14 +19,14 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
             </div>
         </div>
         <div class="row text-center mb-0">
-            <a href="pages.html" class="col-6 pr-0 demo-color">
+            <a href="#" data-menu="member-book" class="col-6 pr-0">
                 <div class="card card-style mr-2 mb-3 bg-orange-light">
                     <img class="height80 mt-4" src="images/icon01.svg">
                     <h1 class="pt-4 text-white">회원리스트</h1>
                     <p class="font-20 opacity-50 mt-n2 text-white">Member</p>
                 </div>
             </a>
-            <a href="splash.html" class="col-6 pl-0">
+            <a href="?p=search" class="col-6 pl-0">
                 <div class="card card-style ml-2 mb-3 bg-yellow1-dark">
                     <img class="height60" src="images/icon02.svg">
                     <h1 class="pt-4 text-white">회원검색</h1>

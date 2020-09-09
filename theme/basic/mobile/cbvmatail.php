@@ -167,77 +167,70 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a data-menu="menu-chungju" href="#">
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>청주시 개업수의사</span>
-                    <strong>청주시, 충주시, 제천시</strong>
+                    <!-- <strong>청주시, 충주시, 제천시</strong> -->
                     <span class="badge bg-highlight color-white">150</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>청주시 개업수의사</span>
-                    <strong>보은군, 옥천군, 영동군, 증평군, 진천군, 괴산군, 음성군, 단양군</strong>
+                    <!-- <strong>보은군, 옥천군, 영동군, 증평군, 진천군, 괴산군, 음성군, 단양군</strong> -->
                     <span class="badge bg-highlight color-white">50</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>충청북도 공무원</span>
-                    <strong>도청 동물방역과, 도청 축수산과</strong>
+                    <!-- <strong>도청 동물방역과, 도청 축수산과</strong> -->
                     <span class="badge bg-highlight color-white">120</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>시군 공무원</span>
-                    <strong>청주시, 충주시, 제천시, 보은군</strong>
+                    <!-- <strong>청주시, 충주시, 제천시, 보은군</strong> -->
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>식품의약품안전처</span>
-                    <strong>식품의약품안전처</strong>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>질병관리본부</span>
-                    <strong>식품의약품안전처</strong>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>한국생명공학연구원</span>
-                    <strong>한국생명공학연구원</strong>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>한국식품안전관리인증원</span>
-                    <strong>한국식품안전관리인증원</strong>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
                     <span>교육기관</span>
-                    <strong>교육기관</strong>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>일반수의사</span>
-                    <strong>일반수의사</strong>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-backgrounds" href="#" class="border-0">
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>공수의사</span>
-                    <strong>공수의사</strong>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>                                                                                                                                      
@@ -245,6 +238,28 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </div>
     <!-- 회원수첩 메뉴 End -->
+    <!-- Board Menu Start -->
+    <div id="board-type" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="310">
+        <div class="menu-title"><h1>공지사항</h1><p class="color-highlight">게시판 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="list-group list-custom-large">
+                <a data-menu="menu-backgrounds" href="#" class="border-0">
+                    <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
+                    <span>정책공지</span>
+                    <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a data-menu="menu-chungju" href="#">
+                    <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
+                    <span>회원공지</span>
+                    <span class="badge bg-highlight color-white">150</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Board Menu End -->
 <!-- </div> -->
 </div>
 <!-- <script>
