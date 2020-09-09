@@ -117,7 +117,7 @@ if ($w == '' || $w == 'u') {
     if ($w=='') {
         if ($msg = exist_mb_id($mb_id))     alert($msg);
 
-        if (get_session('ss_check_mb_id') != $mb_id || get_session('ss_check_mb_nick') != $mb_nick || get_session('ss_check_mb_email') != $mb_email) {
+        if (get_session('ss_check_mb_id') != $mb_id || get_session('ss_check_mb_email') != $mb_email) {
             set_session('ss_check_mb_id', '');
             set_session('ss_check_mb_nick', '');
             set_session('ss_check_mb_email', '');
@@ -150,8 +150,8 @@ if ($w == '' || $w == 'u') {
 
     run_event('register_form_update_valid', $w, $mb_id, $mb_nick, $mb_email);
 
-    if ($msg = exist_mb_nick($mb_nick, $mb_id))     alert($msg, "", true, true);
-    if ($msg = exist_mb_email($mb_email, $mb_id))   alert($msg, "", true, true);
+    // if ($msg = exist_mb_nick($mb_nick, $mb_id))     alert($msg, "", true, true);
+    // if ($msg = exist_mb_email($mb_email, $mb_id))   alert($msg, "", true, true);
 }
 
 // 사용자 코드 실행
