@@ -17,6 +17,15 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 </div>
                 <img class="img-fluid gray25" src="images/pictures/main_img.jpg">
             </div>
+            <div class="card shadow-l">
+                <div class="card-bottom text-left pad-30">
+                    <h1 class="color-white font-700 mb-3 padl-20 font-35">충청북도 수의사회</h1>
+                    <p class="color-white opacity-80 mb-4 padl-20 font-500">회원들과 함께 소통하고 화합하는
+                        <br>새로운 충청북도 수의사회를 희망합니다.
+                    </p>
+                </div>
+                <img class="img-fluid gray25" src="images/pictures/main_img_second.jpg">
+            </div>
         </div>
         <div class="row text-center mb-0">
             <a href="#" data-menu="member-book" class="col-6 pr-0">
@@ -65,7 +74,13 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
     </div>
 
 <!-- 메인화면 최신글 끝 -->
-
+<script>
+$(window).bind("pageshow", function(event) {
+    if (event.originalEvent.persisted) {
+        document.location.reload();
+    }
+});
+</script>
 <?php
 include_once(G5_THEME_MOBILE_PATH.'/cbvmatail.php');
 ?>
