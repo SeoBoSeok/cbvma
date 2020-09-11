@@ -11,7 +11,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
         <div class="card card-style preload-img" data-src="images/pictures/18.jpg" data-card-height="130">
             <div class="card-center ml-3">
                 <h1 class="color-white mb-0">LIST</h1>
-                <p class="color-white mt-n1 mb-0">회원 리스트 | 청주시 상당구</p>
+                <p class="color-white mt-n1 mb-0">회원 리스트 | 도청 동물방역과</p>
             </div>
             <div class="card-center mr-3">
                 <a href="#" data-back-button class="btn btn-m float-right rounded-xl shadow-xl text-uppercase font-800 bg-highlight">Back Home</a>
@@ -250,10 +250,10 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
     $sql = " select mb_id, mb_name, mb_email, mb_tel, mb_hp, mb_1, mb_2, mb_3, mb_4, mb_5, mb_6
         from `{$g5['member_table']}`
         where mb_7 = 'cbpolist_1' ";
-    $mb_dir = substr($row['mb_id'],0,2);
-    $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($row['mb_id']).'.gif';
-    $result = sql_query($sql);
-    for ($i=0; $row=sql_fetch_array($result); $i++) {
+        $result = sql_query($sql);
+        for ($i=0; $row=sql_fetch_array($result); $i++) {
+            $mb_dir = substr($row['mb_id'],0,2);
+            $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($row['mb_id']).'.gif';
     ?>
     <div id="menu-transaction-<?php echo $row["mb_1"] ?>" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
         <div class="menu-title"><h1><?php echo $row["mb_name"] ?></h1><p class="color-highlight"><?php echo $row["mb_2"] ?></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
