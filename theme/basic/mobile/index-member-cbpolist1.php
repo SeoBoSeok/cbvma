@@ -50,7 +50,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                             <?php echo $row["mb_4"]?> <?php echo $row["mb_5"]?><br />
                             <i class="fa fa-phone"></i> <?php echo $row["mb_tel"]?>
                         </p>
-                        <a href="#" data-menu="menu-transaction-<?php echo $row["mb_1"] ?>" class="bg-highlight">VIEW</a>
+                        <a href="#" data-menu="menu-transaction-<?php echo $row["mb_id"] ?>" class="bg-highlight">VIEW</a>
                     </div>
                     <?php
                     }
@@ -255,7 +255,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
             $mb_dir = substr($row['mb_id'],0,2);
             $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($row['mb_id']).'.gif';
     ?>
-    <div id="menu-transaction-<?php echo $row["mb_1"] ?>" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
+    <div id="menu-transaction-<?php echo $row["mb_id"] ?>" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
         <div class="menu-title"><h1><?php echo $row["mb_name"] ?></h1><p class="color-highlight"><?php echo $row["mb_2"] ?></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-1 mt-3"></div>
         <div class="content">
