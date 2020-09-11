@@ -50,7 +50,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                             <?php echo $row["mb_4"]?> <?php echo $row["mb_5"]?><br />
                             <i class="fa fa-phone"></i> <?php echo $row["mb_tel"]?>
                         </p>
-                        <a href="#" data-menu="menu-transaction" class="bg-highlight">VIEW</a>
+                        <a href="#" data-menu="menu-transaction-<?php echo $row["mb_1"] ?>" class="bg-highlight">VIEW</a>
                     </div>
                     <div id="menu-transaction-<?php echo $row["mb_1"] ?>" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
                         <div class="menu-title"><h1>김석희</h1><p class="color-highlight"><?php echo $row["mb_2"] ?></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
