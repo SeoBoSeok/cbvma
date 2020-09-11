@@ -40,8 +40,8 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                     //             where a.bo_device <> 'pc' ";                    
                     $result = sql_query($sql);
                     for ($i=0; $row=sql_fetch_array($result); $i++) {
-                        $mb_dir = substr($mb['mb_id'],0,2);
-                        $icon_file = G5_DATA_PATH.'/member_image/'.$mb_dir.'/'.get_mb_icon_name($mb['mb_id']).'.gif';
+                        $mb_dir = substr($row['mb_id'],0,2);
+                        $icon_file = G5_DATA_PATH.'/member_image/'.$mb_dir.'/'.get_mb_icon_name($row['mb_id']).'.gif';
                     ?>
                     <div data-filter-item data-filter-name="all 제일 김석희 경북대 청주시개업수의사 개업수의사 상당구개업수의사"  class="search-result-list">
                         <img class="shadow-l preload-img objectfit" width="80" height="80" src="<?php echo $icon_file ?>" data-src="<?php echo $icon_file ?>" alt="img">
