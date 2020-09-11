@@ -250,7 +250,8 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
     $sql = " select mb_id, mb_name, mb_email, mb_tel, mb_hp, mb_1, mb_2, mb_3, mb_4, mb_5, mb_6
         from `{$g5['member_table']}`
         where mb_7 = 'cbpolist_1' ";
-          
+    $mb_dir = substr($row['mb_id'],0,2);
+    $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($row['mb_id']).'.gif';
     $result = sql_query($sql);
     for ($i=0; $row=sql_fetch_array($result); $i++) {
     ?>
@@ -260,7 +261,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
         <div class="content">
             <div class="row mb-0">
                 <div class="col-3">
-                    <img src="images/profile/sd1.png" width="80" height="80" class="rounded-xl objectfit">
+                    <img src="<?php echo $icon_file ?>" width="80" height="80" class="rounded-xl objectfit">
                 </div>
                 <div class="col-9 pl-4">
                     <div class="d-flex">
