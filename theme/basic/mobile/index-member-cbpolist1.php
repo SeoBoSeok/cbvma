@@ -52,19 +52,47 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                         </p>
                         <a href="#" data-menu="menu-transaction" class="bg-highlight">VIEW</a>
                     </div>
+                    <div id="menu-transaction-<?php echo $row["mb_1"] ?>" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
+                        <div class="menu-title"><h1>김석희</h1><p class="color-highlight"><?php echo $row["mb_2"] ?></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+                        <div class="divider divider-margins mb-1 mt-3"></div>
+                        <div class="content">
+                            <div class="row mb-0">
+                                <div class="col-3">
+                                    <img src="images/profile/sd1.png" width="80" height="80" class="rounded-xl objectfit">
+                                </div>
+                                <div class="col-9 pl-4">
+                                    <div class="d-flex">
+                                        <div><p class="font-700 color-theme">지역</p></div>
+                                        <div class="ml-auto"><p><?php echo $row["mb_3"] ?></p></div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><p class="font-700 color-theme">회원</p></div>
+                                        <div class="ml-auto"><p><?php echo $row["mb_2"] ?></p></div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><p class="font-700 color-theme">연락처</p></div>
+                                        <div class="ml-auto"><p><?php echo $row["mb_tel"] ?></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider mt-3 mb-3"></div>
+                            <div class="row mb-0">
+                                <div class="col-6"><h4 class="font-14">근무처</h4></div>
+                                <div class="col-6"><h4 class="font-14 text-right"><?php echo $row["mb_3"] ?></h4></div>
+                                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                                <div class="col-6"><h4 class="font-14 mt-1">졸업연도</h4></div>
+                                <div class="col-6"><h4 class="font-14 text-right mt-1"><?php echo $row["mb_4"] ?> <?php echo $row["mb_5"] ?></h4></div>
+                                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                                <div class="col-6"><h4 class="font-14 mt-1">직위</h4></div>
+                                <div class="col-6"><h4 class="font-14 text-right mt-1 color-green1-dark"><?php echo $row["mb_2"] ?></h4></div>
+                                <div class="divider divider-margins w-100 mt-2 mb-3"></div>
+                                <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
+                            </div>
+                        </div>
+                    </div>
                     <?php
                     }
-                    ?>
-
-                    <div data-filter-item data-filter-name="all 한국 김재만 시립대 청주시개업수의사 개업수의사 상당구개업수의사"  class="search-result-list">
-                        <img class="shadow-l preload-img objectfit" width="80" height="80" src="images/profile/sd2.png" data-src="images/profile/sd2.png" alt="img">
-                        <h1>김재만 | 한국, 원장</h1>
-                        <p>
-                            시립대 75<br />
-                            <i class="fa fa-phone"></i> 042-268-5677
-                        </p>
-                        <a href="#" data-menu="menu-transaction" class="bg-highlight">VIEW</a>
-                    </div>                                        
+                    ?>   
                     <!-- <div class="search-no-results disabled">
                         <h3 class="bold top-10">Nothing found...</h3>
                         <span class="under-heading font-11 opacity-70 color-theme">There's nothing matching the description you're looking for, try a different keyword.</span>
@@ -258,7 +286,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
         </div>           
     </div>
 
-    <div id="menu-transaction" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
+    <!-- <div id="menu-transaction" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
         <div class="menu-title"><h1>김석희</h1><p class="color-highlight">원장</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-1 mt-3"></div>
         <div class="content">
@@ -295,7 +323,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 <!-- 메인화면 최신글 끝 -->
 
