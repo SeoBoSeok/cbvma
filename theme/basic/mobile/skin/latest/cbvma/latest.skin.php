@@ -15,9 +15,11 @@ $is_show_next_prev = ($list_count > 4) ? 1 : 0;
 ?>
     <div class="working-hours">
         <p class="p2 <?php if ($list[$i]['icon_new']) echo "color-white bg-red2-dark"; ?>">
+        <a href="<?php echo $list[$i]['href']; ?>">
         <?php
             echo $list[$i]['subject'];
         ?>
+        </a>
         </p>
         <p class="<?php if ($list[$i]['icon_new']) echo "color-white bg-red2-dark"; ?>"><?php echo date('m.d', strtotime($list[$i]['datetime'])) ?></p>
     </div>
