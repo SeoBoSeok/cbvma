@@ -236,19 +236,35 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </div>
     <!-- 회원수첩 메뉴 End -->
+    <!-- 청주시 개업수의사 Start -->
+    <div id="menu-chungju" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="310" data-menu-effect="menu-over">
+        <div class="menu-title"><h1>청주시</h1><p class="color-highlight">지역을 선택해주세요</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="background-changer">
+                <a href="?p=member-sangdang"><i class="bg-theme"></i><span>상당구</span></a>
+                <a href="page-instant.html"><i class="body-plum"></i><span class="color-plum-dark">서원구</span></a>
+                <a href="#"><i class="body-magenta3"></i><span class="color-magenta3-dark">청원구</span></a>
+                <a href="#"><i class="body-yellow3"></i><span class="color-yellow3-dark">흥덕구</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Back to Settings</a>
+        </div>
+    </div>
+    <!-- 청주시 개업수의 End -->
     <!-- Board Menu Start -->
     <div id="board-type" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="310">
         <div class="menu-title"><h1>공지사항</h1><p class="color-highlight">게시판 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
             <div class="list-group list-custom-large">
-                <a data-menu="menu-backgrounds" href="#" class="border-0">
+                <a data-menu="menu-backgrounds" href="?p=board&bo_table=free" class="border-0">
                     <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
                     <span>정책공지</span>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
-                <a data-menu="menu-chungju" href="#">
+                <a data-menu="menu-chungju" href="?p=board&bo_table=notice">
                     <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
                     <span>회원공지</span>
                     <span class="badge bg-highlight color-white">150</span>
