@@ -6034,3 +6034,7 @@ body {
   .margin-top--20 {
     margin-top: -17px;
   }
+
+  .background-main--board {
+    background-color: #6c757d4d;
+  }

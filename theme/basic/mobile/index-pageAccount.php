@@ -34,7 +34,7 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                     <div>
                         <h1 class="font-700 mb-1"><?php echo $member["mb_name"] ?></h1>
                         <p class="mb-0 pb-1 pr-3">
-                            Edit your Profile Settings here and apply. This is just a demo page. 
+                            
                         </p>
                     </div>
                 </div>

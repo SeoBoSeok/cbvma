@@ -13,12 +13,12 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
 <div id="page">
     <div id="menu-sidebar-left-1" class="bg-white menu menu-box-left" data-menu-width="320" style="width: 320px; display: block;">
         <div class="d-flex">
-            <a href="#" class="flex-fill icon icon-m text-center color-facebook border-bottom border-right"><i class="fab font-12 fa-facebook-f"></i></a>
+            <!-- <a href="#" class="flex-fill icon icon-m text-center color-facebook border-bottom border-right"><i class="fab font-12 fa-facebook-f"></i></a>
             <a href="#" class="flex-fill icon icon-m text-center color-twitter border-bottom border-right"><i class="fab font-12 fa-twitter"></i></a>
             <a href="#" class="flex-fill icon icon-m text-center color-instagram border-bottom border-right"><i class="fab font-12 fa-instagram"></i></a>
             <a href="#" class="flex-fill icon icon-m text-center color-whatsapp border-bottom border-right"><i class="fab font-12 fa-whatsapp"></i></a>
-            <a href="#" class="flex-fill icon icon-m text-center color-linkedin border-bottom border-right"><i class="fab font-12 fa-linkedin-in"></i></a>
-            <a href="#" class="close-menu flex-fill icon icon-m text-center color-red2-dark border-bottom"><i class="fa font-12 fa-times"></i></a>
+            <a href="#" class="flex-fill icon icon-m text-center color-linkedin border-bottom border-right"><i class="fab font-12 fa-linkedin-in"></i></a> -->
+            <a href="#" class="close-menu flex-fill icon icon-m text-right pr-3 color-red2-dark border-bottom"><i class="fa font-12 fa-times"></i></a>
         </div>
         <div class="pl-3 pr-3 pt-3 mt-4 mb-2">
             <div class="d-flex">
@@ -26,8 +26,8 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
                     <img src="images/preload-logo.png" width="43">
                 </div>
                 <div class="flex-grow-1">
-                    <h1 class="font-22 font-700 mb-0">Over Effect</h1>
-                    <p class="mt-n2  font-10 font-400">The Best Mobile Template</p>
+                    <h1 class="font-22 font-700 mb-0"><?=$member["mb_name"] ?></h1>
+                    <p class="mt-n2  font-10 font-400"><?=$member["mb_3"] ?></p>
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
             </div>
         </div>
         
-        <div class="mr-3 ml-3 mt-4">
+        <!-- <div class="mr-3 ml-3 mt-4">
             <span class="text-uppercase font-900 font-11 opacity-30">SOCIAL LINKS</span>
             <div class="list-group list-custom-small list-icon-0">
                 <a href="#">
@@ -116,7 +116,7 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
                     <i class="fa fa-angle-right"></i>
                 </a>        
             </div>
-        </div>
+        </div> -->
     </div>
 <!-- <div id="wrapper"> -->
     <?php
