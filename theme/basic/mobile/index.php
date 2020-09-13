@@ -29,31 +29,31 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
         </div>
         <div class="row text-center mb-0">
             <a href="#" data-menu="member-book" class="col-6 pr-0">
-                <div class="card card-style mr-2 mb-3 bg-orange-light">
-                    <img class="height80 mt-4" src="images/icon01.svg">
-                    <h1 class="pt-4 text-white">회원리스트</h1>
-                    <p class="font-20 opacity-50 mt-n2 text-white">Member</p>
+                <div class="card card-style mr-2 mb-3 bg-orange-light tl-left">
+                    <h1 class="pt-4 pl-4 text-white">회원리스트</h1>
+                    <p class="font-16 pl-4 opacity-50 mb-0 text-white">Member</p>
+                    <img class="height80 width80 main-image--right" src="images/icon01.svg">
                 </div>
             </a>
             <a href="?p=search" class="col-6 pl-0">
-                <div class="card card-style ml-2 mb-3 bg-yellow1-dark">
-                    <img class="height60" src="images/icon02.svg">
-                    <h1 class="pt-4 text-white">회원검색</h1>
-                    <p class="font-20 opacity-50 mt-n2 text-white">Search</p>
+                <div class="card card-style ml-2 mb-3 bg-yellow1-dark tl-left">
+                    <h1 class="pt-4 pl-4 text-white">회원검색</h1>
+                    <p class="font-16 pl-4 opacity-50 mb-0 text-white">Search</p>
+                    <img class="height60 width80 main-image--right" src="images/icon02.svg">
                 </div>
             </a>
             <a href="/?p=board&bo_table=free" class="col-6 pr-0">
-                <div class="card card-style mr-2 bg-mint-dark">
-                    <i class="fa fa-file color-magenta2-dark fa-4x mt-4"></i>
-                    <h1 class="pt-4 text-white">정책공지</h1>
-                    <p class="font-20 opacity-50 mt-n2 text-white">Policy</p>
+                <div class="card card-style mr-2 bg-mint-dark tl-left">
+                    <h1 class="pt-4 pl-4 text-white">정책공지</h1>
+                    <p class="font-16 pl-4 opacity-50 mb-0 text-white">Policy</p>
+                    <i class="fa fa-file color-white fa-3x margin-top--10 main-image--right"></i>
                 </div>
             </a>
             <a class="col-6 pl-0" href="/?p=board&bo_table=notice">
-                <div class="card card-style ml-2 pl-0 bg-dark2-light">
-                    <img class="height80 mt-4" src="images/icon04.svg">
-                    <h1 class="pt-4 text-white">회원공지</h1>
-                    <p class="font-20 opacity-50 mt-n2 text-white">Notice</p>
+                <div class="card card-style ml-2 pl-0 bg-dark2-light tl-left">
+                    <h1 class="pt-4 pl-4 text-white">회원공지</h1>
+                    <p class="font-16 pl-4 opacity-50 mb-0 text-white">Notice</p>
+                    <img class="height80 width80 main-image--right" src="images/icon04.svg">
                 </div>
             </a>
         </div>
