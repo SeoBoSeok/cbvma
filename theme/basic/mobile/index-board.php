@@ -3,8 +3,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 // include_once(G5_THEME_MOBILE_PATH.'/head.php');
 include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
-echo '<link rel="stylesheet" href="theme/basic/css/mobile.css">';
-echo '<link rel="stylesheet" href="mobile/skin/board/basic/style.css">';
+echo '<link rel="stylesheet" href="theme/basic/css/mobile.css?ver='.G5_CSS_VER.'">';
+echo '<link rel="stylesheet" href="mobile/skin/board/basic/style.css?ver='.G5_CSS_VER.'">';
 ?>
 
 <?php
