@@ -6006,6 +6006,12 @@ body {
   .main-image--right {
     margin: auto;
     margin-top: -30px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-image--right2 {
+    margin: auto;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
   }
@@ -6025,6 +6031,6 @@ body {
     text-align: left;
   }
 
-  .margin-top--10 {
-    margin-top: -10px;
+  .margin-top--20 {
+    margin-top: -17px;
   }
