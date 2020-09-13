@@ -5996,11 +5996,11 @@ body {
   }
 
   .height80 {
-    height: 80px;
+    height: 60px;
   }
 
   .width80 {
-    width: 80px;
+    width: 60px;
   }
 
   .main-image--right {
@@ -6013,7 +6013,7 @@ body {
   .height60 {
     /* margin-top: calc(1.5rem + 10px); */
     margin-top: -10px;
-    height: 60px;
+    height: 40px;
     /* margin-bottom: 10px; */
   }
 

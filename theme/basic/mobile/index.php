@@ -46,7 +46,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 <div class="card card-style mr-2 bg-mint-dark tl-left">
                     <h1 class="pt-4 pl-4 text-white">정책공지</h1>
                     <p class="font-16 pl-4 opacity-50 mb-0 text-white">Policy</p>
-                    <i class="fa fa-file color-white fa-3x margin-top--10 main-image--right"></i>
+                    <i class="fa fa-file color-white fa-2x margin-top--10 main-image--right"></i>
                 </div>
             </a>
             <a class="col-6 pl-0" href="/?p=board&bo_table=notice">
