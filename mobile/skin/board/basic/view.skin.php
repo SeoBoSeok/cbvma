@@ -143,7 +143,7 @@ jQuery(function($){
             if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view']) {
          ?>
             <li>
-                <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download" download>
+                <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download" download target="_blank">
                     <i class="fa fa-download" aria-hidden="true"></i>
                     <strong><?php echo $view['file'][$i]['source'] ?></strong>
                     <?php echo $view['file'][$i]['content'] ?> (<?php echo $view['file'][$i]['size'] ?>)
@@ -197,7 +197,7 @@ jQuery(function($){
     
     <?php
     // 코멘트 입출력
-    include_once(G5_BBS_PATH.'/view_comment.php');
+    // include_once(G5_BBS_PATH.'/view_comment.php');
 	?>
 
 </article>
@@ -208,6 +208,7 @@ $(function() {
     $("a.view_file_download").click(function() {
         if(!g5_is_member) {
             alert("다운로드 권한이 없습니다.\n회원이시라면 로그인 후 이용해 보십시오.");
+            window.location.href = '?p=login';
             return false;
         }
 
