@@ -26,7 +26,7 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
     <input type="hidden" name="mb_nick_default" value="<?php echo get_text($member['mb_nick']) ?>">
     <input type="hidden" name="mb_nick" value="<?php echo get_text($member['mb_nick']) ?>">
     <?php } ?>
-    <div class="page-content header-clear-medium">
+    <div class="page-content mt-3">
         
          <div class="card card-style">
             <div class="d-flex content">
@@ -34,13 +34,19 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                     <div>
                         <h1 class="font-700 mb-1"><?php echo $member["mb_name"] ?></h1>
                         <p class="mb-0 pb-1 pr-3">
-                            
+                            <input type="file" name="mb_img" id="reg_mb_img" class="uploadBtn">
+                            <span class="frm_info">
+                                이미지 크기는 가로 <?php echo $config['cf_member_img_width'] ?>픽셀, 세로 <?php echo $config['cf_member_img_height'] ?>픽셀 이하로 해주세요.<br>
+                                gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_member_img_size']) ?>바이트 이하만 등록됩니다.
+                            </span>
                         </p>
                     </div>
                 </div>
                 <div>
                     <?php if (file_exists($mb_img_path)) {  ?>
                         <img src="<?php echo $mb_img_url ?>" data-src="<?php echo $mb_img_url ?>" width="80" class="rounded-circle mt- shadow-xl preload-img">
+                        <input type="checkbox" name="del_mb_img" value="1" id="del_mb_img">
+	                    <label for="del_mb_img">삭제</label>
                     <?php } ?>
                 </div>
             </div>
@@ -54,9 +60,9 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                 </p>
                 <div class="input-style input-style-2 has-icon input-required">
                     <i class="input-icon fa fa-user"></i>
-                    <span class="color-highlight input-style-1-active">아이디</span>
+                    <span class="color-highlight input-style-1-active">면허번호</span>
                     <em>(required)</em>
-                    <input type="text" name="mb_id" class="form-control" value="<?php echo get_text($member['mb_id']) ?>">
+                    <input type="text" name="mb_id" class="form-control" value="<?php echo get_text($member['mb_id']) ?>" readonly="readonly">
                 </div> 
                 <div class="input-style input-style-2 has-icon input-required mt-4">
                     <i class="input-icon fa fa-at"></i>
