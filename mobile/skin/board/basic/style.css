@@ -175,7 +175,7 @@
 #bo_v_info .icon_view {display:inline-block;background:url('./img/icon_view.png') no-repeat 50% 50%;background-size:80%;height:15px;width:20px;overflow:hidden;text-indent:-999px;vertical-align:middle;margin:0 3px 0 5px}
 #bo_v_info .icon_comment {display:inline-block;background:url('./img/icon_comment.png') no-repeat 50% 50%;background-size:70%;height:15px;width:20px;overflow:hidden;text-indent:-999px;vertical-align:middle;margin:0 3px 0 5px}
 
-#bo_v_file {padding:0 15px;margin-bottom:50px}
+#bo_v_file {padding:0 15px;margin-bottom:70px}
 #bo_v_file h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #bo_v_file ul {margin:0;list-style:none}
 #bo_v_file li {padding:15px;position:relative;margin:10px 0;border:1px solid #dfdfdf}
