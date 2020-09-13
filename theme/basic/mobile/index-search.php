@@ -175,7 +175,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
         
     </div>
     <!-- End of Page Content-->
-    <div id="menu-transaction" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
+    <!-- <div id="menu-transaction" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
         <div class="menu-title"><h1>이승근</h1><p class="color-highlight">원장</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-1 mt-3"></div>
         <div class="content">
@@ -212,7 +212,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
             </div>
         </div>
-    </div>
+    </div> -->
 <?php
     include_once(G5_THEME_MOBILE_PATH.'/cbvmatail.php');
 ?>

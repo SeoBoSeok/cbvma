@@ -11,7 +11,7 @@ $(document).ready(function(){
     
     var pwaVersion = '3.0'; //must be identical to _manifest.json version. If not it will create update window loop
     var pwaCookie = true; // if set to false, the PWA prompt will appear even if the user selects "maybe later"
-    var pwaNoCache = true; // always keep the cache clear to serve the freshest possible content
+    var pwaNoCache = false; // always keep the cache clear to serve the freshest possible content
     
     
     $('[data-pwa-version]').data('pwa-version', pwaVersion);

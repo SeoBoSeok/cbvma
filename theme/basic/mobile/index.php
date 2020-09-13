@@ -42,14 +42,14 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                     <p class="font-20 opacity-50 mt-n2 text-white">Search</p>
                 </div>
             </a>
-            <a href="/bbs/board.php?bo_table=free" class="col-6 pr-0">
+            <a href="/?p=board&bo_table=free" class="col-6 pr-0">
                 <div class="card card-style mr-2 bg-mint-dark">
                     <i class="fa fa-file color-magenta2-dark fa-4x mt-4"></i>
                     <h1 class="pt-4 text-white">정책공지</h1>
                     <p class="font-20 opacity-50 mt-n2 text-white">Policy</p>
                 </div>
             </a>
-            <a class="col-6 pl-0" href="/bbs/board.php?bo_table=notice">
+            <a class="col-6 pl-0" href="/?p=board&bo_table=notice">
                 <div class="card card-style ml-2 pl-0 bg-dark2-light">
                     <img class="height80 mt-4" src="images/icon04.svg">
                     <h1 class="pt-4 text-white">회원공지</h1>
