@@ -140,5 +140,5 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
     <div class="header header-demo header-logo-center">
         <a href="/" class="header-logo">Enabled<span class="color-highlight"> Mobile</span></a>
         <a href="#" data-menu="menu-sidebar-left-1" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
-        <a href="#" data-toggle-theme="" class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
+        <a href="?p=pageAccount" class="header-icon header-icon-4"><i class="fas fa-user"></i></a>
     </div>
