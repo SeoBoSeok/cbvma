@@ -326,11 +326,11 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                     </div>
                 </div>
             </div>
-            <div class="content mb-0">
+            <!-- <div class="content mb-0">
                 <h2 class="mb-0">비밀번호 수정</h2>
-                <p class="mb-3">
+                <p class="mb-3"> -->
                     <!-- Activate options or set different elements here that are different from basic fields. -->
-                </p>
+                <!-- </p>
                 <div class="input-style input-style-2 input-required">
                     <span class="color-highlight input-style-1-active">비밀번호</span>
                     <em>(required)</em>
@@ -341,8 +341,8 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                     <em>(required)</em>
                     <input type="password" class="form-control" name="mb_password_re" id="reg_mb_password_re" placeholder="" value="">
                 </div> 
-                <button type="submit" class="btn btn-full bg-green1-dark btn-m text-uppercase rounded-lg shadow-l mb-3 mt-4 font-900">수정하기</button>
-            </div>
+            </div> -->
+            <button type="submit" class="btn btn-full bg-green1-dark btn-m text-uppercase rounded-lg shadow-l mb-3 mt-4 font-900">수정하기</button>
         </div>         
             
         <!-- <div class="card card-style">
