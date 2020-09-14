@@ -220,7 +220,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </div>
     <?php
-    
+
     ?>
     <!-- 회원수첩 메뉴 End -->
     <!-- 청주시 개업수의사 Start -->
@@ -353,7 +353,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a data-menu="menu-chungju" href="?p=board&bo_table=notice">
                     <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
                     <span>회원공지</span>
-                    <span class="badge bg-highlight color-white">150</span>
+                    <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
             </div>
