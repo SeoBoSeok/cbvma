@@ -29,8 +29,9 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
                 </div>
                 <div class="flex-grow-1">
                     <h1 class="font-22 font-700 mb-0"><?=$member["mb_name"] ?></h1>
-                    <p class="mt-n2  font-16 font-400"><?=$member["mb_3"] ?></p>
+                    <p class="mt-n2 font-16 font-400"><?=$member["mb_3"] ?></p>
                 </div>
+                <a class="mt-n2 font-16 font-400" href="/bbs/logout.php">로그아웃</a>
             </div>
         </div>
 
