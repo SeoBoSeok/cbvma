@@ -8,6 +8,8 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
 // include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 // include_once(G5_LIB_PATH.'/popular.lib.php');
+$mb_dir = substr($member['mb_id'],0,2);
+$icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']).'.gif';
 ?>
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
 <div id="page">
@@ -23,7 +25,7 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
         <div class="pl-3 pr-3 pt-3 mt-4 mb-2">
             <div class="d-flex">
                 <div class="mr-3">
-                    <img src="images/preload-logo.png" width="43">
+                    <img src="<?=$icon_file ?>" width="43">
                 </div>
                 <div class="flex-grow-1">
                     <h1 class="font-22 font-700 mb-0"><?=$member["mb_name"] ?></h1>
