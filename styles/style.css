@@ -3858,6 +3858,13 @@ body {
     width: 80%;
   }
 
+  .working-hours p.p2 a {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .working-hours p:nth-child(2) {
     text-align: center;
   }
@@ -5213,6 +5220,16 @@ body {
     margin-top: 10px;
     margin-bottom: -5px;
   }
+
+  .background-changer.three a {
+    width: 33%;
+    float: left;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+  }
   
   .background-changer a i {
     margin-top: 10px;
@@ -5229,9 +5246,17 @@ body {
   }
   
   .background-changer a span {
-    font-size: 11px;
+    font-size: 15px;
     display: block;
-    margin-top: -10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+
+  .background-changer.three a span {
+    line-height: 19px;
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
     margin-bottom: -5px;
   }
   

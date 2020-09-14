@@ -22,6 +22,9 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
             <a href="#" class="flex-fill icon icon-m text-center color-linkedin border-bottom border-right"><i class="fab font-12 fa-linkedin-in"></i></a> -->
             <a href="#" class="close-menu flex-fill icon icon-m text-right pr-3 color-red2-dark border-bottom"><i class="fa font-12 fa-times"></i></a>
         </div>
+        <?php
+            if(!empty($member["mb_id"])) {
+        ?>
         <div class="pl-3 pr-3 pt-3 mt-4 mb-2">
             <div class="d-flex">
                 <div class="mr-3">
@@ -34,36 +37,39 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
                 <a class="mt-n2 font-16 font-400" href="/bbs/logout.php">로그아웃</a>
             </div>
         </div>
+        <?php
+        }
+        ?>
 
         <div class="mr-3 ml-3">
-            <span class="text-uppercase font-900 font-11 opacity-30">Navigation</span>
+            <!-- <span class="text-uppercase font-900 font-11 opacity-30">Navigation</span> -->
             <div class="list-group list-custom-small list-icon-0">
                 <a href="#">
                     <i class="fa font-14 fa-star color-yellow1-dark"></i>
-                    <span>Homepage</span>
+                    <span>Home</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
                 <a href="#">
                     <i class="fa font-14 fa-cog color-blue2-dark"></i>
-                    <span>Components</span>
+                    <span>정책공지</span>
                     <span class="badge bg-red2-dark">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
                 <a href="#">
                     <i class="fa font-14 fa-file color-brown1-dark"></i>
-                    <span>Pages</span>
+                    <span>회원공지</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
                 <a href="#">
-                    <i class="fa font-14 fa-camera color-green1-dark"></i>
-                    <span>Media</span>
+                    <i class="fa font-14 fa-user color-green1-dark"></i>
+                    <span>개인정보수정</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
-                <a href="#" class="border-0">
+                <!-- <a href="#" class="border-0">
                     <i class="fa font-14 fa-image color-teal-dark"></i>
                     <span>Contact</span>
                     <i class="fa fa-angle-right"></i>
-                </a>        
+                </a>         -->
             </div>
         </div>
         

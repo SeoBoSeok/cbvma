@@ -3858,6 +3858,13 @@ body {
     width: 80%;
   }
 
+  .working-hours p.p2 a {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .working-hours p:nth-child(2) {
     text-align: center;
   }
