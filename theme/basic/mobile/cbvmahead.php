@@ -44,23 +44,23 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
         <div class="mr-3 ml-3">
             <!-- <span class="text-uppercase font-900 font-11 opacity-30">Navigation</span> -->
             <div class="list-group list-custom-small list-icon-0">
-                <a href="#">
+                <a href="/">
                     <i class="fa font-14 fa-star color-yellow1-dark"></i>
                     <span>Home</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
-                <a href="#">
+                <a href="/?p=board&bo_table=notice">
                     <i class="fa font-14 fa-cog color-blue2-dark"></i>
                     <span>정책공지</span>
                     <span class="badge bg-red2-dark">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
-                <a href="#">
+                <a href="/?p=board&bo_table=free">
                     <i class="fa font-14 fa-file color-brown1-dark"></i>
                     <span>회원공지</span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
-                <a href="#">
+                <a href="/?p=pageAccount">
                     <i class="fa font-14 fa-user color-green1-dark"></i>
                     <span>개인정보수정</span>
                     <i class="fa fa-angle-right"></i>
