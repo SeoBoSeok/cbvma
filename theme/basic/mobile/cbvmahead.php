@@ -25,11 +25,11 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
         <div class="pl-3 pr-3 pt-3 mt-4 mb-2">
             <div class="d-flex">
                 <div class="mr-3">
-                    <img src="<?=$icon_file ?>" width="43">
+                    <img src="<?=$icon_file ?>" width="60">
                 </div>
                 <div class="flex-grow-1">
                     <h1 class="font-22 font-700 mb-0"><?=$member["mb_name"] ?></h1>
-                    <p class="mt-n2  font-10 font-400"><?=$member["mb_3"] ?></p>
+                    <p class="mt-n2  font-16 font-400"><?=$member["mb_3"] ?></p>
                 </div>
             </div>
         </div>
