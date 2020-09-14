@@ -6038,3 +6038,10 @@ body {
   .background-main--board {
     background-color: #6c757d4d;
   }
+
+  .page-account--imgdetail {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+  }

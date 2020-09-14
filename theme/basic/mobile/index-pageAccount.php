@@ -37,7 +37,8 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                         <h1 class="font-700 mb-1"><?php echo $member["mb_name"] ?></h1>
                         <p class="mb-0 pb-1 pr-3">
                             <input type="file" name="mb_img" id="reg_mb_img" class="uploadBtn">
-                            <span class="frm_info">
+                            <br>
+                            <span class="frm_info page-account--imgdetail">
                                 이미지 크기는 가로 <?php echo $config['cf_member_img_width'] ?>픽셀, 세로 <?php echo $config['cf_member_img_height'] ?>픽셀 이하로 해주세요.<br>
                                 gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_member_img_size']) ?>바이트 이하만 등록됩니다.
                             </span>
