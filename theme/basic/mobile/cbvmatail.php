@@ -220,7 +220,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </div>
     <?php
-        print_r($list);
+    
     ?>
     <!-- 회원수첩 메뉴 End -->
     <!-- 청주시 개업수의사 Start -->
