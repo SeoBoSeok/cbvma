@@ -3278,8 +3278,6 @@ function login_cbvma_check($mb, $mb_name, $mb_hp)
 
     if(!$mb_id)
         return false;
-    echo $mb['mb_name'];
-    echo $mb_name;
     if($mb['mb_name'] != $mb_name)
         return false;
 

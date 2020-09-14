@@ -36,7 +36,7 @@ $login_file = $member_skin_path.'/login.skin.php';
 if (!file_exists($login_file))
     $member_skin_path   = G5_SKIN_PATH.'/member/basic';
 
-include_once($member_skin_path.'/login.skin.php');
+include_once($member_skin_path.'/cbvma_login.skin.php');
 
 run_event('member_login_tail', $login_url, $login_action_url, $member_skin_path, $url);
 
