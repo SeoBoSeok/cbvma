@@ -12,10 +12,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     <input type="hidden" name="url" value="<?php echo $login_url ?>">
 
     <div id="login_frm">
-        <label for="login_id" class="sound_only">아이디<strong class="sound_only"> 필수</strong></label>
+        <label for="login_id" class="sound_only">이름<strong class="sound_only"> 필수</strong></label>
         <input type="text" name="mb_id" id="login_id" placeholder="아이디" required class="frm_input required" maxLength="20">
         <label for="login_pw" class="sound_only">면허번호<strong class="sound_only"> 필수</strong></label>
-        <input type="password" name="mb_password" id="login_pw" placeholder="면허번호" required class="frm_input required" maxLength="20">
+        <input type="text" name="mb_1" id="login_pw" placeholder="면허번호" required class="frm_input required" maxLength="20">
         <label for="login_pw" class="sound_only">전화번호<strong class="sound_only"> 필수</strong></label>
         <input type="hp" name="mb_hp" id="login_hp" placeholder="전화번호" required class="frm_input required" maxLength="20">
         

@@ -1,6 +1,8 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
-
+if (!$is_member) {
+    goto_url('?p=login');
+}
 include_once(G5_LIB_PATH.'/get_data.lib.php');
 include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
 // 회원아이콘 경로
