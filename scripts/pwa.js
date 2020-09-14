@@ -187,8 +187,8 @@ $(document).ready(function(){
     var offlineAlerts = $('.offline-message');
 
     if(!offlineAlerts.length){
-        $('body').append('<p class="offline-message bg-red2-dark color-white center-text uppercase ultrabold">No internet connection detected</p> ');
-        $('body').append('<p class="online-message bg-green1-dark color-white center-text uppercase ultrabold">You are back online</p>');
+        // $('body').append('<p class="offline-message bg-red2-dark color-white center-text uppercase ultrabold">No internet connection detected</p> ');
+        // $('body').append('<p class="online-message bg-green1-dark color-white center-text uppercase ultrabold">You are back online</p>');
     }
     
     //Offline Function Show
