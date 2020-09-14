@@ -219,7 +219,7 @@
 #bo_v_bot h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 #bo_v_bot ul {margin:0;padding:0;list-style:none}
 
-.bo_v_nb {position:relative;margin:10px 0 0;border-top:1px solid #e4e4ec;border-bottom:1px solid #e4e4ec;text-align:left}
+.bo_v_nb {position:relative;margin:10px 0 30px;border-top:1px solid #e4e4ec;border-bottom:1px solid #e4e4ec;text-align:left}
 .bo_v_nb:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_v_nb li {}
 .bo_v_nb li a {display:block;padding:15px;color:#777}
