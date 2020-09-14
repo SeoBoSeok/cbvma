@@ -32,7 +32,7 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
         
          <div class="card card-style">
             <div class="d-flex content">
-                <div class="flex-grow-1">
+                <div class="flex-grow-1 width70p">
                     <div>
                         <h1 class="font-700 mb-1"><?php echo $member["mb_name"] ?></h1>
                         <p class="mb-0 pb-1 pr-3">
@@ -45,7 +45,7 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                         </p>
                     </div>
                 </div>
-                <div>
+                <div class="flex-grow-1">
                     <?php if (file_exists($mb_img_path)) {  ?>
                         <img src="<?php echo $mb_img_url ?>" data-src="<?php echo $mb_img_url ?>" width="80" class="rounded-circle mt- shadow-xl preload-img">
                         <input type="checkbox" name="del_mb_img" value="1" id="del_mb_img">
