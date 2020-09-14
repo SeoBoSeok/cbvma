@@ -156,6 +156,14 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
         </div>
     </div>
+    <?php
+        $list = array();
+        $sql = "SELECT mb_6, count(mb_id) as cnt FROM cbvma.g5_member group by mb_6 order by 1 desc";
+        $result = sql_query($sql);
+        for($i=0; $row=sql_fetch_array($result); $i++) {
+            $list[$i] = $row;
+        }
+    ?>
     <!-- 회원수첩메뉴 Starts -->
     <div id="member-book" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="510">
         <div class="menu-title"><h1>회원 수첩</h1><p class="color-highlight">카테고리 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
@@ -166,7 +174,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>청주시 개업수의사</span>
                     <!-- <strong>청주시, 충주시, 제천시</strong> -->
-                    <span class="badge bg-highlight color-white">150</span>
+                    <span class="badge bg-highlight color-white"><?=$list[4]["cnt"] ?></span>
                     <i class="fa fa-angle-right"></i>
                 </a>        
                 <a data-menu="menu-chungjusi" href="#" class="border-0">
@@ -180,37 +188,40 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>충청북도 공무원</span>
                     <!-- <strong>도청 동물방역과, 도청 축수산과</strong> -->
-                    <span class="badge bg-highlight color-white">120</span>
+                    <span class="badge bg-highlight color-white"><?=$list[5]["cnt"] ?></span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-publicofficer" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>시군 공무원</span>
                     <!-- <strong>청주시, 충주시, 제천시, 보은군</strong> -->
-                    <span class="badge bg-highlight color-white">NEW</span>
+                    <span class="badge bg-highlight color-white"><?=$list[1]["cnt"] ?></span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-institution" href="#" class="border-0">
                     <i class="fa font-14 fa-cog bg-blue2-dark rounded-s"></i>
                     <span>기타 기관</span>
-                    <span class="badge bg-highlight color-white">NEW</span>
+                    <span class="badge bg-highlight color-white"><?=$list[2]["cnt"] ?></span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a href="?p=member-education" class="border-0">
                     <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
                     <span>교육기관</span>
-                    <span class="badge bg-highlight color-white">NEW</span>
+                    <span class="badge bg-highlight color-white"><?=$list[3]["cnt"] ?></span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-vet" href="#" class="border-0">
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>수의사</span>
-                    <span class="badge bg-highlight color-white">NEW</span>
+                    <span class="badge bg-highlight color-white"><?=$list[0]["cnt"] ?></span>
                     <i class="fa fa-angle-right"></i>
                 </a>                                                                                                                                     
             </div>
         </div>
     </div>
+    <?php
+        print_r($list);
+    ?>
     <!-- 회원수첩 메뉴 End -->
     <!-- 청주시 개업수의사 Start -->
     <div id="menu-cheongju" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="310" data-menu-effect="menu-over">
