@@ -15,7 +15,7 @@ $mb_img_url  = G5_DATA_URL.'/member_image/'.substr($member['mb_id'],0,2).'/'.get
 
 $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
 ?>
-    <form name="fregisterform" id="fregisterform" action="<?php echo $register_action_url ?>" onsubmit="return fregisterform_submit(this);" method="POST" autocomplete="off">
+    <form name="fregisterform" id="fregisterform" action="<?php echo $register_action_url ?>" onsubmit="return fregisterform_submit(this);" method="POST" autocomplete="off" enctype="multipart/form-data">
     <input type="hidden" name="mb_name" value="<?php echo $member['mb_name'] ?>">
     <input type="hidden" name="w" value="u">
     <input type="hidden" name="url" value="<?php echo $urlencode ?>">

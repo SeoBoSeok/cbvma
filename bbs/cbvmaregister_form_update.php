@@ -530,27 +530,27 @@ if ($w == '') {
         set_session('ss_mb_id', '');
         alert('회원 정보가 수정 되었습니다.\n\nE-mail 주소가 변경되었으므로 다시 인증하셔야 합니다.', G5_URL);
     } else {
-        print_r($_FILES);
-        print_r($_POST);
-        // echo '
-        // <!doctype html>
-        // <html lang="ko">
-        // <head>
-        // <meta charset="utf-8">
-        // <title>회원정보수정</title>
-        // <body>
-        // <form name="fregisterupdate" method="post" action="/?p=pageAccount">
-        // <input type="hidden" name="w" value="u">
-        // <input type="hidden" name="mb_id" value="'.$mb_id.'">
-        // <input type="hidden" name="mb_password" value="'.$tmp_password.'">
-        // <input type="hidden" name="is_update" value="1">
-        // </form>
-        // <script>
-        // alert("회원 정보가 수정 되었습니다.");
-        // document.fregisterupdate.submit();
-        // </script>
-        // </body>
-        // </html>';
+        // print_r($_FILES);
+        // print_r($_POST);
+        echo '
+        <!doctype html>
+        <html lang="ko">
+        <head>
+        <meta charset="utf-8">
+        <title>회원정보수정</title>
+        <body>
+        <form name="fregisterupdate" method="post" action="/?p=pageAccount">
+        <input type="hidden" name="w" value="u">
+        <input type="hidden" name="mb_id" value="'.$mb_id.'">
+        <input type="hidden" name="mb_password" value="'.$tmp_password.'">
+        <input type="hidden" name="is_update" value="1">
+        </form>
+        <script>
+        alert("회원 정보가 수정 되었습니다.");
+        document.fregisterupdate.submit();
+        </script>
+        </body>
+        </html>';
     }
 }
 ?>
