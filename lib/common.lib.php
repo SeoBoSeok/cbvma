@@ -3269,6 +3269,26 @@ function login_password_check($mb, $pass, $hash)
     return check_password($pass, $hash);
 }
 
+// 로그인 패스워드 체크
+function login_cbvma_check($mb, $mb_name, $mb_hp)
+{
+    global $g5;
+
+    $mb_id = isset($mb['mb_id']) ? $mb['mb_id'] : '';
+
+    if(!$mb_id)
+        return false;
+    echo $mb['mb_name'];
+    echo $mb_name;
+    if($mb['mb_name'] != $mb_name)
+        return false;
+
+    if(str_replace("=","",$mb['mb_hp']) != str_replace("=","",$mb_hp))
+        return false;    
+
+    return true;
+}
+
 // 동일한 host url 인지
 function check_url_host($url, $msg='', $return_url=G5_URL, $is_redirect=false)
 {
