@@ -134,21 +134,21 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <span>전체 <?php echo number_format($total_count) ?>건</span>
     <?php echo $page ?> 페이지
 </div>
-
+<!-- 
 <fieldset id="bo_sch">
     <legend>게시물 검색</legend>
     <form name="fsearch" method="get">
-    <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
-    <input type="hidden" name="sca" value="<?php echo $sca ?>">
+    <input type="hidden" name="bo_table" value="<?php // echo $bo_table ?>">
+    <input type="hidden" name="sca" value="<?php // echo $sca ?>">
     <input type="hidden" name="sop" value="and">
     <label for="sfl" class="sound_only">검색대상</label>
     <select name="sfl" id="sfl">
-        <?php echo get_board_sfl_select_options($sfl); ?>
+        <?php // echo get_board_sfl_select_options($sfl); ?>
     </select>
-    <input name="stx" value="<?php echo stripslashes($stx) ?>" placeholder="검색어를 입력하세요" required id="stx" class="sch_input" size="15" maxlength="20">
+    <input name="stx" value="<?php // echo stripslashes($stx) ?>" placeholder="검색어를 입력하세요" required id="stx" class="sch_input" size="15" maxlength="20">
     <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i> <span class="sound_only">검색</span></button>
     </form>
-</fieldset>
+</fieldset> -->
 
 <?php if ($is_checkbox) { ?>
 <script>
