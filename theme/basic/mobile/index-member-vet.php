@@ -103,17 +103,17 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
             </div>
             <div class="divider mt-3 mb-3"></div>
             <div class="row mb-0">
-                <div class="col-6"><h4 class="font-14">근무처</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right"><?php echo $row["mb_3"] ?></h4></div>
+                <div class="col-6"><h4 class="font-16">근무처</h4></div>
+                <div class="col-6"><h4 class="font-16 text-right"><?php echo $row["mb_3"] ?></h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">졸업연도</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1"><?php echo $row["mb_4"] ?> <?php echo $row["mb_5"] ?></h4></div>
+                <div class="col-6"><h4 class="font-16 mt-1">졸업연도</h4></div>
+                <div class="col-6"><h4 class="font-16 text-right mt-1"><?php echo $row["mb_4"] ?> <?php echo $row["mb_5"] ?></h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">직위</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1 color-red2-dark"><?php echo $row["mb_2"] ?></h4></div>
+                <div class="col-6"><h4 class="font-16 mt-1">직위</h4></div>
+                <div class="col-6"><h4 class="font-16 text-right mt-1 color-red2-dark"><?php echo $row["mb_2"] ?></h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">핸드폰</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1 color-green1-dark"><?php echo $row["mb_hp"] ?></h4></div>
+                <div class="col-6"><h4 class="font-16 mt-1">핸드폰</h4></div>
+                <div class="col-6"><h4 class="font-16 text-right mt-1 color-green1-dark"><?php echo $row["mb_hp"] ?></h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-3"></div>
                 <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
             </div>
@@ -147,14 +147,14 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
             </div>
             <div class="divider mt-3 mb-3"></div>
             <div class="row mb-0">
-                <div class="col-6"><h4 class="font-14">근무처</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right">제일</h4></div>
+                <div class="col-6"><h4 class="font-16">근무처</h4></div>
+                <div class="col-6"><h4 class="font-16 text-right">제일</h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">졸업연도</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1">경북대 64</h4></div>
+                <div class="col-6"><h4 class="font-16 mt-1">졸업연도</h4></div>
+                <div class="col-6"><h4 class="font-16 text-right mt-1">경북대 64</h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">직위</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1 color-green1-dark">원장</h4></div>
+                <div class="col-6"><h4 class="font-16 mt-1">직위</h4></div>
+                <div class="col-6"><h4 class="font-16 text-right mt-1 color-green1-dark">원장</h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-3"></div>
                 <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
             </div>
