@@ -88,7 +88,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 </div>
                 <div class="col-9 pl-4">
                     <div class="d-flex">
-                        <div><p class="font-700 color-theme">지역</p></div>
+                        <div><p class="font-700 color-theme">구분</p></div>
                         <div class="ml-auto"><p><?= $_section[$_REQUEST["category"]] ?></p></div>
                     </div>
                     <div class="d-flex">
