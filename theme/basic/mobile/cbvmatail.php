@@ -360,6 +360,52 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </div>
     <!-- Board Menu End -->
+    <!-- member-search Start -->
+    <div id="member-search" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="510">
+        <div class="menu-title"><h1>회원검색</h1><p class="color-highlight">분류 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="list-group list-custom-large">
+                <a href="?p=search&category=cbvet" class="border-0">
+                    <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
+                    <span>개업수의사</span>
+                    <!-- <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i> -->
+                </a>
+                <a href="?p=search&category=cbpublicofficer">
+                    <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
+                    <span>충청북도 공무원</span>
+                    <!-- <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i> -->
+                </a>
+                <a href="?p=search&category=cbpublicofficer">
+                    <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
+                    <span>시도 공무원</span>
+                    <!-- <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i> -->
+                </a>
+                <a href="?p=search&category=institution">
+                    <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
+                    <span>기타 기관</span>
+                    <!-- <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i> -->
+                </a>
+                <a href="?p=search&category=education">
+                    <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
+                    <span>교육 기관</span>
+                    <!-- <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i> -->
+                </a>
+                <a href="?p=search&category=vet">
+                <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
+                    <span>일반수의사</span>
+                    <!-- <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i> -->
+                </a> 
+            </div>
+        </div>
+    </div>
+    <!-- member-search End -->
 <!-- </div> -->
 </div>
 <!-- <script>

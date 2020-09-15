@@ -3,6 +3,14 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 if (!$is_member) {
     goto_url('?p=login');
 }
+$_section = array(
+    "cbvet" => "개업수의사",
+    "cbpublicofficer" => "충청북도 공무원",
+    "publicofficer" => "시도 공무원",
+    "institution" => "기타 기관",
+    "education" => "교육 기관",
+    "vet" => "일반수의사"
+);
 // include_once(G5_THEME_MOBILE_PATH.'/head.php');
 include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
 ?>
@@ -33,7 +41,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                     <?php
                         $sql = " select mb_id, mb_name, mb_email, mb_tel, mb_hp, mb_1, mb_2, mb_3, mb_4, mb_5, mb_6
                         from `{$g5['member_table']}`
-                        where mb_6 = 'cbvet' ";
+                        where mb_6 = '{$_REQUEST["category"]}'";
                         // $sql .= " order by mb_no";
 
                         // $sql = " select bo_table
@@ -65,32 +73,32 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
 
             <div class="search-trending card card-style">
                 <div class="content mb-2">
-                    <h3>Trending Searches</h3>
+                    <h3>Keywords Searches</h3>
                     <p class="font-11 mt-n2">What others are Searching for.</p>
                 </div>
-                <div class="list-group list-custom-small mr-3 ml-3">
-                    <a href="#">
-                        <span class="font-400 color-blue2-dark">All Products</span>
-                        <i class="color-gray2-dark fa fa-angle-right"></i>
-                    </a>        
+                <div class="list-group list-custom-small mr-3 ml-3">       
                     <a href="#">
                         <span class="font-400 color-blue2-dark">개업수의사</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
                     <a href="#">
-                        <span class="font-400 color-blue2-dark">Mega Mobile</span>
+                        <span class="font-400 color-blue2-dark">충청북도 공무원</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
                     <a href="#">
-                        <span class="font-400 color-blue2-dark">Ultra Mobile</span>
+                        <span class="font-400 color-blue2-dark">시도 공무원</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
                     <a href="#">
-                        <span class="font-400 color-blue2-dark">Kolor Mobile</span>
+                        <span class="font-400 color-blue2-dark">기타 기관</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
                     <a href="#" class="border-0">
-                        <span class="font-400 color-blue2-dark">Vinga Mobile</span>
+                        <span class="font-400 color-blue2-dark">교육 기관</span>
+                        <i class="color-gray2-dark fa fa-angle-right"></i>
+                    </a>
+                    <a href="#" class="border-0">
+                        <span class="font-400 color-blue2-dark">일반수의사</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
                 </div>
@@ -101,7 +109,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
     <?php
         $sql = " select mb_id, mb_name, mb_email, mb_tel, mb_hp, mb_1, mb_2, mb_3, mb_4, mb_5, mb_6
         from `{$g5['member_table']}`
-        where mb_6 = 'cbvet' ";
+        where mb_6 = '{$_REQUEST["category"]}'";
         // $sql .= " order by mb_no";
 
         // $sql = " select bo_table
@@ -121,13 +129,13 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                         <img src="<?php echo $icon_file ?>" width="80" height="80" class="rounded-xl objectfit">
                     </div>
                     <div class="col-9 pl-4">
-                        <div class="d-flex">
+                        <!-- <div class="d-flex">
                             <div><p class="font-700 color-theme">지역</p></div>
                             <div class="ml-auto"><p><?php echo $row["mb_3"] ?></p></div>
-                        </div>
+                        </div> -->
                         <div class="d-flex">
                             <div><p class="font-700 color-theme">회원</p></div>
-                            <div class="ml-auto"><p>도청 동물방역과</p></div>
+                            <div class="ml-auto"><p><?= $_section[$_REQUEST["category"]] ?></p></div>
                         </div>
                         <div class="d-flex">
                             <div><p class="font-700 color-theme">연락처</p></div>

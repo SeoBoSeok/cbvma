@@ -135,7 +135,7 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
         <a href="/" class="<?= (!isset($output["p"])) ? "active-nav" : ""; ?>"><i class="fa fa-home"></i><span>홈</span></a>
         <a href="#" data-menu="board-type" class="<?= ($output["p"] == "components") ? "active-nav" : ""; ?>"><i class="fa fa-bell"></i><span>Notice</span></a>
         <a href="#" data-menu="member-book"><i class="fa fa-users"></i><span>Member</span></a>
-        <a href="?p=search" class="<?= ($output["p"] == "search") ? "active-nav" : ""; ?>"><i class="fa fa-search"></i><span>Search</span></a>
+        <a href="#" data-menu="member-search" class="<?= ($output["p"] == "search") ? "active-nav" : ""; ?>"><i class="fa fa-search"></i><span>Search</span></a>
         <a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Settings</span></a>
     </div>
 
