@@ -20,7 +20,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
         <div class="card card-style preload-img" data-src="images/pictures/18.jpg" data-card-height="130">
             <div class="card-center ml-3">
                 <h1 class="color-white mb-0">Search</h1>
-                <p class="color-white mt-n1 mb-0">충북수의사회 회원 검색하기.</p>
+                <p class="color-white mt-n1 mb-0"><?= $_section[$_REQUEST["category"]] ?></p>
             </div>
             <div class="card-center mr-3">
                 <a href="#" data-back-button class="btn btn-m float-right rounded-xl shadow-xl text-uppercase font-800 bg-highlight">Back Home</a>
@@ -71,38 +71,38 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 </div>
             </div>
 
-            <div class="search-trending card card-style">
+            <!-- <div class="card card-style">
                 <div class="content mb-2">
                     <h3>Keywords Searches</h3>
                     <p class="font-11 mt-n2">What others are Searching for.</p>
                 </div>
                 <div class="list-group list-custom-small mr-3 ml-3">       
-                    <a href="#">
+                    <a href="?p=search&category=cbvet">
                         <span class="font-400 color-blue2-dark">개업수의사</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
-                    <a href="#">
+                    <a href="?p=search&category=cbpublicofficer">
                         <span class="font-400 color-blue2-dark">충청북도 공무원</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
-                    <a href="#">
+                    <a href="?p=search&category=publicofficer">
                         <span class="font-400 color-blue2-dark">시도 공무원</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
-                    <a href="#">
+                    <a href="?p=search&category=institution">
                         <span class="font-400 color-blue2-dark">기타 기관</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
-                    <a href="#" class="border-0">
+                    <a href="?p=search&category=education" class="border-0">
                         <span class="font-400 color-blue2-dark">교육 기관</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>
-                    <a href="#" class="border-0">
+                    <a href="?p=search&category=vet" class="border-0">
                         <span class="font-400 color-blue2-dark">일반수의사</span>
                         <i class="color-gray2-dark fa fa-angle-right"></i>
                     </a>        
                 </div>
-            </div>
+            </div> -->
         </div>    
     </div>
     <!-- End of Page Content-->
