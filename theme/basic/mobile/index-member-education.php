@@ -94,7 +94,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                     </div>
                     <div class="d-flex">
                         <div><p class="font-700 color-theme">연락처</p></div>
-                        <div class="ml-auto"><p><?php echo $row["mb_tel"] ?></p></div>
+                        <div class="ml-auto"><p><a href="tel:<?=$row["mb_tel"] ?>"><?php echo $row["mb_tel"] ?></a></p></div>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 <div class="col-6"><h4 class="font-14 text-right mt-1 color-red2-dark"><?php echo $row["mb_2"] ?></h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-2"></div>
                 <div class="col-6"><h4 class="font-14 mt-1">핸드폰</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1 color-green1-dark"><?php echo $row["mb_hp"] ?></h4></div>
+                <div class="col-6"><h4 class="font-14 text-right mt-1 color-green1-dark"><a href="tel:<?=$row["mb_hp"] ?>"><?php echo $row["mb_hp"] ?></a></h4></div>
                 <div class="divider divider-margins w-100 mt-2 mb-3"></div>
                 <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
             </div>

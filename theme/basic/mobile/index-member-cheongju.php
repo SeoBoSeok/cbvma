@@ -131,47 +131,6 @@ $_section = array(
     <?php
         }
     ?>
-    <div id="menu-transaction" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
-        <div class="menu-title"><h1>김석희</h1><p class="color-highlight">원장</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
-        <div class="divider divider-margins mb-1 mt-3"></div>
-        <div class="content">
-            <div class="row mb-0">
-                <div class="col-3">
-                    <img src="images/profile/sd1.png" width="80" height="80" class="rounded-xl objectfit">
-                </div>
-                <div class="col-9 pl-4">
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">지역</p></div>
-                        <div class="ml-auto"><p>청주시 상당구</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">회원</p></div>
-                        <div class="ml-auto"><p>개업수의사</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">연락처</p></div>
-                        <div class="ml-auto"><p>043-256-3309</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="divider mt-3 mb-3"></div>
-            <div class="row mb-0">
-                <div class="col-6"><h4 class="font-14">근무처</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right">제일</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">졸업연도</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1">경북대 64</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">직위</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1">원장</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">휴대폰</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1 color-green1-dark">010-1111-2222</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-3"></div>
-                <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
-            </div>
-        </div>
-    </div>
 
 <!-- 메인화면 최신글 끝 -->
 
