@@ -613,7 +613,12 @@ if (G5_USE_MOBILE && $set_device) {
 }
 
 $_SESSION['ss_is_mobile'] = $is_mobile;
-define('G5_IS_MOBILE', true);
+
+if($is_admin == 'super') {
+    // define('G5_IS_MOBILE', false);
+} else {
+    define('G5_IS_MOBILE', true);
+}
 define('G5_DEVICE_BUTTON_DISPLAY', $set_device);
 if (G5_IS_MOBILE) {
     $g5['mobile_path'] = G5_PATH.'/'.$g5['mobile_dir'];

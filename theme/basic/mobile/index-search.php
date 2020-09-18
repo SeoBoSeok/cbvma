@@ -32,7 +32,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
             
             <div class="search-box search-header bg-theme card-style mr-3 ml-3">
                 <i class="fa fa-search"></i>
-                <input type="text" class="border-0" placeholder="What are you looking for? " data-search>
+                <input type="text" class="border-0" placeholder="검색어를 입력해주세요. " data-search>
                 <a href="#" class="disabled"><i class="fa fa-times-circle color-red2-dark"></i></a>
             </div>   
 
