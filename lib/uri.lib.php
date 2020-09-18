@@ -74,9 +74,11 @@ function get_pretty_url($folder, $no='', $query_string='', $action='', $admin=''
 
 	} else { // don't use shortten url
 		if(in_array($folder, $boards)) {
-            $url = '/?p=board&bo_table='. $folder;
-            if($admin) {
+            global $config;
+            if($config['cf_admin'] == $_SESSION["ss_mb_id"]) {
                 $url = G5_BBS_URL. '/board.php?bo_table='. $folder;
+            } else {
+                $url = '/?p=board&bo_table='. $folder;
             }
 			if($no) {
 				$url .= '&amp;wr_id='. $no;
