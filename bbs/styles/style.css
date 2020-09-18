@@ -3865,6 +3865,10 @@ body {
     white-space: nowrap;
   }
 
+  .working-hours p.p2.bg-red2-dark a {
+    color: white;
+  } 
+
   .working-hours p:nth-child(2) {
     text-align: center;
   }

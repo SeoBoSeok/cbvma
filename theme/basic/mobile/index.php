@@ -35,7 +35,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                     <img class="height80 width80 main-image--right" src="images/icon01.svg">
                 </div>
             </a>
-            <a href="?p=search" class="col-6 pl-0">
+            <a href="#" data-menu="member-search" class="col-6 pl-0">
                 <div class="card card-style ml-2 mb-3 bg-yellow1-dark tl-left">
                     <h1 class="pt-4 pl-4 text-white">회원검색</h1>
                     <p class="font-16 pl-4 opacity-50 mb-0 text-white">Search</p>
