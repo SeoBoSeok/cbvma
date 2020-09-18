@@ -6078,3 +6078,18 @@ body {
   .width70p {
     width: 70%;
   }
+
+  .pc-view {
+    width: 700px;
+    margin: auto;
+  }
+
+  #mb_login.cbvma-login__wrapper {
+    text-align: left;
+  }
+
+  .cbvma-login__1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }

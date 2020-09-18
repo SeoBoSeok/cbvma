@@ -21,12 +21,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <div class="ft_cnt">
     	<h2>사이트 정보</h2>
         <p class="ft_info">
-        	회사명 : 회사명 / 대표 : 대표자명<br>
+        	회사명 : (주)사단법인 충청북도 수의사회<br>
 			주소  : OO도 OO시 OO구 OO동 123-45<br>
 			사업자 등록번호  : 123-45-67890<br>
 			전화 :  02-123-4567  팩스  : 02-123-4568<br>
-			통신판매업신고번호 :  제 OO구 - 123호<br>
-			개인정보관리책임자 :  정보책임자명<br>
 		</p>
     </div>
     <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>

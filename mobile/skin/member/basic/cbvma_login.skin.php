@@ -6,19 +6,19 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 $login_action_url = '/bbs/cbvma_login_check.php';
 ?>
 
-<div id="mb_login" class="mbskin">
+<div id="mb_login" class="mbskin cbvma-login__wrapper">
     <h1><?php echo $g5['title'] ?></h1>
 
     <form name="flogin" action="<?php echo $login_action_url ?>" onsubmit="return flogin_submit(this);" method="post" id="flogin">
     <input type="hidden" name="url" value="<?php echo $login_url ?>">
 
     <div id="login_frm">
-        <label for="login_id" class="sound_only">이름<strong class="sound_only"> 필수</strong></label>
-        <input type="text" name="mb_name" id="login_id" placeholder="이름" required class="frm_input required" maxLength="20">
-        <label for="login_pw" class="sound_only">면허번호<strong class="sound_only"> 필수</strong></label>
-        <input type="text" name="mb_1" id="login_pw" placeholder="면허번호" required class="frm_input required" maxLength="20">
-        <label for="login_hp" class="sound_only">휴대폰번호<strong class="sound_only"> 필수</strong></label>
-        <input type="hp" name="mb_hp" id="login_hp" placeholder="휴대폰번호" required class="frm_input required" maxLength="20">
+        <label for="login_id" class="cbvma-login__1">이름<strong class="sound_only"> 필수</strong></label>
+        <input type="text" name="mb_name" id="login_id" placeholder="이름을 입력해주세요." required class="frm_input required" maxLength="20">
+        <label for="login_pw" class="cbvma-login__1">면허번호<strong class="sound_only"> 필수</strong></label>
+        <input type="text" name="mb_1" id="login_pw" placeholder="면허번호를 입력해주세요." required class="frm_input required" maxLength="20">
+        <label for="login_hp" class="cbvma-login__1">휴대폰번호<strong class="sound_only"> 필수</strong></label>
+        <input type="hp" name="mb_hp" id="login_hp" placeholder="휴대폰번호를 입력해주세요." required class="frm_input required" maxLength="20">
         
         <div id="login_info" class="chk_box">
             <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk">

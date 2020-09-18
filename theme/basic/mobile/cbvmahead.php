@@ -131,7 +131,7 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
     <?php
         parse_str($_SERVER['QUERY_STRING'], $output);
     ?>
-    <div id="footer-bar" class="footer-bar-1">
+    <div id="footer-bar" class="footer-bar-1 <?php echo (!isMobile()) ? 'pc-view' : '' ?>">
         <a href="/" class="<?= (!isset($output["p"])) ? "active-nav" : ""; ?>"><i class="fa fa-home"></i><span>홈</span></a>
         <a href="#" data-menu="board-type" class="<?= ($output["p"] == "components") ? "active-nav" : ""; ?>"><i class="fa fa-bell"></i><span>Notice</span></a>
         <a href="#" data-menu="member-book"><i class="fa fa-users"></i><span>Member</span></a>

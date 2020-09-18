@@ -593,6 +593,10 @@ if(defined('G5_SET_DEVICE') && $set_device) {
 }
 //==============================================================================
 
+function isMobile () {
+    return is_numeric(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), "mobile"));
+}
+
 //==============================================================================
 // Mobile 모바일 설정
 // 쿠키에 저장된 값이 모바일이라면 브라우저 상관없이 모바일로 실행
@@ -614,15 +618,16 @@ if (G5_USE_MOBILE && $set_device) {
 
 $_SESSION['ss_is_mobile'] = $is_mobile;
 
-if($is_admin == 'super') {
-    // define('G5_IS_MOBILE', false);
-} else {
+if($is_admin === 'super' && !$is_mobile) {
+    define('G5_IS_MOBILE', false);
+} elseif($is_mobile === 1) {
     define('G5_IS_MOBILE', true);
 }
 define('G5_DEVICE_BUTTON_DISPLAY', $set_device);
 if (G5_IS_MOBILE) {
     $g5['mobile_path'] = G5_PATH.'/'.$g5['mobile_dir'];
 }
+// echo isMobile() ? "You are using a mobile device." : "You are on a desktop or laptop." ;
 //==============================================================================
 
 

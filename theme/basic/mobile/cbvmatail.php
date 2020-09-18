@@ -10,7 +10,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 <!-- 기존코드 삭제 -->
 
 <!-- All Menus, Action Sheets, Modals, Notifications, Toasts, Snackbars get Placed outside the <div class="page-content"> -->
-    <div id="menu-settings" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="308">
+    <div id="menu-settings" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="308">
         <div class="menu-title"><h1>Settings</h1><p class="color-highlight">Flexible and Easy to Use</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -42,7 +42,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </div>
     <!-- Menu Settings Highlights-->
-    <div id="menu-highlights" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="380" data-menu-effect="menu-over">
+    <div id="menu-highlights" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="380" data-menu-effect="menu-over">
         <div class="menu-title"><h1>Highlights</h1><p class="color-highlight">Any Element can have a Highlight Color</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -68,7 +68,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </div>    
     <!-- Menu Settings Backgrounds-->
-    <div id="menu-backgrounds" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="310" data-menu-effect="menu-over">
+    <div id="menu-backgrounds" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="310" data-menu-effect="menu-over">
         <div class="menu-title"><h1>Backgrounds</h1><p class="color-highlight">Change Page Color Behind Content Boxes</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -89,7 +89,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </div>
     <!-- Menu Share -->
-    <div id="menu-share" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="345" data-menu-effect="menu-over">
+    <div id="menu-share" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="345" data-menu-effect="menu-over">
         <div class="menu-title mt-n1"><h1>Share the Love</h1><p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="content mb-0">
             <div class="divider mb-0"></div>
@@ -125,7 +125,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     
     <!-- Be sure this is on your main visiting page, for example, the index.html page-->
     <!-- Install Prompt for Android -->
-    <div id="menu-install-pwa-android" class="menu menu-box-bottom menu-box-detached rounded-l"
+    <div id="menu-install-pwa-android" class="menu menu-box-bottom menu-box-detached rounded-l <?php echo (!isMobile()) ? 'pc-view' : '' ?>"
          data-menu-height="350" 
         data-menu-effect="menu-parallax">
         <div class="boxed-text-l mt-4">
@@ -142,7 +142,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
     <!-- Install instructions for iOS -->
     <div id="menu-install-pwa-ios" 
-        class="menu menu-box-bottom menu-box-detached rounded-l"
+        class="menu menu-box-bottom menu-box-detached rounded-l <?php echo (!isMobile()) ? 'pc-view' : '' ?>"
          data-menu-height="320" 
         data-menu-effect="menu-parallax">
         <div class="boxed-text-xl mt-4">
@@ -165,7 +165,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         }
     ?>
     <!-- 회원수첩메뉴 Starts -->
-    <div id="member-book" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="510">
+    <div id="member-book" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="510">
         <div class="menu-title"><h1>회원 수첩</h1><p class="color-highlight">카테고리 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -224,7 +224,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     ?>
     <!-- 회원수첩 메뉴 End -->
     <!-- 청주시 개업수의사 Start -->
-    <div id="menu-cheongju" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="310" data-menu-effect="menu-over">
+    <div id="menu-cheongju" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="310" data-menu-effect="menu-over">
         <div class="menu-title"><h1>청주시</h1><p class="color-highlight">지역을 선택해주세요</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -262,7 +262,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <!-- menu-chungju End -->
     <!-- 청주시 개업수의사 End -->
     <!-- menu-cbpublicofficer Start -->
-    <div id="menu-cbpublicofficer" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="410" data-menu-effect="menu-over">
+    <div id="menu-cbpublicofficer" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="410" data-menu-effect="menu-over">
         <div class="menu-title"><h1>충청북도 공무원</h1><p class="color-highlight">소속을 선택해주세요</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -285,7 +285,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </div>
     <!-- menu-cbpublicofficer End -->
     <!-- menu-publicofficer Start -->
-    <div id="menu-publicofficer" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="450" data-menu-effect="menu-over">
+    <div id="menu-publicofficer" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="450" data-menu-effect="menu-over">
         <div class="menu-title"><h1>시군 공무원</h1><p class="color-highlight">지역을 선택해주세요</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -308,7 +308,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </div>
     <!-- menu-publicofficer End -->
     <!-- menu-institution Start -->
-    <div id="menu-institution" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="450" data-menu-effect="menu-over">
+    <div id="menu-institution" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="450" data-menu-effect="menu-over">
         <div class="menu-title"><h1>기타 기관</h1><p class="color-highlight">기관을 선택해주세요</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -325,7 +325,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </div>
     <!-- menu-institution End -->
     <!-- menu-vet Start -->
-    <div id="menu-vet" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="250" data-menu-effect="menu-over">
+    <div id="menu-vet" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="250" data-menu-effect="menu-over">
         <div class="menu-title"><h1>수의사</h1><p class="color-highlight">선택해주세요</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -339,7 +339,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </div>
     <!-- menu-vet End -->
     <!-- Board Menu Start -->
-    <div id="board-type" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="310">
+    <div id="board-type" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="310">
         <div class="menu-title"><h1>공지사항</h1><p class="color-highlight">게시판 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -361,7 +361,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </div>
     <!-- Board Menu End -->
     <!-- member-search Start -->
-    <div id="member-search" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="510">
+    <div id="member-search" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="510">
         <div class="menu-title"><h1>회원검색</h1><p class="color-highlight">분류 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
