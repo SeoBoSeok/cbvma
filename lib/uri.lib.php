@@ -4,7 +4,7 @@ if (!defined('_GNUBOARD_')) exit;
 include_once(dirname(__FILE__) .'/URI/uri.class.php');
 
 // 짧은 주소 형식으로 만들어서 가져온다.
-function get_pretty_url($folder, $no='', $query_string='', $action='')
+function get_pretty_url($folder, $no='', $query_string='', $action='', $admin='')
 {
     global $g5, $config;
 
@@ -74,8 +74,10 @@ function get_pretty_url($folder, $no='', $query_string='', $action='')
 
 	} else { // don't use shortten url
 		if(in_array($folder, $boards)) {
-            // $url = G5_BBS_URL. '/board.php?bo_table='. $folder;
             $url = '/?p=board&bo_table='. $folder;
+            if($admin) {
+                $url = G5_BBS_URL. '/board.php?bo_table='. $folder;
+            }
 			if($no) {
 				$url .= '&amp;wr_id='. $no;
 			}
