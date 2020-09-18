@@ -71,6 +71,10 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
                     <i class="fa fa-angle-right"></i>
                 </a>         -->
             </div>
+            <?php
+                if(is_mobile())
+                    echo '<button onClick="javascript:window.location.reload();">hot reload</button>';
+            ?>
         </div>
         
         <!-- <div class="mr-3 ml-3 mt-4">
