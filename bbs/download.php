@@ -87,8 +87,7 @@ if (!get_session($ss_name))
     // 다운로드 카운트를 증가시키고 세션을 생성
     $_SESSION[$ss_name] = true;
 }
-echo conv_subject($write['wr_subject'], 255);
-exit();
+
 $g5['title'] = '다운로드 &gt; '.conv_subject($write['wr_subject'], 255);
 
 //파일명에 한글이 있는 경우
