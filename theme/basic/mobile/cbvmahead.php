@@ -11,7 +11,7 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
 $mb_dir = substr($member['mb_id'],0,2);
 $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']).'.gif';
 ?>
-<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<!-- <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div> -->
 <div id="page">
     <div id="menu-sidebar-left-1" class="bg-white menu menu-box-left" data-menu-width="320" style="width: 320px; display: block;">
         <div class="d-flex">
