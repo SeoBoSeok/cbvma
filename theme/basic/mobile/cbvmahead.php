@@ -70,6 +70,8 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
                     <span>Contact</span>
                     <i class="fa fa-angle-right"></i>
                 </a>         -->
+                <a href="#" data-menu="menu-install-pwa-android" class=" btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br>
+                <a href="#" data-menu="menu-install-pwa-ios" class=" btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br>
             </div>
         </div>
         
