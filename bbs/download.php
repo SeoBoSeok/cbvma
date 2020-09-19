@@ -100,7 +100,7 @@ if(preg_match("/[\xA1-\xFE][\xA1-\xFE]/", $file['bf_source'])){
 }
 */
 
-$original = urlencode(rawurlencode($file['bf_source']));
+$original = urlencode($file['bf_source']);
 
 @include_once($board_skin_path.'/download.tail.skin.php');
 
