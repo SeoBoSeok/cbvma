@@ -34,7 +34,7 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
                     <h1 class="font-22 font-700 mb-0"><?=$member["mb_name"] ?></h1>
                     <p class="mt-n2 font-16 font-400"><?=$member["mb_3"] ?></p>
                 </div>
-                <a class="mt-n2 font-16 font-400" href="/bbs/logout.php">로그아웃</a>
+                <a class="mt-n2 font-16 font-400" href="<?=G5_URL?>/bbs/logout.php">로그아웃</a>
             </div>
         </div>
         <?php
@@ -152,5 +152,5 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
         <a href="/" class="header-logo">Enabled<span class="color-highlight"> Mobile</span></a>
         <a href="#" data-menu="menu-sidebar-left-1" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
         <!-- <a href="javascript:window.location.reload();" class="header-icon header-icon-4"><i class="fas fa-sync"></i></a> -->
-        <a href="?p=pageAccount" class="header-icon header-icon-4"><i class="fas fa-user"></i></a>
+        <a href="<?=G5_URL?>?p=pageAccount" class="header-icon header-icon-4"><i class="fas fa-user"></i></a>
     </div>

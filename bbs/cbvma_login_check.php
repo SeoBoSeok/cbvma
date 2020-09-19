@@ -127,7 +127,7 @@ if(function_exists('social_login_success_after')){
     social_login_session_clear(1);
 }
 
-run_event('member_login_check', $mb, $link, $is_social_login);
+run_event('member_login_check', $mb, G5_URL, $is_social_login);
 
-goto_url($link);
+goto_url(G5_URL);
 ?>

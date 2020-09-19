@@ -125,7 +125,21 @@ $(document).ready(function(){
             var menuHeight = menuID.data('menu-height');
             var menuId_id = $(this).data('id');
             var menuId_name = $(this).data('name');
+            var menuId_img = $(this).data('img');
+            var menuId_tel = $(this).data('tel');
+            var menuId_hp = $(this).data('hp');
+            var menuId_mb2 = $(this).data('mb2');
+            var menuId_mb3 = $(this).data('mb3');
+            var menuId_mb4 = $(this).data('mb4');
+            var menuId_mb5 = $(this).data('mb5');
             menuID.find('.menu-title h1').text(menuId_name);
+            menuID.find('#menuMb_img img').attr('src', menuId_img);
+            menuID.find('#menuMb_tel').attr('href', 'tel:'+menuId_tel).text(menuId_tel);
+            menuID.find('#menuMb_mb3').text(menuId_mb3);
+            menuID.find('#menuMb_mb4').text(menuId_mb4+" "+menuId_mb5);
+            menuID.find('#menuMb_mb2').text(menuId_mb2);
+            menuID.find('#menuMb_mb21').text(menuId_mb2);
+            menuID.find('#menuMb_hp').attr('href', 'tel:'+menuId_hp).text(menuId_hp);
             $('body').addClass('modal-open');
             if(menuID.hasClass('menu-header-clear')){menuHider.addClass('menu-active-clear');}  
             function menuActivate(){menuID = 'menu-active' ? menuID.addClass('menu-active') : menuID.removeClass('menu-active');}               

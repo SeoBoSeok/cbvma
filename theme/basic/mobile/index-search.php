@@ -63,57 +63,53 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                             <?php echo $row["mb_4"]?> <?php echo $row["mb_5"]?><br />
                             <i class="fa fa-phone"></i> <?php echo $row["mb_tel"]?> 
                         </p>
-                        <a href="#" data-menu="menu-transaction-details" data-id="<?=$row["mb_id"]?>" data-name="<?=$row["mb_name"]?>" data-img="<?php echo $icon_file ?>" class="bg-highlight">VIEW</a>
+                        <a href="#" data-menu="menu-transaction-details" data-id="<?=$row["mb_id"]?>" data-name="<?=$row["mb_name"]?>" data-img="<?php echo $icon_file ?>" data-tel="<?php echo $row["mb_tel"] ?>" data-hp="<?php echo $row["mb_hp"] ?>" data-mb2="<?php echo $row["mb_2"] ?>" data-mb3="<?php echo $row["mb_3"] ?>" data-mb4="<?php echo $row["mb_4"] ?>" data-mb5="<?php echo $row["mb_5"] ?>" class="bg-highlight">VIEW</a>
                     </div>      
                     <?php
                         echo "<script>$('#preloader').removeClass('preloader-hide');</script>";
                     }
                     ?>      
-                    <div class="search-no-results disabled">
+                    <!-- <div class="search-no-results disabled">
                         <h3 class="bold top-10">Nothing found...</h3>
                         <span class="under-heading font-11 opacity-70 color-theme">There's nothing matching the description you're looking for, try a different keyword.</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>    
     </div>
     <!-- End of Page Content-->
     <div id="menu-transaction-details" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
-            <div class="menu-title"><h1></h1><p class="color-highlight"><?php //echo $row["mb_2"] ?></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+            <div class="menu-title"><h1></h1><p class="color-highlight" id="menuMb_mb2"><?php //echo $row["mb_2"] ?></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
             <div class="divider divider-margins mb-1 mt-3"></div>
             <div class="content">
                 <div class="row mb-0">
-                    <div class="col-3">
-                        <img src="<?php //echo $icon_file ?>" width="80" height="80" class="rounded-xl objectfit">
+                    <div class="col-3" id="menuMb_img">
+                        <img src="" width="80" height="80" class="rounded-xl objectfit">
                     </div>
                     <div class="col-9 pl-4">
-                        <!-- <div class="d-flex">
-                            <div><p class="font-700 color-theme">지역</p></div>
-                            <div class="ml-auto"><p><?php //echo $row["mb_3"] ?></p></div>
-                        </div> -->
                         <div class="d-flex">
                             <div><p class="font-700 color-theme">회원</p></div>
                             <div class="ml-auto"><p><?= $_section[$_REQUEST["category"]] ?></p></div>
                         </div>
                         <div class="d-flex">
                             <div><p class="font-700 color-theme">연락처</p></div>
-                            <div class="ml-auto"><p><a href="tel:"><?php //echo $row["mb_tel"] ?></a></p></div>
+                            <div class="ml-auto"><p><a href="tel:" id="menuMb_tel"></a></p></div>
                         </div>
                     </div>
                 </div>
                 <div class="divider mt-3 mb-3"></div>
                 <div class="row mb-0">
                     <div class="col-6"><h4 class="font-16">근무처</h4></div>
-                    <div class="col-6"><h4 class="font-16 text-right"><?php //echo $row["mb_3"] ?></h4></div>
+                    <div class="col-6"><h4 class="font-16 text-right" id="menuMb_mb3"></h4></div>
                     <div class="divider divider-margins w-100 mt-2 mb-2"></div>
                     <div class="col-6"><h4 class="font-16 mt-1">졸업연도</h4></div>
-                    <div class="col-6"><h4 class="font-16 text-right mt-1"><?php //echo $row["mb_4"] ?> <?php //echo $row["mb_5"] ?></h4></div>
+                    <div class="col-6"><h4 class="font-16 text-right mt-1" id="menuMb_mb4"></h4></div>
                     <div class="divider divider-margins w-100 mt-2 mb-2"></div>
                     <div class="col-6"><h4 class="font-16 mt-1">직위</h4></div>
-                    <div class="col-6"><h4 class="font-16 text-right mt-1 color-red2-dark"><?php //echo $row["mb_2"] ?></h4></div>
+                    <div class="col-6"><h4 class="font-16 text-right mt-1 color-red2-dark" id="menuMb_mb21"></h4></div>
                     <div class="divider divider-margins w-100 mt-2 mb-2"></div>
                     <div class="col-6"><h4 class="font-16 mt-1">핸드폰</h4></div>
-                    <div class="col-6"><h4 class="font-16 text-right mt-1 color-green1-dark"><a href="tel:<?=$row["mb_hp"] ?>"><?php //echo $row["mb_hp"] ?></a></h4></div>
+                    <div class="col-6"><h4 class="font-16 text-right mt-1 color-green1-dark"><a href="tel:" id="menuMb_hp"></a></h4></div>
                     <div class="divider divider-margins w-100 mt-2 mb-3"></div>
                     <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
                 </div>
