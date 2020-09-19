@@ -99,8 +99,7 @@ if(preg_match("/[\xA1-\xFE][\xA1-\xFE]/", $file['bf_source'])){
     $original = urlencode($file['bf_source']);
 }
 
-
-// $original = ($file['bf_source']);
+$original = ($file['bf_source']);
 
 // echo '1111';
 // print_r($original);
