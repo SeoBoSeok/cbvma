@@ -123,6 +123,7 @@ $(document).ready(function(){
             var menuEffect = $('#'+menuData).data('menu-effect');
             var menuWidth = menuID.data('menu-width');
             var menuHeight = menuID.data('menu-height');
+            var id = $(this).data('id');
             $('body').addClass('modal-open');
             if(menuID.hasClass('menu-header-clear')){menuHider.addClass('menu-active-clear');}  
             function menuActivate(){menuID = 'menu-active' ? menuID.addClass('menu-active') : menuID.removeClass('menu-active');}               

@@ -59,7 +59,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                             <?php echo $row["mb_4"]?> <?php echo $row["mb_5"]?><br />
                             <i class="fa fa-phone"></i> <?php echo $row["mb_tel"]?> 
                         </p>
-                        <a href="#" data-menu="menu-transaction-<?php echo $row["mb_id"] ?>" class="bg-highlight">VIEW</a>
+                        <a href="#" data-menu="menu-transaction-<?php echo $row["mb_id"] ?>" data-id="<?=$row["mb_id"]?>" class="bg-highlight">VIEW</a>
                     </div>      
                     <?php
                     }
