@@ -123,7 +123,9 @@ $(document).ready(function(){
             var menuEffect = $('#'+menuData).data('menu-effect');
             var menuWidth = menuID.data('menu-width');
             var menuHeight = menuID.data('menu-height');
-            var id = $(this).data('id');
+            var menuId_id = $(this).data('id');
+            var menuId_name = $(this).data('name');
+            menuID.find('.menu-title h1').text(menuId_name);
             $('body').addClass('modal-open');
             if(menuID.hasClass('menu-header-clear')){menuHider.addClass('menu-active-clear');}  
             function menuActivate(){menuID = 'menu-active' ? menuID.addClass('menu-active') : menuID.removeClass('menu-active');}               
