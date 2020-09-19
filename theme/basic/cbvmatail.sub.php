@@ -2,7 +2,7 @@
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 ?>
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="scripts/custom.js"></script> -->
+<script type="text/javascript" src="scripts/custom.js"></script>
 <?php if ($is_admin == 'super') {  ?><!-- <div style='float:left; text-align:center;'>RUN TIME : <?php echo get_microtime()-$begin_time; ?><br></div> --><?php }  ?>
 
 <!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->

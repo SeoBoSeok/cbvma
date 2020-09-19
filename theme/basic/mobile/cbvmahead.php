@@ -151,6 +151,6 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
     <div class="header header-demo header-logo-center">
         <a href="/" class="header-logo">Enabled<span class="color-highlight"> Mobile</span></a>
         <a href="#" data-menu="menu-sidebar-left-1" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
-        <a href="javascript:window.location.reload();" class="header-icon header-icon-3"><i class="fas fa-sync"></i></a>
-        <a href="?p=pageAccount" class="header-icon header-icon-4"><i class="fas fa-user"></i></a>
+        <a href="javascript:window.location.reload();" class="header-icon header-icon-4"><i class="fas fa-sync"></i></a>
+        <!-- <a href="?p=pageAccount" class="header-icon header-icon-4"><i class="fas fa-user"></i></a> -->
     </div>
