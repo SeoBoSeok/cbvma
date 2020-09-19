@@ -66,9 +66,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                         <a href="#" data-menu="menu-transaction-details" data-id="<?=$row["mb_id"]?>" data-name="<?=$row["mb_name"]?>" data-img="<?php echo $icon_file ?>" class="bg-highlight">VIEW</a>
                     </div>      
                     <?php
-                    echo "                    <script>
-                    $('#preloader').removeClass('preloader-hide');
-                </script>";
+                        echo "<script>$('#preloader').removeClass('preloader-hide');</script>";
                     }
                     ?>      
                     <div class="search-no-results disabled">
@@ -80,32 +78,18 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
         </div>    
     </div>
     <!-- End of Page Content-->
-    <?php
-        $sql = " select mb_id, mb_name, mb_email, mb_tel, mb_hp, mb_1, mb_2, mb_3, mb_4, mb_5, mb_6
-        from `{$g5['member_table']}`
-        where mb_6 = '{$_REQUEST["category"]}'";
-        // $sql .= " order by mb_no";
-
-        // $sql = " select bo_table
-        //             from `{$g5['board_table']}` a left join `{$g5['group_table']}` b on (a.gr_id=b.gr_id)
-        //             where a.bo_device <> 'pc' ";                    
-        $result = sql_query($sql);
-        for ($i=0; $row=sql_fetch_array($result); $i++) {
-            $mb_dir = substr($row['mb_id'],0,2);
-            $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($row['mb_id']).'.gif';
-        ?>
-        <div id="menu-transaction-details" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
-            <div class="menu-title"><h1></h1><p class="color-highlight"><?php echo $row["mb_2"] ?></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+    <div id="menu-transaction-details" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
+            <div class="menu-title"><h1></h1><p class="color-highlight"><?php //echo $row["mb_2"] ?></p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
             <div class="divider divider-margins mb-1 mt-3"></div>
             <div class="content">
                 <div class="row mb-0">
                     <div class="col-3">
-                        <img src="<?php echo $icon_file ?>" width="80" height="80" class="rounded-xl objectfit">
+                        <img src="<?php //echo $icon_file ?>" width="80" height="80" class="rounded-xl objectfit">
                     </div>
                     <div class="col-9 pl-4">
                         <!-- <div class="d-flex">
                             <div><p class="font-700 color-theme">지역</p></div>
-                            <div class="ml-auto"><p><?php echo $row["mb_3"] ?></p></div>
+                            <div class="ml-auto"><p><?php //echo $row["mb_3"] ?></p></div>
                         </div> -->
                         <div class="d-flex">
                             <div><p class="font-700 color-theme">회원</p></div>
@@ -113,69 +97,28 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                         </div>
                         <div class="d-flex">
                             <div><p class="font-700 color-theme">연락처</p></div>
-                            <div class="ml-auto"><p><a href="tel:<?=$row["mb_tel"] ?>"><?php echo $row["mb_tel"] ?></a></p></div>
+                            <div class="ml-auto"><p><a href="tel:"><?php //echo $row["mb_tel"] ?></a></p></div>
                         </div>
                     </div>
                 </div>
                 <div class="divider mt-3 mb-3"></div>
                 <div class="row mb-0">
                     <div class="col-6"><h4 class="font-16">근무처</h4></div>
-                    <div class="col-6"><h4 class="font-16 text-right"><?php echo $row["mb_3"] ?></h4></div>
+                    <div class="col-6"><h4 class="font-16 text-right"><?php //echo $row["mb_3"] ?></h4></div>
                     <div class="divider divider-margins w-100 mt-2 mb-2"></div>
                     <div class="col-6"><h4 class="font-16 mt-1">졸업연도</h4></div>
-                    <div class="col-6"><h4 class="font-16 text-right mt-1"><?php echo $row["mb_4"] ?> <?php echo $row["mb_5"] ?></h4></div>
+                    <div class="col-6"><h4 class="font-16 text-right mt-1"><?php //echo $row["mb_4"] ?> <?php //echo $row["mb_5"] ?></h4></div>
                     <div class="divider divider-margins w-100 mt-2 mb-2"></div>
                     <div class="col-6"><h4 class="font-16 mt-1">직위</h4></div>
-                    <div class="col-6"><h4 class="font-16 text-right mt-1 color-red2-dark"><?php echo $row["mb_2"] ?></h4></div>
+                    <div class="col-6"><h4 class="font-16 text-right mt-1 color-red2-dark"><?php //echo $row["mb_2"] ?></h4></div>
                     <div class="divider divider-margins w-100 mt-2 mb-2"></div>
                     <div class="col-6"><h4 class="font-16 mt-1">핸드폰</h4></div>
-                    <div class="col-6"><h4 class="font-16 text-right mt-1 color-green1-dark"><a href="tel:<?=$row["mb_hp"] ?>"><?php echo $row["mb_hp"] ?></a></h4></div>
+                    <div class="col-6"><h4 class="font-16 text-right mt-1 color-green1-dark"><a href="tel:<?=$row["mb_hp"] ?>"><?php //echo $row["mb_hp"] ?></a></h4></div>
                     <div class="divider divider-margins w-100 mt-2 mb-3"></div>
                     <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
                 </div>
             </div>
         </div>
-    <?php
-    }
-    ?>
-    <!-- <div id="menu-transaction" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="480" style="height: 480px; display: block;">
-        <div class="menu-title"><h1>이승근</h1><p class="color-highlight">원장</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
-        <div class="divider divider-margins mb-1 mt-3"></div>
-        <div class="content">
-            <div class="row mb-0">
-                <div class="col-3">
-                    <img src="images/profile/ko1.png" width="80" height="80" class="rounded-xl objectfit">
-                </div>
-                <div class="col-9 pl-4">
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">지역</p></div>
-                        <div class="ml-auto"><p>청주시 서원구</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">회원</p></div>
-                        <div class="ml-auto"><p>개업수의사</p></div>
-                    </div>
-                    <div class="d-flex">
-                        <div><p class="font-700 color-theme">연락처</p></div>
-                        <div class="ml-auto"><p>043-268-5677</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="divider mt-3 mb-3"></div>
-            <div class="row mb-0">
-                <div class="col-6"><h4 class="font-14">근무처</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right">고려동물메디컬센터</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">졸업연도</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1">경북대 85</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
-                <div class="col-6"><h4 class="font-14 mt-1">직위</h4></div>
-                <div class="col-6"><h4 class="font-14 text-right mt-1 color-green1-dark">원장</h4></div>
-                <div class="divider divider-margins w-100 mt-2 mb-3"></div>
-                <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-highlight rounded-sm text-uppercase font-800">close</a></div>
-            </div>
-        </div>
-    </div> -->
 <?php
     include_once(G5_THEME_MOBILE_PATH.'/cbvmatail.php');
 ?>
