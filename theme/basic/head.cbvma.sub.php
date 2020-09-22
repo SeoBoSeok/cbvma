@@ -38,7 +38,7 @@ header("Pragma: no-cache"); // HTTP/1.0
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'.PHP_EOL;
-    echo '<meta name="apple-mobile-web-app-capable" content="yes">'.PHP_EOL;
+    // echo '<meta name="apple-mobile-web-app-capable" content="yes">'.PHP_EOL;
     // echo '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">'.PHP_EOL;
     echo '<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover" />'.PHP_EOL;
 } else {
