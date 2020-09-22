@@ -1,6 +1,12 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 ?>
+<script>
+function checkingIOS() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);}
+if(checkingIOS()){
+    $('#addToHomeSidebar').data('menu', 'menu-install-pwa-ios');
+}
+</script>
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 <?php if ($is_admin == 'super') {  ?><!-- <div style='float:left; text-align:center;'>RUN TIME : <?php echo get_microtime()-$begin_time; ?><br></div> --><?php }  ?>
