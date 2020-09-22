@@ -17,8 +17,8 @@ $login_action_url = '/bbs/cbvma_login_check.php';
         <input type="text" name="mb_name" id="login_id" placeholder="이름을 입력해주세요." required class="frm_input required" maxLength="20">
         <label for="login_pw" class="cbvma-login__1">면허번호<strong class="sound_only"> 필수</strong></label>
         <input type="text" name="mb_1" id="login_pw" placeholder="면허번호를 입력해주세요." required class="frm_input required" maxLength="20">
-        <label for="login_hp" class="cbvma-login__1">휴대폰번호<strong class="sound_only"> 필수</strong></label>
-        <input type="hp" name="mb_hp" id="login_hp" placeholder="휴대폰번호를 입력해주세요." required class="frm_input required" maxLength="20">
+        <label for="login_hp" class="cbvma-login__1">휴대폰번호</label>
+        <input type="hp" name="mb_hp" id="login_hp" placeholder="휴대폰번호를 입력해주세요." class="frm_input required" maxLength="20">
         
         <div id="login_info" class="chk_box">
             <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk">
