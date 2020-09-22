@@ -412,10 +412,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <img class="rounded-l mb-3" src="app/icons/icon-128x128.png" alt="img" width="90">
             <h4 class="mt-3">홈화면에 바로가기 추가</h4>
             <p>
-                홈화면에 바로가기를 추가하실 수 있습니다.
+                홈화면에 바로가기를<br />추가하실 수 있습니다.
             </p>
-            <a href="#" class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br>
-            <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">나중에 추가</a>
+            <a href="#" class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">홈화면에 바로가기 추가</a><br>
+            <a href="#" class="pwa-dismiss close-menu text-uppercase font-900 opacity-60 font-16">나중에 추가</a>
             <div class="clear"></div>
         </div>
     </div>   
