@@ -433,7 +433,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             </p>
             <div class="clear"></div>
             <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">나중에 추가</a>
-            <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
+            <!-- <i class="fa-ios-arrow fa fa-caret-down font-40"></i> -->
         </div>
     </div>
     <!-- member-search End -->
