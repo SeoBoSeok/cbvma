@@ -186,7 +186,7 @@ box-shadow:1px 2px 5px rgba(191, 191, 191, 0.4)}
 .btn_cke_sc_close {background:#333;padding:5px;border:none;color:#fff}
 
 /* 버튼 */
-.btn {display:inline-block;padding:0 5px;height:30px;line-height:30px;border-radius:3px}
+/* .btn {display:inline-block;padding:0 5px;height:30px;line-height:30px;border-radius:3px} */
 a.btn01 {display:inline-block;background:#ddd;color:#444;text-decoration:none;vertical-align:middle}
 a.btn01:focus, a.btn01:hover {text-decoration:none}
 button.btn01 {display:inline-block;margin:0;padding:7px;border:1px solid #ccc;background:#fafafa;color:#000;text-decoration:none}
@@ -218,11 +218,11 @@ a.btn_admin:focus, a.btn_admin:hover {}
 .fix_btn {position:fixed;z-index:99;bottom:65px;right:15px;background:#3a8afd;width:50px;height:50px;color:#fff;text-align:center;border-radius:50% !important;font-size:1.8em;line-height:50px !important;-webkit-box-shadow:1px 2px 5px rgba(191, 191, 191, 0.4);
 -moz-box-shadow:1px 2px 5px rgba(191, 191, 191, 0.4);
 box-shadow:1px 2px 5px rgba(191, 191, 191, 0.4)}
-a.btn,.btn {line-height:35px;width:30px;height:35px;padding:0 5px;text-align:center;font-weight:bold;border:0;font-size:1.4em;
+/* a.btn,.btn {line-height:35px;width:30px;height:35px;padding:0 5px;text-align:center;font-weight:bold;border:0;font-size:1.4em;
 -webkit-transition:background-color 0.3s ease-out;
 -moz-transition:background-color 0.3s ease-out;
 -o-transition:background-color 0.3s ease-out;
-transition:background-color 0.3s ease-out}
+transition:background-color 0.3s ease-out} */
 
 
 /* 기본테이블 */

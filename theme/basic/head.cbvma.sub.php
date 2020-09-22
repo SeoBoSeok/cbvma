@@ -83,12 +83,12 @@ if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css?ver=<?php echo G5_JS_VER ?>">
 <!-- <link rel="stylesheet" type="text/css" href="theme/basic/css/mobile.css">
 <link rel="stylesheet" type="text/css" href="mobile/skin/board/basic/style.css"> -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
-<!-- <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js"> -->
+<link rel="manifest" href="_manifest.json" data-pwa-version="<?php echo G5_JS_VER ?>">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 <body<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?> class="theme-light <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-background="none" data-highlight="red2">

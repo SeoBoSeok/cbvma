@@ -50,7 +50,7 @@ $(document).ready(function(){
                     setTimeout(function(){
                         $('.add-to-home').addClass('add-to-home-visible add-to-home-android');
                         $('#menu-install-pwa-android, .menu-hider').addClass('menu-active')
-                    },4500);
+                    },1500);
                 }
             } else {
                 console.log('The div #menu-install-pwa-android was not found. Please add this div to show the install window')
@@ -58,6 +58,7 @@ $(document).ready(function(){
         }
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
+            console.log('beforeinstallprompt');
             e.preventDefault();
             deferredPrompt = e;
             showInstallPromotion();
@@ -90,7 +91,7 @@ $(document).ready(function(){
                     setTimeout(function(){
                         $('.add-to-home').addClass('add-to-home-visible add-to-home-ios');
                         $('#menu-install-pwa-ios, .menu-hider').addClass('menu-active');
-                    },4500);
+                    },1500);
                 };
             } else {
                 console.log('The div #menu-install-pwa-ios was not found. Please add this div to show the install window')

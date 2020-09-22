@@ -410,12 +410,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         data-menu-effect="menu-parallax">
         <div class="boxed-text-l mt-4">
             <img class="rounded-l mb-3" src="app/icons/icon-128x128.png" alt="img" width="90">
-            <h4 class="mt-3">Add Sticky on your Home Screen</h4>
+            <h4 class="mt-3">홈화면에 바로가기 추가</h4>
             <p>
-                Install Sticky on your home screen, and access it just like a regular app. It really is that simple!
+                홈화면에 바로가기를 추가하실 수 있습니다.
             </p>
             <a href="#" class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br>
-            <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">Maybe later</a>
+            <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">나중에</a>
             <div class="clear"></div>
         </div>
     </div>   
@@ -427,9 +427,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         data-menu-effect="menu-parallax">
         <div class="boxed-text-xl mt-4">
             <img class="rounded-l mb-3" src="app/icons/icon-128x128.png" alt="img" width="90">
-            <h4 class="mt-3">Add Sticky on your Home Screen</h4>
+            <h4 class="mt-3">홈화면에 바로가기 추가</h4>
             <p class="mb-0 pb-0">
-                Install Sticky on your home screen, and access it just like a regular app.  Open your Safari menu and tap "Add to Home Screen".
+                사파리로 브라우저에서 https://cbvma.kr 로 접속후 menu -> tap "홈화면에 추가". 버튼을 눌러주세요.
             </p>
             <div class="clear"></div>
             <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">Maybe later</a>
