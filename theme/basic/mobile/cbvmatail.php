@@ -165,7 +165,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         }
     ?>
     <!-- 회원수첩메뉴 Starts -->
-    <div id="member-book" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="580">
+    <div id="member-book" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="600">
         <div class="menu-title"><h1>회원 수첩</h1><p class="color-highlight">카테고리 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
