@@ -3281,8 +3281,10 @@ function login_cbvma_check($mb, $mb_name, $mb_hp)
     if($mb['mb_name'] != $mb_name)
         return false;
 
-    // if(str_replace("-","",$mb['mb_hp']) != str_replace("-","",$mb_hp))
-    //     return false;
+    if($mb_hp){
+        if(str_replace("-","",$mb['mb_hp']) != str_replace("-","",$mb_hp))
+            return false;
+    }
 
     return true;
 }
