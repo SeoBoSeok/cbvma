@@ -56,6 +56,7 @@ $(document).ready(function(){
                 console.log('The div #menu-install-pwa-android was not found. Please add this div to show the install window')
             }
         }
+        showInstallPromotion();
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
             console.log('beforeinstallprompt');
