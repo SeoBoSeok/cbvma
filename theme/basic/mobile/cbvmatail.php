@@ -125,7 +125,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     
     <!-- Be sure this is on your main visiting page, for example, the index.html page-->
     <!-- Install Prompt for Android -->
-    <div id="menu-install-pwa-android" class="menu menu-box-bottom menu-box-detached rounded-l <?php echo (!isMobile()) ? 'pc-view' : '' ?>"
+    <!-- <div id="menu-install-pwa-android" class="menu menu-box-bottom menu-box-detached rounded-l <?php echo (!isMobile()) ? 'pc-view' : '' ?>"
          data-menu-height="350" 
         data-menu-effect="menu-parallax">
         <div class="boxed-text-l mt-4">
@@ -138,10 +138,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">나중에 추가</a>
             <div class="clear"></div>
         </div>
-    </div>   
+    </div>    -->
 
     <!-- Install instructions for iOS -->
-    <div id="menu-install-pwa-ios" 
+    <!-- <div id="menu-install-pwa-ios" 
         class="menu menu-box-bottom menu-box-detached rounded-l <?php echo (!isMobile()) ? 'pc-view' : '' ?>"
          data-menu-height="320" 
         data-menu-effect="menu-parallax">
@@ -155,7 +155,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">나중에 추가</a>
             <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
         </div>
-    </div>
+    </div> -->
     <?php
         $list = array();
         $sql = "SELECT mb_6, count(mb_id) as cnt FROM cbvma.g5_member group by mb_6 order by 1 desc";
@@ -415,7 +415,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 홈화면에 바로가기를 추가하실 수 있습니다.
             </p>
             <a href="#" class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br>
-            <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">나중에</a>
+            <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">나중에 추가</a>
             <div class="clear"></div>
         </div>
     </div>   
@@ -432,7 +432,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 사파리 브라우저에서 https://cbvma.kr 로 접속후 menu -> tap "홈화면에 추가". 버튼을 눌러주세요.
             </p>
             <div class="clear"></div>
-            <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">Maybe later</a>
+            <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">나중에 추가</a>
             <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
         </div>
     </div>
