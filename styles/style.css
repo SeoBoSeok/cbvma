@@ -3685,6 +3685,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     padding-left: 40px;
     line-height: 45px;
+    border: 0px;
   }
   
   .search-box .fa-search {
