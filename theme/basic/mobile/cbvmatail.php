@@ -135,7 +135,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             충청북도 수의사회 모바일 전용 홈페이지 오픈하였습니다. 많은 관심 부탁드립니다.
             </p>
             <a href="#" class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br>
-            <!-- <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">Maybe later</a> -->
+            <a href="#" class="pwa-dismiss close-menu color-gray2-light text-uppercase font-900 opacity-60 font-10">나중에 추가</a>
             <div class="clear"></div>
         </div>
     </div>   
@@ -152,7 +152,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             충청북도 수의사회 모바일 전용 홈페이지 오픈하였습니다. 많은 관심 부탁드립니다.
             </p>
             <div class="clear"></div>
-            <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">Maybe later</a>
+            <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">나중에 추가</a>
             <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
         </div>
     </div>
