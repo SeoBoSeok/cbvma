@@ -8,8 +8,8 @@ $mb_password = trim($_POST['mb_password']);
 $mb_name     = trim($_POST['mb_name']);
 $mb_hp       = trim($_POST['mb_hp']);
 
-if (!$mb_id || !$mb_name || !$mb_hp)
-    alert('회원이름, 면허번호, 전화번호가 공백이면 안됩니다.');
+if (!$mb_id || !$mb_name)
+    alert('회원이름, 면허번호가 공백이면 안됩니다.');
 
 $mb = get_member($mb_id);
 
