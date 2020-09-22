@@ -1,10 +1,10 @@
 //Loading the Service Worker
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
+    window.addEventListener('load', function() {
+    console.log('serviceWorker');
     navigator.serviceWorker.register('_service-worker.js', {scope: ''});
   });
 }
-
 
 $(document).ready(function(){      
     'use strict'	
@@ -56,7 +56,7 @@ $(document).ready(function(){
                 console.log('The div #menu-install-pwa-android was not found. Please add this div to show the install window')
             }
         }
-        showInstallPromotion();
+        // showInstallPromotion();
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
             console.log('beforeinstallprompt');
