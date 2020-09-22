@@ -165,7 +165,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         }
     ?>
     <!-- 회원수첩메뉴 Starts -->
-    <div id="member-book" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="510">
+    <div id="member-book" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="580">
         <div class="menu-title"><h1>회원 수첩</h1><p class="color-highlight">카테고리 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -361,7 +361,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </div>
     <!-- Board Menu End -->
     <!-- member-search Start -->
-    <div id="member-search" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="510">
+    <div id="member-search" class="menu menu-box-bottom menu-box-detached rounded-m <?php echo (!isMobile()) ? 'pc-view' : '' ?>" data-menu-height="530">
         <div class="menu-title"><h1>회원검색</h1><p class="color-highlight">분류 선택</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
@@ -369,38 +369,38 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a href="?p=search&category=cbvet" class="border-0">
                     <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
                     <span>개업수의사</span>
-                    <!-- <span class="badge bg-highlight color-white"></span>
-                    <i class="fa fa-angle-right"></i> -->
+                    <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i>
                 </a>
                 <a href="?p=search&category=cbpublicofficer">
                     <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
                     <span>충청북도 공무원</span>
-                    <!-- <span class="badge bg-highlight color-white">NEW</span>
-                    <i class="fa fa-angle-right"></i> -->
+                    <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i>
                 </a>
                 <a href="?p=search&category=cbpublicofficer">
                     <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
                     <span>시도 공무원</span>
-                    <!-- <span class="badge bg-highlight color-white">NEW</span>
-                    <i class="fa fa-angle-right"></i> -->
+                    <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i>
                 </a>
                 <a href="?p=search&category=institution">
                     <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
                     <span>기타 기관</span>
-                    <!-- <span class="badge bg-highlight color-white">NEW</span>
-                    <i class="fa fa-angle-right"></i> -->
+                    <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i>
                 </a>
                 <a href="?p=search&category=education">
                     <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
                     <span>교육 기관</span>
-                    <!-- <span class="badge bg-highlight color-white">NEW</span>
-                    <i class="fa fa-angle-right"></i> -->
+                    <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i>
                 </a>
                 <a href="?p=search&category=vet">
                 <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
                     <span>일반수의사</span>
-                    <!-- <span class="badge bg-highlight color-white">NEW</span>
-                    <i class="fa fa-angle-right"></i> -->
+                    <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i>
                 </a> 
             </div>
         </div>
@@ -429,7 +429,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <img class="rounded-l mb-3" src="app/icons/icon-128x128.png" alt="img" width="90">
             <h4 class="mt-3">홈화면에 바로가기 추가</h4>
             <p class="mb-0 pb-0">
-                사파리로 브라우저에서 https://cbvma.kr 로 접속후 menu -> tap "홈화면에 추가". 버튼을 눌러주세요.
+                사파리 브라우저에서 https://cbvma.kr 로 접속후 menu -> tap "홈화면에 추가". 버튼을 눌러주세요.
             </p>
             <div class="clear"></div>
             <a href="#" class="pwa-dismiss close-menu color-highlight uppercase ultrabold opacity-80 top-25">Maybe later</a>
