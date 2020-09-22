@@ -145,6 +145,8 @@ body {
     left: 0px;
     right: 0px;
     height: 75px;
+    min-height: 75px;
+    vertical-align: middle;
     z-index: 99;
     transition: all 350ms ease;
     background-color: #FFF;
