@@ -6,7 +6,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 $login_action_url = '/bbs/cbvma_login_check.php';
 ?>
 
-<div id="mb_login" class="mbskin cbvma-login__wrapper">
+<div id="mb_login" class="mbskin cbvma-login__wrapper mb-4 pb-4">
     <h1><?php echo $g5['title'] ?></h1>
 
     <form name="flogin" action="<?php echo $login_action_url ?>" onsubmit="return flogin_submit(this);" method="post" id="flogin">
