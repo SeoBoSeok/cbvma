@@ -12,7 +12,7 @@ $login_action_url = '/bbs/cbvma_login_check.php';
     <form name="flogin" action="<?php echo $login_action_url ?>" onsubmit="return flogin_submit(this);" method="post" id="flogin">
     <input type="hidden" name="url" value="<?php echo $login_url ?>">
 
-    <div id="login_frm">
+    <div id="login_frm" class="mb-4 pb-4">
         <label for="login_id" class="cbvma-login__1">이름<strong class="sound_only"> 필수</strong></label>
         <input type="text" name="mb_name" id="login_id" placeholder="이름을 입력해주세요." required class="frm_input required" maxLength="20">
         <label for="login_pw" class="cbvma-login__1">면허번호<strong class="sound_only"> 필수</strong></label>
