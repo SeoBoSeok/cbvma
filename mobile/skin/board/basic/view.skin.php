@@ -143,7 +143,8 @@ jQuery(function($){
             if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view']) {
          ?>
             <li>
-                <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download" target="_blank">
+                <?php // var_dump($view['file'][$i]['file']) ?>
+                <a href="?p=pdfviewer&filePath=/data/file/<?=$_REQUEST['bo_table']?>/<?php echo $view['file'][$i]['file'];  ?>" class="view_file_download" target="_blank">
                     <i class="fa fa-download" aria-hidden="true"></i>
                     <strong><?php echo $view['file'][$i]['source'] ?></strong>
                     <?php echo $view['file'][$i]['content'] ?> (<?php echo $view['file'][$i]['size'] ?>)
