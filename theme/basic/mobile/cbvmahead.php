@@ -72,7 +72,7 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
                 </a>         -->
                 <!-- <a href="#" data-menu="menu-install-pwa-android" class=" btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br>
                 <a href="#" data-menu="menu-install-pwa-ios" class=" btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Add to Home Screen</a><br> -->
-                <a href="#" data-menu="menu-install-pwa-android" id="addToHomeSidebar" class=" btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">홈화면에 바로가기 추가</a>
+                <!-- <a href="#" data-menu="menu-install-pwa-android" id="addToHomeSidebar" class=" btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">홈화면에 바로가기 추가</a> -->
             </div>
         </div>
         
@@ -136,8 +136,8 @@ $icon_file = '/data/member_image/'.$mb_dir.'/'.get_mb_icon_name($member['mb_id']
     ?>
     <div id="footer-bar" class="footer-bar-1 <?php echo (!isMobile()) ? 'pc-view' : '' ?>">
         <a href="/" class="<?= (!isset($output["p"])) ? "active-nav" : ""; ?>"><i class="fa fa-home"></i><span>홈</span></a>
-        <a href="#" data-menu="board-type" class="<?= ($output["p"] == "components") ? "active-nav" : ""; ?>"><i class="fa fa-bell"></i><span>Notice</span></a>
-        <a href="#" data-menu="member-book"><i class="fa fa-users"></i><span>Member</span></a>
+        <a href="#" data-menu="board-type" class="<?= ($output["p"] == "board") ? "active-nav" : ""; ?>"><i class="fa fa-bell"></i><span>Notice</span></a>
+        <a href="#" data-menu="member-book" class="<?= (substr($output["p"], 0, 6) == "member") ? "active-nav" : ""; ?>"><i class="fa fa-users"></i><span>Member</span></a>
         <a href="#" data-menu="member-search" class="<?= ($output["p"] == "search") ? "active-nav" : ""; ?>"><i class="fa fa-search"></i><span>Search</span></a>
         <a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Settings</span></a>
     </div>

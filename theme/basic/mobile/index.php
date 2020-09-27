@@ -7,7 +7,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
 <!-- 메인화면 최신글 시작 -->
     <div class="page-content">
         <div class="single-slider owl-carousel owl-no-dots">
-            <div class="card shadow-l mb-0">
+            <div class="card shadow-l mb-0" style="border-radius: 0;">
                 <div class="card-bottom text-left pad-30 pt-30 cbvbannerfilter">
                     <h1 class="color-white font-700 mb-3 padl-20 font-35">충청북도 수의사회</h1>
                     <p class="color-white opacity-80 mb-4 padl-20 font-500">회원들과 함께 소통하고 화합하는
@@ -16,7 +16,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                 </div>
                 <img class="img-fluid gray25" src="images/pictures/main_img.jpg">
             </div>
-            <div class="card shadow-l mb-0">
+            <div class="card shadow-l mb-0" style="border-radius: 0;">
                 <div class="card-bottom text-left pad-30 pt-30 cbvbannerfilter">
                     <h1 class="color-white font-700 mb-3 padl-20 font-35">충청북도 수의사회</h1>
                     <p class="color-white opacity-80 mb-4 padl-20 font-500">회원들과 함께 소통하고 화합하는
@@ -41,13 +41,13 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
             </a>
             <a href="/?p=board&bo_table=free" class="col-3 pr-0 pl-0 cbvmainquickmenu bg-mint-dark">
                 <div class="cbvmainquickmenu_wrap pl-0">
-                    <i class="fa fa-file color-white fa-2x"  style="margin-top: 20px; margin-bottom: 8px;" ></i>
+                    <i class="fa fa-file color-white fa-2x"  style="margin-top: 20px; margin-bottom: 10px;" ></i>
                     <p>정책공지</p>
                 </div>
             </a>
             <a href="/?p=board&bo_table=notice" class="col-3 pr-0 pl-0 cbvmainquickmenu bg-dark2-light">
                 <div class="cbvmainquickmenu_wrap">
-                    <img class="" style="width: 50px; margin-top: 10px" src="images/icon04.svg">
+                    <img class="" style="width: 50px; margin-top: 10px; margin-bottom: 5px;" src="images/icon04.svg">
                     <p>회원공지</p>
                 </div>                
             </a>
