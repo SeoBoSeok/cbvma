@@ -33,19 +33,19 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
                     <p>회원리스트</p>
                 </div>
             </a>
-            <a href="#" data-menu="member-book" class="col-3 pr-0 pl-0 cbvmainquickmenu bg-yellow1-dark">
+            <a href="#" data-menu="member-search" class="col-3 pr-0 pl-0 cbvmainquickmenu bg-yellow1-dark">
                 <div class="cbvmainquickmenu_wrap">
                     <img class="width80 height60" style="margin-top: 17px; margin-bottom: 8px;" src="images/icon02.svg">
                     <p>회원검색</p>
                 </div>
             </a>
-            <a href="#" data-menu="member-book" class="col-3 pr-0 pl-0 cbvmainquickmenu bg-mint-dark">
+            <a href="/?p=board&bo_table=free" class="col-3 pr-0 pl-0 cbvmainquickmenu bg-mint-dark">
                 <div class="cbvmainquickmenu_wrap pl-0">
                     <i class="fa fa-file color-white fa-2x"  style="margin-top: 20px; margin-bottom: 8px;" ></i>
                     <p>정책공지</p>
                 </div>
             </a>
-            <a href="#" data-menu="member-book" class="col-3 pr-0 pl-0 cbvmainquickmenu bg-dark2-light">
+            <a href="/?p=board&bo_table=notice" class="col-3 pr-0 pl-0 cbvmainquickmenu bg-dark2-light">
                 <div class="cbvmainquickmenu_wrap">
                     <img class="" style="width: 50px; margin-top: 10px" src="images/icon04.svg">
                     <p>회원공지</p>
