@@ -4,6 +4,19 @@ include_once('./_common.php');
 
 auth_check($auth[$sub_menu], 'w');
 
+$_additional_fields = array(
+    "1" => "면허번호",
+    "2" => "직위",
+    "3" => "근무처",
+    "4" => "출신학교",
+    "5" => "졸업연도",
+    "6" => "분류",
+    "7" => "상세지역",
+    "8" => "",
+    "9" => "",
+    "10" => "",
+);
+
 if ($w == '')
 {
     $required_mb_id = 'required';
@@ -447,7 +460,7 @@ this.form.mb_intercept_date.value=this.form.mb_intercept_date.defaultValue; }">
 
     <?php for ($i=1; $i<=10; $i++) { ?>
     <tr>
-        <th scope="row"><label for="mb_<?php echo $i ?>">여분 필드 <?php echo $i ?></label></th>
+        <th scope="row"><label for="mb_<?php echo $i ?>"><?php echo $_additional_fields[$i] ?></label></th>
         <td colspan="3"><input type="text" name="mb_<?php echo $i ?>" value="<?php echo $mb['mb_'.$i] ?>" id="mb_<?php echo $i ?>" class="frm_input" size="30" maxlength="255"></td>
     </tr>
     <?php } ?>
