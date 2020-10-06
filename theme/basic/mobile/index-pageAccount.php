@@ -117,11 +117,11 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                     <select class="form-control" name="mb_6">
                         <option value="default" disabled>선택하기</option>
                         <option value="cbvet" <?php echo ($member["mb_6"] == "cbvet") ? "selected" : null; ?>>개업수의사</option>
-                        <option value="cbpublicofficer">충정북도 공무원</option>
-                        <option value="publicofficer">시군 공무원</option>
-                        <option value="institution">기타 기관</option>
-                        <option value="education">교육 기관</option>
-                        <option value="vet">수의사</option>
+                        <option value="cbpublicofficer" <?php echo ($member["mb_6"] == "cbpublicofficer") ? "selected" : null; ?>>충정북도 공무원</option>
+                        <option value="publicofficer" <?php echo ($member["mb_6"] == "publicofficer") ? "selected" : null; ?>>시군 공무원</option>
+                        <option value="institution" <?php echo ($member["mb_6"] == "institution") ? "selected" : null; ?>>기타 기관</option>
+                        <option value="education" <?php echo ($member["mb_6"] == "education") ? "selected" : null; ?>>교육 기관</option>
+                        <option value="vet" <?php echo ($member["mb_6"] == "vet") ? "selected" : null; ?>>수의사</option>
                         <!-- cbvet, cbpublicofficer, publicofficer, institution, education, vet -->
                     </select>
                 </div>

@@ -205,7 +205,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
         <th scope="row"><label for="mb_tel">전화번호</label></th>
         <td><input type="text" name="mb_tel" value="<?php echo $mb['mb_tel'] ?>" id="mb_tel" class="frm_input" size="15" maxlength="20"></td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row">본인확인방법</th>
         <td colspan="3">
             <input type="radio" name="mb_certify_case" value="ipin" id="mb_certify_ipin" <?php if($mb['mb_certify'] == 'ipin') echo 'checked="checked"'; ?>>
@@ -214,7 +214,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
             <label for="mb_certify_hp">휴대폰</label>
         </td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row">본인확인</th>
         <td>
             <input type="radio" name="mb_certify" value="1" id="mb_certify_yes" <?php echo $mb_certify_yes; ?>>
@@ -230,7 +230,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
             <label for="mb_adult_no">아니오</label>
         </td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row">주소</th>
         <td colspan="3" class="td_addr_line">
             <label for="mb_zip" class="sound_only">우편번호</label>
@@ -246,7 +246,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
             <input type="hidden" name="mb_addr_jibeon" value="<?php echo $mb['mb_addr_jibeon']; ?>"><br>
         </td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row"><label for="mb_icon">회원아이콘</label></th>
         <td colspan="3">
             <?php echo help('이미지 크기는 <strong>넓이 '.$config['cf_member_icon_width'].'픽셀 높이 '.$config['cf_member_icon_height'].'픽셀</strong>로 해주세요.') ?>
@@ -278,7 +278,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
             ?>
         </td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row">메일 수신</th>
         <td>
             <input type="radio" name="mb_mailling" value="1" id="mb_mailling_yes" <?php echo $mb_mailling_yes; ?>>
@@ -294,7 +294,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
             <label for="mb_sms_no">아니오</label>
         </td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row">정보 공개</th>
         <td colspan="3">
             <input type="radio" name="mb_open" value="1" id="mb_open_yes" <?php echo $mb_open_yes; ?>>
@@ -303,32 +303,32 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
             <label for="mb_open_no">아니오</label>
         </td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row"><label for="mb_signature">서명</label></th>
         <td colspan="3"><textarea  name="mb_signature" id="mb_signature"><?php echo $mb['mb_signature'] ?></textarea></td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row"><label for="mb_profile">자기 소개</label></th>
         <td colspan="3"><textarea name="mb_profile" id="mb_profile"><?php echo $mb['mb_profile'] ?></textarea></td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row"><label for="mb_memo">메모</label></th>
         <td colspan="3"><textarea name="mb_memo" id="mb_memo"><?php echo $mb['mb_memo'] ?></textarea></td>
     </tr>
 
     <?php if ($w == 'u') { ?>
-    <tr>
+    <tr style="display: none">
         <th scope="row">회원가입일</th>
         <td><?php echo $mb['mb_datetime'] ?></td>
         <th scope="row">최근접속일</th>
         <td><?php echo $mb['mb_today_login'] ?></td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <th scope="row">IP</th>
         <td colspan="3"><?php echo $mb['mb_ip'] ?></td>
     </tr>
     <?php if ($config['cf_use_email_certify']) { ?>
-    <tr>
+    <tr style="display: none">
         <th scope="row">인증일시</th>
         <td colspan="3">
             <?php if ($mb['mb_email_certify'] == '0000-00-00 00:00:00') { ?>
@@ -344,13 +344,13 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
     <?php } ?>
 
     <?php if ($config['cf_use_recommend']) { // 추천인 사용 ?>
-    <tr>
+    <tr style="display: none">
         <th scope="row">추천인</th>
         <td colspan="3"><?php echo ($mb['mb_recommend'] ? get_text($mb['mb_recommend']) : '없음'); // 081022 : CSRF 보안 결함으로 인한 코드 수정 ?></td>
     </tr>
     <?php } ?>
 
-    <tr>
+    <tr style="display: none">
         <th scope="row"><label for="mb_leave_date">탈퇴일자</label></th>
         <td>
             <input type="text" name="mb_leave_date" value="<?php echo $mb['mb_leave_date'] ?>" id="mb_leave_date" class="frm_input" maxlength="8">
