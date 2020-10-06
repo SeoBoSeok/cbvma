@@ -3860,13 +3860,16 @@ body {
   
   .working-hours p.p2 {
     width: 80%;
-  }
-
-  .working-hours p.p2 a {
-    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .working-hours p.p2 a {
+    /* width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
   }
 
   .working-hours p.p2.bg-red2-dark a {
@@ -6021,7 +6024,7 @@ body {
   }
 
   .font-35 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .gray25 {
@@ -6143,4 +6146,5 @@ body {
   .main-guide-file__font {
     color: white;
     font-size: 20px;
+    margin-top: 10px;
   }

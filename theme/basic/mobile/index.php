@@ -9,8 +9,8 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
         <div class="single-slider owl-carousel owl-no-dots">
             <div class="card shadow-l mb-0" style="border-radius: 0;">
                 <div class="card-bottom text-left pad-30 pt-30 cbvbannerfilter">
-                    <h1 class="color-white font-700 mb-3 padl-20 font-35">충청북도 수의사회</h1>
-                    <p class="color-white opacity-80 mb-4 padl-20 font-500">회원들과 함께 소통하고 화합하는
+                    <h1 class="color-white font-700 mb-3 padl-20 font-30">충청북도 수의사회</h1>
+                    <p class="color-white opacity-80 mb-4 padl-20 font-500 font-15">회원들과 함께 소통하고 화합하는
                         <br>새로운 충청북도 수의사회를 희망합니다.
                     </p>
                     <a class="main-guide-file" href="https://cbvma.kr/?p=pdfviewer&filePath=/data/file/free/2077742899_gzLihc0p_fab755b00a384b89c2b50e7e0fe370de5d21c6b2.pdf" target="_blank"><i class="far fa-3x fa-file-pdf"><p class="main-guide-file__font">이용방법</p></i></a>
@@ -19,8 +19,8 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
             </div>
             <div class="card shadow-l mb-0" style="border-radius: 0;">
                 <div class="card-bottom text-left pad-30 pt-30 cbvbannerfilter">
-                    <h1 class="color-white font-700 mb-3 padl-20 font-35">충청북도 수의사회</h1>
-                    <p class="color-white opacity-80 mb-4 padl-20 font-500">회원들과 함께 소통하고 화합하는
+                    <h1 class="color-white font-700 mb-3 padl-20 font-30">충청북도 수의사회</h1>
+                    <p class="color-white opacity-80 mb-4 padl-20 font-500 font-15">회원들과 함께 소통하고 화합하는
                         <br>새로운 충청북도 수의사회를 희망합니다.
                     </p>
                     <a class="main-guide-file" href="https://cbvma.kr/?p=pdfviewer&filePath=/data/file/free/2077742899_gzLihc0p_fab755b00a384b89c2b50e7e0fe370de5d21c6b2.pdf" target="_blank"><i class="far fa-3x fa-file-pdf"><p class="main-guide-file__font">이용방법</p></i></a>
