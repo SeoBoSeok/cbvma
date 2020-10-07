@@ -34,7 +34,7 @@ $mb_zip1 = substr($_POST['mb_zip'], 0, 3);
 $mb_zip2 = substr($_POST['mb_zip'], 3);
 
 $mb_email = isset($_POST['mb_email']) ? get_email_address(trim($_POST['mb_email'])) : '';
-$mb_nick = isset($_POST['mb_nick']) ? trim(strip_tags($_POST['mb_nick'])) : '';
+$mb_nick = isset($_POST['mb_id']) ? trim(strip_tags($_POST['mb_id'])) : '';
 
 if ($msg = valid_mb_nick($mb_nick))     alert($msg, "", true, true);
 
