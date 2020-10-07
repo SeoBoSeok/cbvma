@@ -14,7 +14,7 @@ $_section = array(
     "polist_8" => "진천군",
     "polist_9" => "괴산군",
     "polist_10" =>"음성군",
-    "polist_11" =>"단양군",
+    "polist_11" =>"담양군",
 );
 // include_once(G5_THEME_MOBILE_PATH.'/head.php');
 include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');

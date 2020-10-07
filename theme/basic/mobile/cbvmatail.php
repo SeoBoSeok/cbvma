@@ -180,7 +180,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a data-menu="menu-chungjusi" href="#" class="border-0">
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>충주시,기타군 수의사</span>
-                    <!-- <strong>보은군, 옥천군, 영동군, 증평군, 진천군, 괴산군, 음성군, 단양군</strong> -->
+                    <!-- <strong>보은군, 옥천군, 영동군, 증평군, 진천군, 괴산군, 음성군, 담양군</strong> -->
                     <span class="badge bg-highlight color-white">50</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
@@ -253,7 +253,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a href="?p=member-chungju&category=jincheon"><i class="body-magenta3"></i><span class="color-magenta3-dark">진천군</span></a>
                 <a href="?p=member-chungju&category=goesan"><i class="body-yellow3"></i><span class="color-yellow3-dark">괴산군</span></a>
                 <a href="?p=member-chungju&category=eumseong"><i class="body-magenta3"></i><span class="color-magenta3-dark">음성군</span></a>
-                <a href="?p=member-chungju&category=danyang"><i class="body-yellow3"></i><span class="color-yellow3-dark">단양군</span></a>
+                <a href="?p=member-chungju&category=danyang"><i class="body-yellow3"></i><span class="color-yellow3-dark">담양군</span></a>
                 <div class="clearfix"></div>
             </div>
             <a href="#" data-menu="member-book" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4 mb-4">Back to Settings</a>
@@ -300,7 +300,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a href="?p=member-publicofficer&category=polist_8"><i class="body-magenta3"></i><span class="color-magenta3-dark">진천군</span></a>
                 <a href="?p=member-publicofficer&category=polist_9"><i class="body-yellow3"></i><span class="color-yellow3-dark">괴산군</span></a>
                 <a href="?p=member-publicofficer&category=polist_10"><i class="body-magenta3"></i><span class="color-magenta3-dark">음성군</span></a>
-                <a href="?p=member-publicofficer&category=polist_11"><i class="body-yellow3"></i><span class="color-yellow3-dark">단양군</span></a>
+                <a href="?p=member-publicofficer&category=polist_11"><i class="body-yellow3"></i><span class="color-yellow3-dark">담양군</span></a>
                 <div class="clearfix"></div>
             </div>
             <a href="#" data-menu="member-book" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4 mb-4">Back to Settings</a>
