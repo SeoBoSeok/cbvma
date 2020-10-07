@@ -65,6 +65,10 @@ $sql = " select * {$sql_common} {$sql_search} {$sql_order} limit {$from_record},
 $result = sql_query($sql);
 
 $colspan = 16;
+
+// 회원이미지 경로
+$mb_img_path = G5_DATA_PATH.'/member_image/'.substr($member['mb_id'],0,2).'/'.get_mb_icon_name($member['mb_id']).'.gif';
+$mb_img_url  = G5_DATA_URL.'/member_image/'.substr($member['mb_id'],0,2).'/'.get_mb_icon_name($member['mb_id']).'.gif';
 ?>
 
 <div class="local_ov01 local_ov">
@@ -78,17 +82,17 @@ $colspan = 16;
 
 <label for="sfl" class="sound_only">검색대상</label>
 <select name="sfl" id="sfl">
-    <option value="mb_id"<?php echo get_selected($_GET['sfl'], "mb_id"); ?>>회원아이디</option>
-    <option value="mb_nick"<?php echo get_selected($_GET['sfl'], "mb_nick"); ?>>닉네임</option>
+    <option value="mb_id"<?php echo get_selected($_GET['sfl'], "mb_id"); ?>>면허번호</option>
+    <!-- <option value="mb_nick"<?php //echo get_selected($_GET['sfl'], "mb_nick"); ?>>닉네임</option> -->
     <option value="mb_name"<?php echo get_selected($_GET['sfl'], "mb_name"); ?>>이름</option>
-    <option value="mb_level"<?php echo get_selected($_GET['sfl'], "mb_level"); ?>>권한</option>
+    <!-- <option value="mb_level"<?php //echo get_selected($_GET['sfl'], "mb_level"); ?>>권한</option> -->
     <option value="mb_email"<?php echo get_selected($_GET['sfl'], "mb_email"); ?>>E-MAIL</option>
     <option value="mb_tel"<?php echo get_selected($_GET['sfl'], "mb_tel"); ?>>전화번호</option>
     <option value="mb_hp"<?php echo get_selected($_GET['sfl'], "mb_hp"); ?>>휴대폰번호</option>
-    <option value="mb_point"<?php echo get_selected($_GET['sfl'], "mb_point"); ?>>포인트</option>
-    <option value="mb_datetime"<?php echo get_selected($_GET['sfl'], "mb_datetime"); ?>>가입일시</option>
-    <option value="mb_ip"<?php echo get_selected($_GET['sfl'], "mb_ip"); ?>>IP</option>
-    <option value="mb_recommend"<?php echo get_selected($_GET['sfl'], "mb_recommend"); ?>>추천인</option>
+    <!-- <option value="mb_point"<?php //echo get_selected($_GET['sfl'], "mb_point"); ?>>포인트</option> -->
+    <!-- <option value="mb_datetime"<?php //echo get_selected($_GET['sfl'], "mb_datetime"); ?>>가입일시</option> -->
+    <!-- <option value="mb_ip"<?php //echo get_selected($_GET['sfl'], "mb_ip"); ?>>IP</option> -->
+    <!-- <option value="mb_recommend"<?php //echo get_selected($_GET['sfl'], "mb_recommend"); ?>>추천인</option> -->
 </select>
 <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
 <input type="text" name="stx" value="<?php echo $stx ?>" id="stx" required class="required frm_input">
@@ -133,7 +137,7 @@ $colspan = 16;
     </tr>
     <tr>
         <th scope="col" id="mb_list_name"><?php echo subject_sort_link('mb_name') ?>이름</a></th>
-        <th scope="col" id="mb_list_nick"><?php echo subject_sort_link('mb_nick') ?>닉네임</a></th>
+        <th scope="col" id="mb_list_nick"><?php echo subject_sort_link('mb_nick') ?>면허번호</a></th>
         <th scope="col" id="mb_list_sms"><?php echo subject_sort_link('mb_sms', '', 'desc') ?>SMS수신</a></th>
         <th scope="col" id="mb_list_adultc"><?php echo subject_sort_link('mb_adult', '', 'desc') ?>성인인증</a></th>
         <th scope="col" id="mb_list_auth"><?php echo subject_sort_link('mb_intercept_date', '', 'desc') ?>접근차단</a></th>
@@ -236,10 +240,11 @@ $colspan = 16;
             ?>
         </td>
         <td headers="mb_list_cert"  rowspan="2" class="td_mbcert">
-            <input type="radio" name="mb_certify[<?php echo $i; ?>]" value="ipin" id="mb_certify_ipin_<?php echo $i; ?>" <?php echo $row['mb_certify']=='ipin'?'checked':''; ?>>
-            <label for="mb_certify_ipin_<?php echo $i; ?>">아이핀</label><br>
-            <input type="radio" name="mb_certify[<?php echo $i; ?>]" value="hp" id="mb_certify_hp_<?php echo $i; ?>" <?php echo $row['mb_certify']=='hp'?'checked':''; ?>>
-            <label for="mb_certify_hp_<?php echo $i; ?>">휴대폰</label>
+            <img src="<?php echo $mb_img_url; ?>" />
+            <!-- <input type="radio" name="mb_certify[<?php //echo $i; ?>]" value="ipin" id="mb_certify_ipin_<?php //echo $i; ?>" <?php //echo $row['mb_certify']=='ipin'?'checked':''; ?>>
+            <label for="mb_certify_ipin_<?php //echo $i; ?>">아이핀</label><br>
+            <input type="radio" name="mb_certify[<?php //echo $i; ?>]" value="hp" id="mb_certify_hp_<?php //echo $i; ?>" <?php //echo $row['mb_certify']=='hp'?'checked':''; ?>>
+            <label for="mb_certify_hp_<?php //echo $i; ?>">휴대폰</label> -->
         </td>
         <td headers="mb_list_mailc"><?php echo preg_match('/[1-9]/', $row['mb_email_certify'])?'<span class="txt_true">Yes</span>':'<span class="txt_false">No</span>'; ?></td>
         <td headers="mb_list_open">
