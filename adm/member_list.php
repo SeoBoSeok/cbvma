@@ -240,7 +240,7 @@ $mb_img_url  = G5_DATA_URL.'/member_image/'.substr($member['mb_id'],0,2).'/'.get
             ?>
         </td>
         <td headers="mb_list_cert"  rowspan="2" class="td_mbcert">
-            <img src="<?php echo $mb_img_url; ?>" />
+            <img src="<?php echo G5_DATA_URL.'/member_image/'.substr($row['mb_id'],0,2).'/'.get_mb_icon_name($row['mb_id']).'.gif'; ?>" width=80 height=80 />
             <!-- <input type="radio" name="mb_certify[<?php //echo $i; ?>]" value="ipin" id="mb_certify_ipin_<?php //echo $i; ?>" <?php //echo $row['mb_certify']=='ipin'?'checked':''; ?>>
             <label for="mb_certify_ipin_<?php //echo $i; ?>">아이핀</label><br>
             <input type="radio" name="mb_certify[<?php //echo $i; ?>]" value="hp" id="mb_certify_hp_<?php //echo $i; ?>" <?php //echo $row['mb_certify']=='hp'?'checked':''; ?>>
