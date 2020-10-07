@@ -272,10 +272,10 @@ $colspan = 16;
         <td headers="mb_list_nick" class="td_name sv_use"><div><?php echo $mb_nick ?></div></td>
         
         <td headers="mb_list_sms">
-            <?php echo $row['mb_5']; ?>
+            <?php echo $row['mb_3']; ?>
         </td>
         <td headers="mb_list_adultc">
-            <?php echo $row['mb_7']; ?>
+            <?php echo $row['mb_2']; ?>
         </td>
         <td headers="mb_list_deny">
             <?php if(empty($row['mb_leave_date'])){ ?>
