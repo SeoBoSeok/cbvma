@@ -67,8 +67,53 @@ $result = sql_query($sql);
 $colspan = 16;
 
 // 근무처
-
+$_mb6 = array(
+    'cbvet' => '개업수의사', 'cbpublicofficer' => '충청북도 공무원', 'publicofficer' => '시군공무원', 'institution' => '기타기관', 'education' => '교육기관', 'vet' => '수의사'
+);
 // 직위
+$_mb7 = array(
+    "polist_1" => "청주시",
+    "polist_2" => "충주시",
+    "polist_3" => "제천시",
+    "polist_4" => "보은군",
+    "polist_5" => "옥천군",
+    "polist_6" => "영동군",
+    "polist_7" => "증평군",
+    "polist_8" => "진천군",
+    "polist_9" => "괴산군",
+    "polist_10" =>"음성군",
+    "polist_11" =>"담양군",
+    "vet_1" => "일반수의사",
+    "vet_2" => "공수의사",
+    "ins_1" => "식품의약품안전처",
+    "ins_2" => "질병관리본부",
+    "ins_3" => "한국생명공학연구원",
+    "ins_4" => "한국식품안전관리인증원",
+    "chungjusi" => "청주시",
+    "jecheon" => "제천시",
+    "boeun" => "보은군",
+    "okcheon" => "옥천군",
+    "youngdong" => "영동군",
+    "jeungpyeong" => "증평군",
+    "jincheon" => "진천군",
+    "goesan" => "괴산군",
+    "eumseong" => "음성군",
+    "danyang" => "담양군",
+    "sangdang" => "상당구",
+    "seowon" => "서원구",
+    "cheongwon" => "청원구",
+    "heungdeok" => "흥덕구",
+    "cbpolist_1" => "도청 동물방역과",
+    "cbpolist_2" => "도청 축수산과",
+    "cbpolist_3" => "동물위생시험소 방역과",
+    "cbpolist_4" => "동물위생시험소 축산물검사과",
+    "cbpolist_5" => "동물위생시험소 중부지소",
+    "cbpolist_6" => "동물위생시험소 남부지소",
+    "cbpolist_7" => "동물위생시험소 북부지소",
+    "cbpolist_8" => "동물위생시험소 음성축산물검사소",
+    "cbpolist_9" => "충청북도 보건환경연구원",
+    "edu_1" => '교육기관'
+);
 ?>
 
 <div class="local_ov01 local_ov">
@@ -128,7 +173,7 @@ $colspan = 16;
         <th scope="col" rowspan="2" id="mb_list_cert"><?php echo subject_sort_link('mb_certify', '', 'desc') ?>본인확인</a></th>
         <th scope="col" id="mb_list_mailc"><?php echo subject_sort_link('mb_email_certify', '', 'desc') ?>출신학교</a></th>
         <th scope="col" id="mb_list_open"><?php echo subject_sort_link('mb_open', '', 'desc') ?>근무처</a></th>
-        <th scope="col" id="mb_list_mailr"><?php echo subject_sort_link('mb_mailling', '', 'desc') ?>메일수신</a></th>
+        <th scope="col" id="mb_list_mailr"><?php echo subject_sort_link('mb_mailling', '', 'desc') ?>대분류</a></th>
         <th scope="col" id="mb_list_auth">상태</th>
         <th scope="col" id="mb_list_mobile">휴대폰</th>
         <th scope="col" id="mb_list_lastcall"><?php echo subject_sort_link('mb_today_login', '', 'desc') ?>최종접속</a></th>
@@ -140,7 +185,7 @@ $colspan = 16;
         <th scope="col" id="mb_list_nick"><?php echo subject_sort_link('mb_nick') ?>면허번호</a></th>
         <th scope="col" id="mb_list_sms"><?php echo subject_sort_link('mb_sms', '', 'desc') ?>졸업연도</a></th>
         <th scope="col" id="mb_list_adultc"><?php echo subject_sort_link('mb_adult', '', 'desc') ?>직위</a></th>
-        <th scope="col" id="mb_list_auth"><?php echo subject_sort_link('mb_intercept_date', '', 'desc') ?>접근차단</a></th>
+        <th scope="col" id="mb_list_auth"><?php echo subject_sort_link('mb_intercept_date', '', 'desc') ?>소분류</a></th>
         <th scope="col" id="mb_list_deny"><?php echo subject_sort_link('mb_level', '', 'desc') ?>권한</a></th>
         <th scope="col" id="mb_list_tel">전화번호</th>
         <th scope="col" id="mb_list_join"><?php echo subject_sort_link('mb_datetime', '', 'desc') ?>가입일</a></th>
@@ -253,8 +298,7 @@ $colspan = 16;
             <?php echo $row['mb_3']; ?>
         </td>
         <td headers="mb_list_mailr">
-            <label for="mb_mailling_<?php echo $i; ?>" class="sound_only">메일수신</label>
-            <input type="checkbox" name="mb_mailling[<?php echo $i; ?>]" <?php echo $row['mb_mailling']?'checked':''; ?> value="1" id="mb_mailling_<?php echo $i; ?>">
+        <?php echo $_mb6[$row['mb_6']]; ?>
         </td>
         <td headers="mb_list_auth" class="td_mbstat">
             <?php
@@ -278,10 +322,7 @@ $colspan = 16;
             <?php echo $row['mb_2']; ?>
         </td>
         <td headers="mb_list_deny">
-            <?php if(empty($row['mb_leave_date'])){ ?>
-            <input type="checkbox" name="mb_intercept_date[<?php echo $i; ?>]" <?php echo $row['mb_intercept_date']?'checked':''; ?> value="<?php echo $intercept_date ?>" id="mb_intercept_date_<?php echo $i ?>" title="<?php echo $intercept_title ?>">
-            <label for="mb_intercept_date_<?php echo $i; ?>" class="sound_only">접근차단</label>
-            <?php } ?>
+            <?php echo $_mb7[$row['mb_7']]; ?>
         </td>
         <td headers="mb_list_auth" class="td_mbstat">
             <?php echo get_member_level_select("mb_level[$i]", 1, $member['mb_level'], $row['mb_level']) ?>
