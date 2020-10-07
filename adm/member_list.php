@@ -250,7 +250,7 @@ $colspan = 16;
             <?php echo $row['mb_4']; ?>
         </td>
         <td headers="mb_list_open">
-            <?php echo $row['mb_6']; ?>
+            <?php echo $row['mb_3']; ?>
         </td>
         <td headers="mb_list_mailr">
             <label for="mb_mailling_<?php echo $i; ?>" class="sound_only">메일수신</label>
@@ -272,7 +272,7 @@ $colspan = 16;
         <td headers="mb_list_nick" class="td_name sv_use"><div><?php echo $mb_nick ?></div></td>
         
         <td headers="mb_list_sms">
-            <?php echo $row['mb_3']; ?>
+            <?php echo $row['mb_5']; ?>
         </td>
         <td headers="mb_list_adultc">
             <?php echo $row['mb_2']; ?>
