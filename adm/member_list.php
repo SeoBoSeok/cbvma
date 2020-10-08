@@ -5,9 +5,14 @@ include_once('./_common.php');
 auth_check($auth[$sub_menu], 'r');
 
 $sql_common = " from {$g5['member_table']} ";
-
+$_mb6_reverse = array(
+    '개업수의사' => 'cbvet', '충청북도 공무원' => 'cbpublicofficer', '시군공무원' => 'publicofficer', '기타기관' => 'institution', '교육기관' => 'education', '수의사' => 'vet'
+);
 $sql_search = " where (1) ";
 if ($stx) {
+    if($sfl == "mb_6") {
+        $stx = $_mb6_reverse[$stx];
+    }
     $sql_search .= " and ( ";
     switch ($sfl) {
         case 'mb_point' :
@@ -131,6 +136,7 @@ $_mb7 = array(
     <!-- <option value="mb_nick"<?php //echo get_selected($_GET['sfl'], "mb_nick"); ?>>닉네임</option> -->
     <option value="mb_name"<?php echo get_selected($_GET['sfl'], "mb_name"); ?>>이름</option>
     <!-- <option value="mb_level"<?php //echo get_selected($_GET['sfl'], "mb_level"); ?>>권한</option> -->
+    <option value="mb_6"<?php echo get_selected($_GET['sfl'], "mb_6"); ?>>대분류</option>
     <option value="mb_email"<?php echo get_selected($_GET['sfl'], "mb_email"); ?>>E-MAIL</option>
     <option value="mb_tel"<?php echo get_selected($_GET['sfl'], "mb_tel"); ?>>전화번호</option>
     <option value="mb_hp"<?php echo get_selected($_GET['sfl'], "mb_hp"); ?>>휴대폰번호</option>
@@ -140,7 +146,7 @@ $_mb7 = array(
     <!-- <option value="mb_recommend"<?php //echo get_selected($_GET['sfl'], "mb_recommend"); ?>>추천인</option> -->
 </select>
 <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
-<input type="text" name="stx" value="<?php echo $stx ?>" id="stx" required class="required frm_input">
+<input type="text" name="stx" value="<?php echo ($_GET['sfl'] == 'mb_6') ? $_mb6[$stx] : $stx; ?>" id="stx" required class="required frm_input">
 <input type="submit" class="btn_submit" value="검색">
 
 </form>
