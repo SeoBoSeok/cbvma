@@ -132,9 +132,9 @@ $_mb7 = array(
 
 <label for="sfl" class="sound_only">검색대상</label>
 <select name="sfl" id="sfl">
+    <option value="mb_name"<?php echo get_selected($_GET['sfl'], "mb_name"); ?>>이름</option>
     <option value="mb_id"<?php echo get_selected($_GET['sfl'], "mb_id"); ?>>면허번호</option>
     <!-- <option value="mb_nick"<?php //echo get_selected($_GET['sfl'], "mb_nick"); ?>>닉네임</option> -->
-    <option value="mb_name"<?php echo get_selected($_GET['sfl'], "mb_name"); ?>>이름</option>
     <!-- <option value="mb_level"<?php //echo get_selected($_GET['sfl'], "mb_level"); ?>>권한</option> -->
     <option value="mb_6"<?php echo get_selected($_GET['sfl'], "mb_6"); ?>>대분류</option>
     <option value="mb_email"<?php echo get_selected($_GET['sfl'], "mb_email"); ?>>E-MAIL</option>
