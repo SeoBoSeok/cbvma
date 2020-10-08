@@ -264,7 +264,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
     </tr>
     <tr>
         <th scope="row"><label for="mb_img">회원이미지</label></th>
-        <td colspan="3">
+        <td colspan="3" style="position: relative;">
             <?php echo help('이미지 크기는 <strong>넓이 '.$config['cf_member_img_width'].'픽셀 높이 '.$config['cf_member_img_height'].'픽셀</strong>로 해주세요.') ?>
             <input type="file" name="mb_img" id="mb_img">
             <?php
@@ -275,6 +275,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
                 echo '<img src="'.$icon_url.'" alt="">';
                 echo '<input type="checkbox" id="del_mb_img" name="del_mb_img" value="1">삭제';
             }
+            echo '<span style="position:absolute;right: 0;color:red;font-size:15px;">!!회원이미지 교체시 기존 이미지 삭제를 체크하고<br>이미지 파일을 등록해주세요.</span>';
             ?>
         </td>
     </tr>
