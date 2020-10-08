@@ -181,7 +181,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     <i class="fa font-14 fa-tint bg-green1-dark rounded-s"></i>
                     <span>충주시,기타군 수의사</span>
                     <!-- <strong>보은군, 옥천군, 영동군, 증평군, 진천군, 괴산군, 음성군, 담양군</strong> -->
-                    <span class="badge bg-highlight color-white">50</span>
+                    <span class="badge bg-highlight color-white"><?=$list[4]["cnt"] ?></span>
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="menu-cbpublicofficer" href="#" class="border-0">
