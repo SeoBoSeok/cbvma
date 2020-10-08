@@ -319,7 +319,7 @@ $_mb7 = array(
     </tr>
     <tr class="<?php echo $bg; ?>">
         <td headers="mb_list_name" class="td_mbname"><?php echo get_text($row['mb_name']); ?></td>
-        <td headers="mb_list_nick" class="td_name sv_use"><div><?php echo $mb_nick ?></div></td>
+        <td headers="mb_list_nick" class="td_name sv_use"><div><?php echo $row["mb_1"] ?></div></td>
         
         <td headers="mb_list_sms">
             <?php echo $row['mb_5']; ?>
