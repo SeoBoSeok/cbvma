@@ -35,6 +35,9 @@ header("Pragma: no-cache"); // HTTP/1.0
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'.PHP_EOL;
