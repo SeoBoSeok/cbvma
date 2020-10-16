@@ -13,7 +13,7 @@ $_section = array(
     "jincheon" => "진천군",
     "goesan" => "괴산군",
     "eumseong" => "음성군",
-    "danyang" => "담양군",
+    "danyang" => "단양군",
 );
 // include_once(G5_THEME_MOBILE_PATH.'/head.php');
 include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');

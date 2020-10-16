@@ -394,7 +394,7 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
                         </div>
                         <div class="fac fac-radio fac-default mb-1"><span></span>
                             <input id="box14-fac-radio" type="radio" name="mb_7" value="danyang">
-                            <label for="box14-fac-radio">담양군</label>
+                            <label for="box14-fac-radio">단양군</label>
                         </div>                      
                     </div>
                 </div>
@@ -464,7 +464,7 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
                         </div>
                         <div class="fac fac-radio fac-default mb-1"><span></span>
                             <input id="box34-fac-radio" type="radio" name="mb_7" value="polist_11">
-                            <label for="box34-fac-radio">담양군</label>
+                            <label for="box34-fac-radio">단양군</label>
                         </div>
                     </div>
                     <div class="col-6">
