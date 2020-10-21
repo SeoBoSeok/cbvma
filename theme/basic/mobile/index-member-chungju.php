@@ -14,6 +14,7 @@ $_section = array(
     "goesan" => "괴산군",
     "eumseong" => "음성군",
     "danyang" => "단양군",
+    "cbuniv" => "충북대동물병원"
 );
 // include_once(G5_THEME_MOBILE_PATH.'/head.php');
 include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');

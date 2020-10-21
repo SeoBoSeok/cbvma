@@ -233,6 +233,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a href="?p=member-cheongju&category=seowon"><i class="body-plum"></i><span class="color-plum-dark">서원구</span></a>
                 <a href="?p=member-cheongju&category=cheongwon"><i class="body-magenta3"></i><span class="color-magenta3-dark">청원구</span></a>
                 <a href="?p=member-cheongju&category=heungdeok"><i class="body-yellow3"></i><span class="color-yellow3-dark">흥덕구</span></a>
+                <a href="?p=member-cheongju&category=cbuniv"><i class="body-theme"></i><span>충북대동물병원</span></a>
                 <div class="clearfix"></div>
             </div>
             <a href="#" data-menu="member-book" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Back to Settings</a>

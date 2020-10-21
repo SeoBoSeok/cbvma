@@ -108,6 +108,7 @@ $_mb7 = array(
     "seowon" => "서원구",
     "cheongwon" => "청원구",
     "heungdeok" => "흥덕구",
+    "cbuniv" => "충북대동물병원",
     "cbpolist_1" => "도청 동물방역과",
     "cbpolist_2" => "도청 축수산과",
     "cbpolist_3" => "동물위생시험소 방역과",

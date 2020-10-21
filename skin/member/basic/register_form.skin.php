@@ -365,7 +365,11 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
                         <div class="fac fac-radio fac-default mb-1"><span></span>
                             <input id="box13-fac-radio" type="radio" name="mb_7" value="eumseong">
                             <label for="box13-fac-radio">음성군</label>
-                        </div>                                                                        
+                        </div> 
+                        <div class="fac fac-radio fac-default mb-1"><span></span>
+                            <input id="box13-fac-radio" type="radio" name="mb_7" value="cbuniv">
+                            <label for="box13-fac-radio">충북대동물병원</label>
+                        </div>                                                                       
                     </div>
                     <div class="col-6">
                         <div class="fac fac-radio fac-default mb-1"><span></span>
