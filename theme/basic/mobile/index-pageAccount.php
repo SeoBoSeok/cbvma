@@ -47,7 +47,7 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                 </div>
                 <div class="flex-grow-1">
                     <?php if (file_exists($mb_img_path)) {  ?>
-                        <img src="<?php echo $mb_img_url ?>?v=<?php echo time();?>" data-src="<?php echo $mb_img_url ?>" width="80" class="rounded-circle mt- shadow-xl preload-img">
+                        <img src="<?php echo $mb_img_url . '&v=' . time(); ?>" data-src="<?php echo $mb_img_url . '&v=' . time();?>" width="80" class="rounded-circle mt- shadow-xl preload-img">
                         <!-- <input type="checkbox" name="del_mb_img" value="1" id="del_mb_img"> -->
 	                    <!-- <label for="del_mb_img">삭제</label> -->
                     <?php } ?>
