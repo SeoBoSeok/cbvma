@@ -156,8 +156,8 @@ $register_action_url = G5_HTTPS_BBS_URL.'/cbvmaregister_form_update.php';
                             <label for="box13-fac-radio">음성군</label>
                         </div>
                         <div class="fac fac-radio fac-default mb-1"><span></span>
-                            <input id="box13-fac-radio" type="radio" name="mb_7" value="cbuniv">
-                            <label for="box13-fac-radio">충북대동물병원</label>
+                            <input id="box15-fac-radio" type="radio" name="mb_7" value="cbuniv">
+                            <label for="box15-fac-radio">충북대동물병원</label>
                         </div>                                                                        
                     </div>
                     <div class="col-6">
