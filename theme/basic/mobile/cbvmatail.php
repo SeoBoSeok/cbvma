@@ -229,10 +229,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
             <div class="background-changer">
-                <a href="?p=member-cheongju&category=sangdang"><i class="bg-theme"></i><span>상당구</span></a>
-                <a href="?p=member-cheongju&category=seowon"><i class="body-plum"></i><span class="color-plum-dark">서원구</span></a>
-                <a href="?p=member-cheongju&category=cheongwon"><i class="body-magenta3"></i><span class="color-magenta3-dark">청원구</span></a>
-                <a href="?p=member-cheongju&category=heungdeok"><i class="body-yellow3"></i><span class="color-yellow3-dark">흥덕구</span></a>
+                <a href="?p=member-cheongju&category=sangdang&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>상당구</span></a>
+                <a href="?p=member-cheongju&category=seowon&v=<?php echo time(); ?>"><i class="body-plum"></i><span class="color-plum-dark">서원구</span></a>
+                <a href="?p=member-cheongju&category=cheongwon&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">청원구</span></a>
+                <a href="?p=member-cheongju&category=heungdeok&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">흥덕구</span></a>
                 <a href="?p=member-cheongju&category=cbuniv&v=<?php echo time(); ?>"><i class="body-plum"></i><span>충북대</span></a>
                 <div class="clearfix"></div>
             </div>
@@ -245,16 +245,16 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
             <div class="background-changer">
-                <a href="?p=member-chungju&category=chungjusi"><i class="bg-theme"></i><span>충주시</span></a>
-                <a href="?p=member-chungju&category=jecheon"><i class="body-plum"></i><span class="color-plum-dark">제천시</span></a>
-                <a href="?p=member-chungju&category=boeun"><i class="body-magenta3"></i><span class="color-magenta3-dark">보은군</span></a>
-                <a href="?p=member-chungju&category=okcheon"><i class="body-yellow3"></i><span class="color-yellow3-dark">옥천군</span></a>
-                <a href="?p=member-chungju&category=youngdong"><i class="bg-theme"></i><span>영동군</span></a>
-                <a href="?p=member-chungju&category=jeungpyeong"><i class="body-plum"></i><span class="color-plum-dark">증평군</span></a>
-                <a href="?p=member-chungju&category=jincheon"><i class="body-magenta3"></i><span class="color-magenta3-dark">진천군</span></a>
-                <a href="?p=member-chungju&category=goesan"><i class="body-yellow3"></i><span class="color-yellow3-dark">괴산군</span></a>
-                <a href="?p=member-chungju&category=eumseong"><i class="body-magenta3"></i><span class="color-magenta3-dark">음성군</span></a>
-                <a href="?p=member-chungju&category=danyang"><i class="body-yellow3"></i><span class="color-yellow3-dark">단양군</span></a>
+                <a href="?p=member-chungju&category=chungjusi&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>충주시</span></a>
+                <a href="?p=member-chungju&category=jecheon&v=<?php echo time(); ?>"><i class="body-plum"></i><span class="color-plum-dark">제천시</span></a>
+                <a href="?p=member-chungju&category=boeun&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">보은군</span></a>
+                <a href="?p=member-chungju&category=okcheon&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">옥천군</span></a>
+                <a href="?p=member-chungju&category=youngdong&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>영동군</span></a>
+                <a href="?p=member-chungju&category=jeungpyeong&v=<?php echo time(); ?>"><i class="body-plum"></i><span class="color-plum-dark">증평군</span></a>
+                <a href="?p=member-chungju&category=jincheon&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">진천군</span></a>
+                <a href="?p=member-chungju&category=goesan&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">괴산군</span></a>
+                <a href="?p=member-chungju&category=eumseong&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">음성군</span></a>
+                <a href="?p=member-chungju&category=danyang&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">단양군</span></a>
                 <div class="clearfix"></div>
             </div>
             <a href="#" data-menu="member-book" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4 mb-4">Back to Settings</a>
@@ -268,17 +268,17 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
             <div class="background-changer three">
-                <a href="?p=member-cbpublicofficer&category=cbpolist_1"><i class="bg-theme"></i><span>도청 동물방역과</span></a>
-                <a href="?p=member-cbpublicofficer&category=cbpolist_2"><i class="body-plum"></i><span class="color-plum-dark">도청 축수산과</span></a>
-                <a href="?p=member-cbpublicofficer&category=cbpolist_3"><i class="body-magenta3"></i><span class="color-magenta3-dark">동물위생시험소<br>방역과</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_1&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>도청 동물방역과</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_2&v=<?php echo time(); ?>"><i class="body-plum"></i><span class="color-plum-dark">도청 축수산과</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_3&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">동물위생시험소<br>방역과</span></a>
                 <div class="clearfix"></div>
-                <a href="?p=member-cbpublicofficer&category=cbpolist_4"><i class="body-yellow3"></i><span class="color-yellow3-dark">동물위생시험소<br>축산물검사과</span></a>
-                <a href="?p=member-cbpublicofficer&category=cbpolist_5"><i class="bg-theme"></i><span>동물위생시험소<br>중부지소</span></a>
-                <a href="?p=member-cbpublicofficer&category=cbpolist_6"><i class="body-plum"></i><span class="color-plum-dark">동물위생시험소<br>남부지소</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_4&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">동물위생시험소<br>축산물검사과</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_5&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>동물위생시험소<br>중부지소</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_6&v=<?php echo time(); ?>"><i class="body-plum"></i><span class="color-plum-dark">동물위생시험소<br>남부지소</span></a>
                 <div class="clearfix"></div>
-                <a href="?p=member-cbpublicofficer&category=cbpolist_7"><i class="body-magenta3"></i><span class="color-magenta3-dark">동물위생시험소<br>북부지소</span></a>
-                <a href="?p=member-cbpublicofficer&category=cbpolist_8"><i class="body-yellow3"></i><span class="color-yellow3-dark">동물위생시험소<br>음성축산물검사소</span></a>
-                <a href="?p=member-cbpublicofficer&category=cbpolist_9"><i class="body-magenta3"></i><span class="color-magenta3-dark">충청북도<br>보건환경연구원</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_7&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">동물위생시험소<br>북부지소</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_8&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">동물위생시험소<br>음성축산물검사소</span></a>
+                <a href="?p=member-cbpublicofficer&category=cbpolist_9&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">충청북도<br>보건환경연구원</span></a>
                 <div class="clearfix"></div>
             </div>
             <a href="#" data-menu="member-book" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4 mb-4">Back to Settings</a>
@@ -291,17 +291,17 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
             <div class="background-changer">
-                <a href="?p=member-publicofficer&category=polist_1"><i class="bg-theme"></i><span>청주시</span></a>
-                <a href="?p=member-publicofficer&category=polist_2"><i class="bg-theme"></i><span>충주시</span></a>
-                <a href="?p=member-publicofficer&category=polist_3"><i class="body-plum"></i><span class="color-plum-dark">제천시</span></a>
-                <a href="?p=member-publicofficer&category=polist_4"><i class="body-magenta3"></i><span class="color-magenta3-dark">보은군</span></a>
-                <a href="?p=member-publicofficer&category=polist_5"><i class="body-yellow3"></i><span class="color-yellow3-dark">옥천군</span></a>
-                <a href="?p=member-publicofficer&category=polist_6"><i class="bg-theme"></i><span>영동군</span></a>
-                <a href="?p=member-publicofficer&category=polist_7"><i class="body-plum"></i><span class="color-plum-dark">증평군</span></a>
-                <a href="?p=member-publicofficer&category=polist_8"><i class="body-magenta3"></i><span class="color-magenta3-dark">진천군</span></a>
-                <a href="?p=member-publicofficer&category=polist_9"><i class="body-yellow3"></i><span class="color-yellow3-dark">괴산군</span></a>
-                <a href="?p=member-publicofficer&category=polist_10"><i class="body-magenta3"></i><span class="color-magenta3-dark">음성군</span></a>
-                <a href="?p=member-publicofficer&category=polist_11"><i class="body-yellow3"></i><span class="color-yellow3-dark">단양군</span></a>
+                <a href="?p=member-publicofficer&category=polist_1&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>청주시</span></a>
+                <a href="?p=member-publicofficer&category=polist_2&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>충주시</span></a>
+                <a href="?p=member-publicofficer&category=polist_3&v=<?php echo time(); ?>"><i class="body-plum"></i><span class="color-plum-dark">제천시</span></a>
+                <a href="?p=member-publicofficer&category=polist_4&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">보은군</span></a>
+                <a href="?p=member-publicofficer&category=polist_5&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">옥천군</span></a>
+                <a href="?p=member-publicofficer&category=polist_6&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>영동군</span></a>
+                <a href="?p=member-publicofficer&category=polist_7&v=<?php echo time(); ?>"><i class="body-plum"></i><span class="color-plum-dark">증평군</span></a>
+                <a href="?p=member-publicofficer&category=polist_8&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">진천군</span></a>
+                <a href="?p=member-publicofficer&category=polist_9&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">괴산군</span></a>
+                <a href="?p=member-publicofficer&category=polist_10&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">음성군</span></a>
+                <a href="?p=member-publicofficer&category=polist_11&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span class="color-yellow3-dark">단양군</span></a>
                 <div class="clearfix"></div>
             </div>
             <a href="#" data-menu="member-book" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4 mb-4">Back to Settings</a>
@@ -314,11 +314,11 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
             <div class="background-changer three">
-                <a href="?p=member-institution&category=ins_1"><i class="bg-theme"></i><span>식품의약품 안전처</span></a>
-                <a href="?p=member-institution&category=ins_2"><i class="bg-theme"></i><span>질병관리본부</span></a>
-                <a href="?p=member-institution&category=ins_3"><i class="body-plum"></i><span class="color-plum-dark">한국생명공학연구원</span></a>
+                <a href="?p=member-institution&category=ins_1&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>식품의약품 안전처</span></a>
+                <a href="?p=member-institution&category=ins_2&v=<?php echo time(); ?>"><i class="bg-theme"></i><span>질병관리본부</span></a>
+                <a href="?p=member-institution&category=ins_3&v=<?php echo time(); ?>"><i class="body-plum"></i><span class="color-plum-dark">한국생명공학연구원</span></a>
                 <div class="clearfix"></div>
-                <a href="?p=member-institution&category=ins_4"><i class="body-magenta3"></i><span class="color-magenta3-dark">한국식품안전관리인증원</span></a>
+                <a href="?p=member-institution&category=ins_4&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span class="color-magenta3-dark">한국식품안전관리인증원</span></a>
                 <div class="clearfix"></div>
             </div>
             <a href="#" data-menu="member-book" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4 mb-4">Back to Settings</a>
@@ -331,8 +331,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
             <div class="background-changer">
-                <a href="?p=member-vet&category=vet_1"><i class="body-yellow3"></i><span>일반수의사</span></a>
-                <a href="?p=member-vet&category=vet_2"><i class="body-magenta3"></i><span>공수의사</span></a>
+                <a href="?p=member-vet&category=vet_1&v=<?php echo time(); ?>"><i class="body-yellow3"></i><span>일반수의사</span></a>
+                <a href="?p=member-vet&category=vet_2&v=<?php echo time(); ?>"><i class="body-magenta3"></i><span>공수의사</span></a>
                 <div class="clearfix"></div>
             </div>
             <a href="#" data-menu="member-book" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4 mb-4">Back to Settings</a>
@@ -345,13 +345,13 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <div class="divider divider-margins mb-n2"></div>
         <div class="content">
             <div class="list-group list-custom-large">
-                <a data-menu="menu-backgrounds" href="?p=board&bo_table=free" class="border-0">
+                <a data-menu="menu-backgrounds" href="?p=board&bo_table=free&v=<?php echo time(); ?>" class="border-0">
                     <i class="fa font-12 fa-moon rounded-s bg-highlight color-white mr-3"></i>
                     <span>정책공지</span>
                     <span class="badge bg-highlight color-white">NEW</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
-                <a data-menu="menu-chungju" href="?p=board&bo_table=notice">
+                <a data-menu="menu-chungju" href="?p=board&bo_table=notice&v=<?php echo time(); ?>">
                     <i class="fa font-16 fa-tint bg-green1-dark rounded-s"></i>
                     <span>회원공지</span>
                     <span class="badge bg-highlight color-white">NEW</span>

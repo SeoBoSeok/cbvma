@@ -272,7 +272,7 @@ add_javascript(G5_POSTCODE_JS, 0);    //다음 주소 js
             $icon_file = G5_DATA_PATH.'/member_image/'.$mb_dir.'/'.get_mb_icon_name($mb['mb_id']).'.gif';
             if (file_exists($icon_file)) {
                 $icon_url = str_replace(G5_DATA_PATH, G5_DATA_URL, $icon_file);
-                echo '<img src="'.$icon_url.'" alt="">';
+                echo '<img src="'.$icon_url.'?v='.time().'" alt="">';
                 echo '<input type="checkbox" id="del_mb_img" name="del_mb_img" value="1">삭제';
             }
             echo '<span style="position:absolute;right: 0;color:red;font-size:15px;">!!회원이미지 교체시 기존 이미지 삭제를 체크하고<br>이미지 파일을 등록해주세요.</span>';
