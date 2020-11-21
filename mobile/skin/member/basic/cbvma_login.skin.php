@@ -21,10 +21,10 @@ $login_action_url = '/bbs/cbvma_login_check.php';
         <input type="hp" name="mb_hp" id="login_hp" placeholder="휴대폰번호를 입력해주세요." class="frm_input required" maxLength="20">
         
         <div id="login_info" class="chk_box">
-            <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk">
+            <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk" checked>
             <label for="login_auto_login"><span></span> 자동로그인</label>
         </div>
-		<button type="submit" class="btn_submit">로그인</button>
+		<button type="submit" class=    "btn_submit">로그인</button>
     </div>
 
     <?php
