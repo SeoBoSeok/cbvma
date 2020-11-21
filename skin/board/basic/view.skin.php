@@ -229,16 +229,16 @@ $(function() {
             return false;
         }
 
-        var msg = "파일을 다운로드 하시면 포인트가 차감(<?php echo number_format($board['bo_download_point']) ?>점)됩니다.\n\n포인트는 게시물당 한번만 차감되며 다음에 다시 다운로드 하셔도 중복하여 차감하지 않습니다.\n\n그래도 다운로드 하시겠습니까?";
+        // var msg = "파일을 다운로드 하시면 포인트가 차감(<?php //echo number_format($board['bo_download_point']) ?>점)됩니다.\n\n포인트는 게시물당 한번만 차감되며 다음에 다시 다운로드 하셔도 중복하여 차감하지 않습니다.\n\n그래도 다운로드 하시겠습니까?";
 
-        if(confirm(msg)) {
-            var href = $(this).attr("href")+"&js=on";
-            $(this).attr("href", href);
+        // if(confirm(msg)) {
+        //     var href = $(this).attr("href")+"&js=on";
+        //     $(this).attr("href", href);
 
-            return true;
-        } else {
-            return false;
-        }
+        //     return true;
+        // } else {
+        //     return false;
+        // }
     });
 });
 <?php } ?>

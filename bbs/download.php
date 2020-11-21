@@ -94,14 +94,21 @@ $g5['title'] = '다운로드 &gt; '.conv_subject($write['wr_subject'], 255);
 
 if(preg_match("/[\xA1-\xFE][\xA1-\xFE]/", $file['bf_source'])){
     // 2015.09.02 날짜의 파이어폭스에서 인코딩된 문자 그대로 출력되는 문제가 발생됨, 2018.12.11 날짜의 파이어폭스에서는 해당 현상이 없으므로 해당 코드를 사용 안합니다.
-    $original = iconv('utf-8', 'euc-kr', $file['bf_source']); // SIR 잉끼님 제안코드
+    // $original = iconv('utf-8', 'euc-kr', $file['bf_source']); // SIR 잉끼님 제안코드
+    // $original = iconv('UTF-8', 'EUC-KR', $file['bf_source']);
+    $original = $file['bf_source'];
 } else {
     $original = urlencode($file['bf_source']);
 }
-// $original = ($file['bf_source']);
+
+// $original = iconv('UTF-8', 'EUC-KR', $file['bf_source']);
+// echo iconv('EUC-KR', 'UTF-8', $file['bf_source']);
 
 // echo '1111';
+// print_r($original = iconv('utf-8', 'euc-kr', $file['bf_source']));
+// print_r(urlencode($file['bf_source']));
 // print_r($original);
+// echo $original;
 // exit();
 
 @include_once($board_skin_path.'/download.tail.skin.php');
@@ -126,6 +133,8 @@ if(preg_match("/msie/i", $_SERVER['HTTP_USER_AGENT']) && preg_match("/5\.5/", $_
 }
 header("pragma: no-cache");
 header("expires: 0");
+ob_clean();
+// exit();
 flush();
 
 $fp = fopen($filepath, 'rb');
