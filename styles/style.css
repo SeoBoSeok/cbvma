@@ -144,8 +144,8 @@ body {
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 75px;
-    min-height: 75px;
+    height: 60px;
+    min-height: 60px;
     vertical-align: middle;
     z-index: 99;
     transition: all 350ms ease;
@@ -176,10 +176,10 @@ body {
   
   .header .header-icon {
     position: absolute;
-    height: 75px;
+    height: 60px;
     width: 50px;
     text-align: center;
-    line-height: 74px;
+    line-height: 60px;
     font-size: 18px;
     color: #1f1f1f;
     border: none;
@@ -343,9 +343,9 @@ body {
   .header-logo-center .header-logo {
     background-position: center center;
     background-size: 75%;
-    width: 300px !important;
+    width: 260px !important;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -130px;
     text-align: center;
   }
   
