@@ -25,7 +25,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b03 btn" title="글쓰기"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</a></li><?php } ?>
 	
 	<li>
-		<button type="button" class="btn_more_opt btn_b03 btn is_view_btn" title="게시판 리스트 옵션"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
+		<!-- <button type="button" class="btn_more_opt btn_b03 btn is_view_btn" title="게시판 리스트 옵션"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button> -->
     	<?php ob_start(); ?>
 	    <ul class="more_opt is_view_btn">
 			<?php if ($update_href) { ?><li><a href="<?php echo $update_href ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 수정</a></li><?php } ?>
@@ -144,8 +144,13 @@ jQuery(function($){
             if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view']) {
          ?>
             <li>
-                <?php // var_dump($view['file'][$i]['file']) ?>
-                <a href="?p=pdfviewer&filePath=/data/file/<?=$_REQUEST['bo_table']?>/<?php echo $view['file'][$i]['file'];  ?>" class="view_file_download" target="_blank">
+                <?php
+                    if(pathinfo($view['file'][$i]['source'], PATHINFO_EXTENSION) == "pdf") { ?>
+                        <a href="?p=pdfviewer&filePath=/data/file/<?=$_REQUEST['bo_table']?>/<?php echo $view['file'][$i]['file'];  ?>" class="view_file_download" target="_blank">
+                    <?php } else { ?>
+                        <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download" download>
+                    <?php }
+                ?>
                     <i class="fa fa-download" aria-hidden="true"></i>
                     <strong><?php echo $view['file'][$i]['source'] ?></strong>
                     <?php echo $view['file'][$i]['content'] ?> (<?php echo $view['file'][$i]['size'] ?>)
