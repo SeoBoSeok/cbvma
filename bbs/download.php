@@ -58,24 +58,24 @@ if ( false === run_replace('download_file_exist_check', $file_exist_check, $file
 
 // 이미 다운로드 받은 파일인지를 검사한 후 게시물당 한번만 포인트를 차감하도록 수정
 $ss_name = 'ss_down_'.$bo_table.'_'.$wr_id;
-if (!get_session($ss_name))
-{
-    // 자신의 글이라면 통과
-    // 관리자인 경우 통과
-    if (($write['mb_id'] && $write['mb_id'] == $member['mb_id']) || $is_admin)
-        ;
-    else if ($board['bo_download_level'] >= 1) // 회원이상 다운로드가 가능하다면
-    {
-        // 다운로드 포인트가 음수이고 회원의 포인트가 0 이거나 작다면
-        if ($member['mb_point'] + $board['bo_download_point'] < 0)
-            alert('보유하신 포인트('.number_format($member['mb_point']).')가 없거나 모자라서 다운로드('.number_format($board['bo_download_point']).')가 불가합니다.\\n\\n포인트를 적립하신 후 다시 다운로드 해 주십시오.');
+// if (!get_session($ss_name))
+// {
+//     // 자신의 글이라면 통과
+//     // 관리자인 경우 통과
+//     if (($write['mb_id'] && $write['mb_id'] == $member['mb_id']) || $is_admin)
+//         ;
+//     else if ($board['bo_download_level'] >= 1) // 회원이상 다운로드가 가능하다면
+//     {
+//         // 다운로드 포인트가 음수이고 회원의 포인트가 0 이거나 작다면
+//         if ($member['mb_point'] + $board['bo_download_point'] < 0)
+//             alert('보유하신 포인트('.number_format($member['mb_point']).')가 없거나 모자라서 다운로드('.number_format($board['bo_download_point']).')가 불가합니다.\\n\\n포인트를 적립하신 후 다시 다운로드 해 주십시오.');
 
-        // 게시물당 한번만 차감하도록 수정
-        insert_point($member['mb_id'], $board['bo_download_point'], "{$board['bo_subject']} $wr_id 파일 다운로드", $bo_table, $wr_id, "다운로드");
-    }
+//         // 게시물당 한번만 차감하도록 수정
+//         insert_point($member['mb_id'], $board['bo_download_point'], "{$board['bo_subject']} $wr_id 파일 다운로드", $bo_table, $wr_id, "다운로드");
+//     }
 
-    set_session($ss_name, TRUE);
-}
+//     set_session($ss_name, TRUE);
+// }
 
 // 이미 다운로드 받은 파일인지를 검사한 후 다운로드 카운트 증가 ( SIR 그누위즈 님 코드 제안 )
 $ss_name = 'ss_down_'.$bo_table.'_'.$wr_id.'_'.$no;
@@ -98,8 +98,7 @@ if(preg_match("/[\xA1-\xFE][\xA1-\xFE]/", $file['bf_source'])){
 } else {
     $original = urlencode($file['bf_source']);
 }
-
-$original = ($file['bf_source']);
+// $original = ($file['bf_source']);
 
 // echo '1111';
 // print_r($original);
