@@ -22,7 +22,7 @@ $is_show_next_prev = ($list_count > 4) ? 1 : 0;
         </a>
         <?php if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N</span>"; ?>
         </p>
-        <p><?php echo date('m.d', strtotime($list[$i]['datetime'])) ?></p>
+        <p style="float:right;"><?php echo date('m.d', strtotime($list[$i]['datetime'])) ?></p>
     </div>
 <?php
     }

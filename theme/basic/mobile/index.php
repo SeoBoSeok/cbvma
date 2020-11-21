@@ -88,7 +88,7 @@ include_once(G5_THEME_MOBILE_PATH.'/cbvmahead.php');
             <div class="d-flex">
                 <div class="pl-3 ml-2 align-self-center">
                     <h1 class="pt-4">공지사항</h1>
-                    <p class="font-15 opacity-50 mt-n2 mb-4">충청북도 수의사회의 최신소식을 확인하세요.</p>
+                    <p class="font-15 opacity-50 mt-n2 mb-4">수의사회의 최신소식을 확인하세요.</p>
                 </div>
                 <div class="ml-auto mr-3 mb-4 align-self-center">
                 <i class="fa fa-plus"></i>

@@ -78,7 +78,7 @@ body {
   }
 
   .content.front {
-    margin: 0px 15px 20px 15px;
+    margin: 0px 10px 20px 10px;
   }
   
   .content p:last-child {
@@ -3846,9 +3846,9 @@ body {
   
   .working-hours p {
     font-size: 15px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 15px !important;
-    line-height: 0px;
+    /* line-height: 0px; */
     padding-left: 10px;
     padding-right: 10px;
     margin-top: -8px !important;
@@ -3859,7 +3859,8 @@ body {
   }
   
   .working-hours p.p2 {
-    width: 80%;
+    position: relative;
+    width: 74%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -3882,6 +3883,7 @@ body {
   
   .working-hours p:last-child {
     text-align: right;
+    min-width: 60px;
   }
   
   .working-hours::after {
@@ -6155,6 +6157,6 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
+.working-hours {width:100%;}
 .working-hours .p2 a {color: black;}
-.new_icon {display:inline-block;width:16px;color:white!important;line-height:16px;font-size:0.833em;color:#DA4453;background:#DA4453;text-align:center;border-radius:2px;margin:0 4px;font-weight:bold;vertical-align:middle}
+.new_icon {display:inline-block;position:absolute;right:0;top:5px;width:16px;color:white!important;line-height:16px;font-size:0.833em;color:#DA4453;background:#DA4453;text-align:center;border-radius:2px;margin:0 4px;font-weight:bold;vertical-align:middle}

@@ -45,6 +45,7 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
         $list = array();
 
         $board = get_board_db($bo_table, true);
+        $board2 = get_board_db("notice", true);
 
         $bo_subject = get_text($board['bo_subject']);
 
@@ -57,7 +58,7 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
         //     select * from cbvma.g5_write_notice where wr_is_comment = 0 order by wr_num limit 0, 8
         //     ";
         // }
-        $sql = " select * from {$tmp_write_table} where wr_is_comment = 0 union all SELECT * from cbvma.g5_write_notice where wr_is_comment = 0 order by wr_datetime desc limit 0, {$rows} ";
+        $sql = " select *, 'free' as bo_table from {$tmp_write_table} where wr_is_comment = 0 union all SELECT *, 'notice' as bo_table from cbvma.g5_write_notice where wr_is_comment = 0 order by wr_datetime desc limit 0, {$rows} ";
         $result = sql_query($sql);
         for ($i=0; $row = sql_fetch_array($result); $i++) {
             try {
@@ -69,7 +70,11 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
                 $row['wr_content'] = $row['wr_link1'] = $row['wr_link2'] = '';
                 $row['file'] = array('count'=>0);
             }
-            $list[$i] = get_list($row, $board, $latest_skin_url, $subject_len);
+            if($row['bo_table'] == "notice") {
+                $list[$i] = get_list($row, $board2, $latest_skin_url, $subject_len);
+            } else {
+                $list[$i] = get_list($row, $board, $latest_skin_url, $subject_len);
+            }
 
             $list[$i]['first_file_thumb'] = (isset($row['wr_file']) && $row['wr_file']) ? get_board_file_db($bo_table, $row['wr_id'], 'bf_file, bf_content', "and bf_type between '1' and '3'", true) : array('bf_file'=>'', 'bf_content'=>'');
             $list[$i]['bo_table'] = $bo_table;
