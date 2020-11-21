@@ -6155,3 +6155,6 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+.working-hours .p2 a {color: black;}
+.new_icon {display:inline-block;width:16px;color:white!important;line-height:16px;font-size:0.833em;color:#DA4453;background:#DA4453;text-align:center;border-radius:2px;margin:0 4px;font-weight:bold;vertical-align:middle}

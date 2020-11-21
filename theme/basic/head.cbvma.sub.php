@@ -89,6 +89,8 @@ if(!defined('G5_IS_ADMIN'))
 <link rel="stylesheet" type="text/css" href="styles/style.css?ver=<?php echo G5_JS_VER ?>">
 <!-- <link rel="stylesheet" type="text/css" href="theme/basic/css/mobile.css">
 <link rel="stylesheet" type="text/css" href="mobile/skin/board/basic/style.css"> -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
 <link rel="manifest" href="_manifest.json" data-pwa-version="<?php echo G5_JS_VER ?>">

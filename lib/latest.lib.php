@@ -49,7 +49,7 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
         $bo_subject = get_text($board['bo_subject']);
 
         $tmp_write_table = $g5['write_prefix'] . $bo_table; // 게시판 테이블 전체이름
-        $sql = " select * from {$tmp_write_table} where wr_is_comment = 0 order by wr_num limit 0, {$rows} ";
+        // $sql = " select * from {$tmp_write_table} where wr_is_comment = 0 order by wr_num limit 0, {$rows} ";
         // if($tmp_write_table == "g5_write_free") {
             // $sql = " select * from {$tmp_write_table} UNION ALL select * from g5_write_notice where wr_is_comment = 0 order by wr_num limit 0, {$rows}";
         //     $sql = "select * from cbvma.g5_write_free
@@ -57,6 +57,7 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
         //     select * from cbvma.g5_write_notice where wr_is_comment = 0 order by wr_num limit 0, 8
         //     ";
         // }
+        $sql = " select * from {$tmp_write_table} where wr_is_comment = 0 union all SELECT * from cbvma.g5_write_notice where wr_is_comment = 0 order by wr_datetime desc limit 0, {$rows} ";
         $result = sql_query($sql);
         for ($i=0; $row = sql_fetch_array($result); $i++) {
             try {

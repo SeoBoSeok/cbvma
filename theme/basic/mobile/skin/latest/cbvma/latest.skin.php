@@ -14,14 +14,15 @@ $is_show_next_prev = ($list_count > 4) ? 1 : 0;
     for ($i=0; $i<$list_count; $i++) {
 ?>
     <div class="working-hours">
-        <p class="p2 <?php if ($list[$i]['icon_new']) echo "color-white bg-red2-dark"; ?>">
+        <p class="p2">
         <a href="<?php echo $list[$i]['href']; ?>">
         <?php
             echo $list[$i]['subject'];
         ?>
         </a>
+        <?php if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N</span>"; ?>
         </p>
-        <p class="<?php if ($list[$i]['icon_new']) echo "color-white bg-red2-dark"; ?>"><?php echo date('m.d', strtotime($list[$i]['datetime'])) ?></p>
+        <p><?php echo date('m.d', strtotime($list[$i]['datetime'])) ?></p>
     </div>
 <?php
     }
