@@ -148,7 +148,7 @@ jQuery(function($){
                     if(pathinfo($view['file'][$i]['source'], PATHINFO_EXTENSION) == "pdf") { ?>
                         <a href="?p=pdfviewer&filePath=/data/file/<?=$_REQUEST['bo_table']?>/<?php echo $view['file'][$i]['file'];  ?>" class="view_file_download" target="_blank">
                     <?php } else { ?>
-                        <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download" download target="_blank">
+                        <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download" download target="_blank" rel="noreferrer external">
                     <?php }
                 ?>
                     <i class="fa fa-download" aria-hidden="true"></i>
