@@ -1,8 +1,8 @@
 //Loading the Service Worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-    console.log('serviceWorker');
-    navigator.serviceWorker.register('_service-worker.js', {scope: ''});
+    // console.log('serviceWorker');
+    // navigator.serviceWorker.register('_service-worker.js', {scope: ''});
   });
 }
 
