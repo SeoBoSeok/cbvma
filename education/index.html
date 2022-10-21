@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 충북수의사회 후반기 연수교육</title>
+    <meta property="og:title" content="2022 충북수의사회 후반기 연수교육" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cbvma.kr" />
+    <meta property="og:image" content="https://cbvma.kr/seminar/assets/seminar_pic.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        img {
+            width: 100%;
+        }
+        button {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            width: 100%;
+            background-color: crimson;
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="./assets/1.png" alt="교육안내">
+    <div class="slider">
+        <img src="./assets/slider1.png" alt="고려동물메디컬센터">
+        <img src="./assets/slider1.png" alt="고려동물메디컬센터">
+        <img src="./assets/slider1.png" alt="고려동물메디컬센터">
+        <img src="./assets/slider1.png" alt="고려동물메디컬센터">
+    </div>
+    <img src="./assets/2.png" alt="광고">
+    <img src="./assets/3.png" alt="광고">
+    <button>신청하기</button>
+
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            auto: true,
+            speed:1000,
+            pause:1000,
+            infiniteLoop: true,
+          });
+        });
+    </script>    
+</body>
+</html>
