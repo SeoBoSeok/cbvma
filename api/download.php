@@ -14,7 +14,7 @@
         header("Content-Disposition: attachment; filename=$filename"); // 다운로드되는 파일명 (실제 파일명과 별개로 지정 가능)
         header("Content-Transfer-Encoding: binary"); 
         header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-        header("Pragma: public"); 
+        header("Pragma: no-cache");
         header("Expires: 0"); 
 	 	/*
 	    if (preg_match("MSIE", $_SERVER['HTTP_USER_AGENT'])) { 
