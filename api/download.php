@@ -3,8 +3,6 @@
 	$target_Dir = $_GET["target_Dir"];
 	$file 		= $_SERVER['DOCUMENT_ROOT']."/".$target_Dir."/".$filename;
 
-	echo $file;
-
 	$filesize = filesize($file);
 
 	if (is_file($file)) {
@@ -14,7 +12,7 @@
         header("Content-Disposition: attachment; filename=$filename"); // 다운로드되는 파일명 (실제 파일명과 별개로 지정 가능)
         header("Content-Transfer-Encoding: binary"); 
         header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-        header("Pragma: no-cache");
+        header("Pragma: public"); 
         header("Expires: 0"); 
 	 	/*
 	    if (preg_match("MSIE", $_SERVER['HTTP_USER_AGENT'])) { 
