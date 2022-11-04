@@ -3,6 +3,8 @@
 	$target_Dir = $_GET["target_Dir"];
 	$file 		= $_SERVER['DOCUMENT_ROOT']."/".$target_Dir."/".$filename;
 
+	echo $file;
+
 	$filesize = filesize($file);
 
 	if (is_file($file)) {
