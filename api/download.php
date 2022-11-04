@@ -1,4 +1,4 @@
-<?
+<?php
 	$filename  	= $_GET["file"];
 	$target_Dir = $_GET["target_Dir"];
 	$file 		= $_SERVER['DOCUMENT_ROOT']."/".$target_Dir."/".$filename;
