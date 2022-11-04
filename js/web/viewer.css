@@ -2377,7 +2377,7 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 
 @media all and (max-width: 700px) {
   #outerContainer .hiddenMediumView {
-    display: none;
+    /* display: none; */
   }
   #outerContainer .visibleMediumView {
     display: inherit;
