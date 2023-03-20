@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 충북수의사회 60주년 기념행사</title>
+    <meta property="og:title" content="2023 충북수의사회 60주년 기념행사" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cbvma.kr" />
+    <meta property="og:image" content="https://cbvma.kr/sixty/assets/60main1.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 766px;
+        }
+        img {
+            width: 100%;
+        }
+        #floating_menu img {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 100px;
+        }
+        .bx-wrapper {
+            margin: 0;
+            border: 0;
+        }
+        .bx-wrapper {
+            width: 100%;
+            /* border: 10px solid white; */
+            margin-bottom: 50px;
+        }
+        .bx-wrapper ul li {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img src="./assets/60main1.png" alt="교육안내">
+        <img src="./assets/60main1.png" alt="교육안내">
+    </div>
+    <img src="./assets/60main2.png" alt="교육안내">
+    <img src="./assets/60main3.png" alt="교육안내">
+    <img src="./assets/60main4.png" alt="교육안내">
+    <ul class="bxslider">
+        <li><img src="http://placehold.it/160x189&text=1" /></li>
+        <li><img src="http://placehold.it/160x189&text=2" /></li>
+        <li><img src="http://placehold.it/160x189&text=3" /></li>
+        <li><img src="http://placehold.it/160x189&text=4" /></li>
+        <li><img src="http://placehold.it/160x189&text=5" /></li>
+        <li><img src="http://placehold.it/160x189&text=6" /></li>
+        <li><img src="http://placehold.it/160x189&text=7" /></li>
+        <li><img src="http://placehold.it/160x189&text=8" /></li>
+    </ul>
+    <div id="" style="display: block; text-align: center; margin-bottom: 80px;">
+       <img src="./assets/60button.png" style="width: 80%" />
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            auto: true,
+            pause:3000,
+            infiniteLoop: true,
+        });
+        $(document).scroll(function(){
+            var scrollTop = $(this).scrollTop();
+            var innerHeight = $(this).innerHeight();
+            // console.log(scrollTop);
+            if (scrollTop >= 3600) {
+                $('.guide').hide();
+            } else {
+                $('.guide').show();
+            }
+        });
+        $('.bxslider').bxSlider({
+            minSlides: 1,
+            maxSlides: 8,
+            slideWidth: 189,
+            slideMargin: 0,
+            ticker: true,
+            speed: 50000
+        });
+    });
+</script>
+</html>
